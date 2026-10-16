@@ -13,3 +13,26 @@
 - Claims reviewed against supplied copy: no current academic rank, board ranking, success rates, procedure totals, testimonials, or 2013 identity-unmatched paper added. Services, contact details and license number follow the user's explicit confirmation.
 
 Browser checks used the Codex in-app browser. Physical iOS/Android device and Safari testing were not performed.
+
+## Regression fixes after direct-file report
+
+- Root cause: `dist/index.html` loaded a JavaScript module. Direct `file://` loading blocks that module in Chromium, preventing dynamic content and the entire animation from initializing.
+- Changed to ordered classic deferred scripts with an isolated content namespace. Static regression checks reject module entrypoints, import/export syntax and wrong content/app ordering.
+- Replaced the frame loader's `decode()` dependency with `load`/`error` events. All 57 frames loaded; forward scrolling reached frame 57 and the surgical copy. Reverse scrolling returned to frame 24 and academic copy.
+- The offline preview is now one HTML file with embedded WebP frames, photos, font, libraries and CSS. It has no module, external script, external stylesheet or base-element dependency. Windows MIME detection for WebP was replaced with an explicit correct MIME type. HTTP browser testing confirmed 57 embedded frames and all content render successfully.
+- Intrinsic grid sizing reserves space for both text states. All academic/surgical paragraphs and English research titles are visible on mobile. Short windows use normal document flow and keep rotation tied to the visible photo instead of pinning an oversized scene outside the viewport.
+- Rechecked 1440×900, 1440×600, 768×1024 and 360×640. No horizontal overflow or text-state overflow. Short desktop and phone layouts used flow mode.
+- Rechecked menu Escape, single-open FAQ behavior, reduced-motion fallback and deliberate failure of all 57 frame requests. Independent posters and content remained available.
+- The browser tool only permits HTTP/HTTPS, so direct `file://` execution was not automated. Classic-script compatibility was checked statically, and both the normal entrypoint and identical standalone preview were executed over HTTP.
+
+## One-gesture playback revision
+
+This replaces the previous scroll-scrubbed frame sequence.
+
+- The doctor is now a native muted, inline MP4 video, duration 1.90115 seconds. No frame requests, canvas rendering or scroll-to-video seeking occur. The standalone preview embeds that same MP4 and excludes the obsolete frame sequence.
+- Arrival armed the scene and locked the page at scroll Y=786.923, with video time 0. A single additional wheel gesture entered playing. The video reached its native ended event at 1.90115 seconds without any more input; scroll Y remained 786.923 throughout. The lock then cleared.
+- Additional wheel input during playback left scroll Y unchanged and did not restart playback (video time advanced to 0.176). After completion another wheel input moved the page to Y=1000.
+- The standalone preview was tested at CSS 360×800. The full 300px-high visual remained within the viewport. Arrival locked Y=1179.231; one additional gesture played the full video, then unlocked at the identical Y.
+- Escape cancelled playback and cleared the lock. A deliberately failing MP4 request left the poster visible and the page unlocked. Reduced-motion mode showed the static alternative without any lock.
+- Seven automated playback lifecycle tests passed: arrival without autoplay, one uninterrupted playback, ignored duplicate starts, native-ended unlock, media-error unlock, stalled-media timeout, cancellation, rejected play promises, callback cleanup and explicit retry.
+- Native touch gesture handling is implemented; a physical touchscreen device was not tested. Keyboard and wheel paths are available, together with an explicit play/replay button.

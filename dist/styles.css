@@ -33,3 +33,37 @@
 @media(max-width:768px){.service-card p,.research-card p{font-size:12px}.faq-answer,.contact-address p{font-size:13px}}
 @media(max-width:768px) and (max-height:700px){.story-card{min-height:0;height:calc(100svh - 96px)}.story-content{min-height:242px;height:47%;padding-top:20px}.story-surgical{top:20px}.story-state h2{font-size:27px;margin-block:7px}.story-state .section-description{font-size:11px}.story-facts{display:none}.story-state .text-link{font-size:10px;margin-top:10px}.story-visual .frame-stage{height:calc(100% - 32px);margin-bottom:27px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.story-scroll{display:none}.story-static[hidden]{display:block!important}}
+
+/* Intrinsic text sizing keeps both story states complete at every window height. */
+.story-card{min-height:var(--story-required-height,590px)}
+.story-content{display:grid;grid-template-columns:minmax(0,1fr);align-content:center;align-items:start;align-self:stretch;height:auto;min-height:0;padding-top:40px;padding-bottom:65px}
+.story-state{grid-area:1/1;align-self:start;min-width:0}
+.story-surgical{position:relative;inset:auto;width:100%}
+.story-facts{display:block}
+.story-facts p+p{display:block}
+.story-card[data-layout="flow"]{max-height:none}
+.paper-english{overflow-wrap:anywhere}
+@media(max-width:768px){
+  .story-card{height:calc(100svh - 108px);min-height:var(--story-required-height,600px);max-height:none}
+  .story-content{height:auto;min-height:0;padding:24px 20px 52px;flex:0 0 auto}
+  .story-surgical{inset:auto}
+  .story-visual{min-height:300px}
+  .story-facts{font-size:11px;line-height:1.95}
+  .story-facts span{font-size:11px}
+  .story-facts p+p{margin-top:12px}
+  .story-state .text-link{margin-top:10px;font-size:11px}
+  .story-progress{bottom:16px;right:20px;left:20px}
+  .paper-english{display:block;font-size:9px}
+}
+
+html{scrollbar-gutter:stable}
+html.story-scroll-locked,html.story-scroll-locked body{overflow:hidden;overscroll-behavior:none}
+#doctor-sequence{display:block;object-fit:contain;pointer-events:none}
+.story-controls{display:flex;align-items:center;justify-content:space-between;gap:22px;padding:16px 8px 0;color:#698371;font-size:11px}
+.story-controls p{max-width:750px;line-height:1.9}
+.story-play{display:inline-flex;align-items:center;justify-content:center;gap:9px;flex-shrink:0;border:1px solid #91b59d;border-radius:24px;background:transparent;color:var(--green);font-family:inherit;font-size:11px;padding:8px 17px;min-height:40px}
+.story-play .icon{width:18px;height:18px}
+.story-play:hover{background:#e1eddf}
+.story-play:disabled{opacity:.5;cursor:default}
+.story-card[data-playback="playing"] .status-dot{box-shadow:0 0 0 4px #00a97a15}
+@media(max-width:768px){.story-controls{align-items:flex-start;flex-direction:column;gap:10px;padding-inline:0;font-size:10px}.story-play{font-size:10px}}

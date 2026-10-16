@@ -1,4 +1,8 @@
-import { doctor, timeline, services, papers, faqs } from './content.js';
+(() => {
+'use strict';
+// Classic deferred scripts also run when index.html is opened directly from disk.
+const { doctor, timeline, services, papers, faqs } = window.SigariContent;
+const assetSource = path => window.SigariAssets?.[path] ?? path;
 
 const icon = (name, extra = '') => `<svg class="icon ${extra}" aria-hidden="true"><use href="#i-${name}"/></svg>`;
 const escapeHTML = (value) => String(value).replace(/[&<>"']/g, (character) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[character]));
@@ -25,11 +29,15 @@ details.forEach(detail => detail.addEventListener('toggle', () => {
 const header = document.querySelector('.site-header');
 const menuButton = document.querySelector('.menu-toggle');
 const mobileNav = document.querySelector('#mobile-nav');
+let storyController;
 function setMenu(open, returnFocus = false) {
   menuButton.setAttribute('aria-expanded', String(open));
   menuButton.setAttribute('aria-label', open ? 'بستن منو' : 'باز کردن منو');
   mobileNav.hidden = !open;
   document.body.classList.toggle('menu-open', open);
+  if (open) storyController?.navigate();
+  if (open) lenis?.stop();
+  else if (!storyController?.locked) lenis?.start();
   if (open) header.classList.add('is-scrolled');
   else header.classList.toggle('is-scrolled', scrollY > 60);
   if (returnFocus) menuButton.focus();
@@ -60,6 +68,7 @@ function setupSmoothScroll() {
   lenis.on('scroll', () => window.ScrollTrigger?.update());
   window.gsap.ticker.add(tick);
   stopSmoothScroll = () => { window.gsap.ticker.remove(tick); lenis?.destroy(); lenis = undefined; };
+  if (storyController?.locked) lenis.stop();
 }
 
 // Offset anchors for the fixed header, and preserve keyboard focus on arrival.
@@ -67,11 +76,13 @@ document.querySelectorAll('a[href^="#"]').forEach(link => link.addEventListener(
   const target = document.querySelector(link.getAttribute('href'));
   if (!target) return;
   event.preventDefault();
+  storyController?.navigate();
   setMenu(false);
   const moveFocus = () => {
     if (!target.hasAttribute('tabindex')) target.setAttribute('tabindex', '-1');
     target.focus({ preventScroll: true });
-    history.replaceState(null, '', link.getAttribute('href'));
+    // File URLs have an opaque origin in some browsers; navigation must still work.
+    if (location.protocol !== 'file:') history.replaceState(null, '', link.getAttribute('href'));
   };
   if (lenis) lenis.scrollTo(target, { offset: -90, duration: 1.1, onComplete: moveFocus });
   else {
@@ -81,60 +92,16 @@ document.querySelectorAll('a[href^="#"]').forEach(link => link.addEventListener(
   }
 }));
 
-const canvas = document.querySelector('#doctor-sequence');
-const context = canvas.getContext('2d', { alpha: false });
+const video = document.querySelector('#doctor-sequence');
 const poster = document.querySelector('.story-poster');
 const storyScroll = document.querySelector('.story-scroll');
 const staticStory = document.querySelector('.story-static');
-const frameCount = 57;
-const frames = new Array(frameCount);
-const failed = new Set();
-let requestedFrame = 0;
-let lastRenderedFrame = -1;
-let sequenceStarted = false;
 let currentStage = '';
-
-function renderFrame(index) {
-  requestedFrame = Math.min(frameCount - 1, Math.max(0, Math.round(index)));
-  if (!context) return;
-  // The poster remains visible until the desired frame is available; no blank flash.
-  const available = frames[requestedFrame];
-  if (!available) return;
-  if (lastRenderedFrame === requestedFrame) return;
-  context.drawImage(available, 0, 0, canvas.width, canvas.height);
-  lastRenderedFrame = requestedFrame;
-  canvas.dataset.frame = String(requestedFrame + 1);
-  document.querySelector('.frame-stage').classList.add('sequence-ready');
-}
-
-async function loadSequence() {
-  if (sequenceStarted || reducedMotion.matches) return;
-  sequenceStarted = true;
-  // Load endpoints, then spread anchor frames before filling the short sequence.
-  const anchorFrames = [0, 56, 28, 14, 42, 7, 21, 35, 49];
-  const queue = [...new Set([...anchorFrames, ...Array.from({ length: frameCount }, (_, index) => index)])];
-  async function worker() {
-    while (queue.length) {
-      const index = queue.shift();
-      try {
-        const frame = new Image();
-        frame.decoding = 'async';
-        frame.src = `assets/frames/frame-${String(index + 1).padStart(3, '0')}.webp`;
-        await frame.decode();
-        frames[index] = frame;
-        if (requestedFrame === index) renderFrame(index);
-      } catch { failed.add(index); }
-    }
-  }
-  await Promise.all(Array.from({ length: 4 }, worker));
-  canvas.dataset.loadedFrames = String(frames.filter(Boolean).length);
-  canvas.dataset.failedFrames = String(failed.size);
-  renderFrame(requestedFrame);
-}
 
 function setStage(surgical) {
   const next = surgical ? 'surgical' : 'academic';
   if (currentStage === next) return;
+  const initial = currentStage === '';
   currentStage = next;
   const academic = document.querySelector('.story-academic');
   const surgery = document.querySelector('.story-surgical');
@@ -144,7 +111,7 @@ function setStage(surgical) {
   outgoing.setAttribute('aria-hidden', 'true');
   incoming.inert = false;
   incoming.removeAttribute('aria-hidden');
-  if (window.gsap && !reducedMotion.matches) {
+  if (!initial && window.gsap && !reducedMotion.matches) {
     window.gsap.to(outgoing, { autoAlpha: 0, y: surgical ? -12 : 12, duration: .22, overwrite: true });
     window.gsap.fromTo(incoming, { autoAlpha: 0, y: surgical ? 14 : -14 }, { autoAlpha: 1, y: 0, duration: .38, delay: .12, overwrite: true });
   } else {
@@ -153,85 +120,255 @@ function setStage(surgical) {
   }
   document.querySelector('.visual-label-text').textContent = surgical ? 'فعالیت جراحی و مراقبت' : 'مسیر علمی و دانشگاهی';
   document.querySelector('.visual-label-index').textContent = surgical ? '02 / 02' : '01 / 02';
-  poster.src = surgical ? 'assets/story-end.webp' : 'assets/story-start.webp';
+  poster.src = assetSource(surgical ? 'assets/story-end.webp' : 'assets/story-start.webp');
   poster.alt = surgical ? 'دکتر سیگاری با لباس جراحی' : 'دکتر سیگاری با لباس رسمی';
-  canvas.setAttribute('aria-label', poster.alt);
-}
-
-function updateSequence(progress) {
-  // Hold the first and last poses briefly so the story has a clear beginning/end.
-  const normalized = Math.max(0, Math.min(1, (progress - .08) / .84));
-  const index = Math.round(normalized * (frameCount - 1));
-  setStage(normalized >= .56);
-  if (!frames[index]) {
-    // Missing or slow frames fall back to a pose rather than a frozen wrong outfit.
-    document.querySelector('.frame-stage').classList.remove('sequence-ready');
-    lastRenderedFrame = -1;
-  }
-  renderFrame(index);
-  document.querySelector('.story-progress i').style.transform = `scaleX(${progress})`;
-  canvas.dataset.progress = progress.toFixed(3);
+  video.setAttribute('aria-label', poster.alt);
 }
 
 let animationContext;
+let resizeTimer;
+
+function measureScene() {
+  const scene = document.querySelector('.story-card');
+  const content = document.querySelector('.story-content');
+  const styles = getComputedStyle(content);
+  const textHeight = Math.max(...[...content.querySelectorAll('.story-state')].map(state => state.offsetHeight));
+  const contentHeight = textHeight + parseFloat(styles.paddingTop) + parseFloat(styles.paddingBottom);
+  const mobile = matchMedia('(max-width: 768px)').matches;
+  // Both text states take part in grid sizing, including the visually hidden one.
+  // Never crop a paragraph to force the complete scene into a short viewport.
+  const requiredHeight = mobile ? contentHeight + 300 : Math.max(480, contentHeight);
+  scene.style.setProperty('--story-required-height', `${Math.ceil(requiredHeight + 2)}px`);
+  return { scene, mobile };
+}
+
+function createStoryController() {
+  const scene = document.querySelector('.story-card');
+  const stage = document.querySelector('.frame-stage');
+  const status = document.querySelector('#story-playback-status');
+  const button = document.querySelector('.story-play');
+  let trigger;
+  let anchorY = 0;
+  let lockedY = 0;
+  let armedAt = 0;
+  let lastWheelAt = 0;
+  let navigationUntil = 0;
+  let touchY = 0;
+  let freshTouch = false;
+
+  function positionAt(y) {
+    lenis?.scrollTo(y, { immediate: true, force: true });
+    window.scrollTo({ top: y, behavior: 'instant' });
+  }
+
+  function unlock() {
+    document.documentElement.classList.remove('story-scroll-locked');
+    if (mobileNav.hidden) lenis?.start();
+  }
+
+  const playback = window.SigariStoryPlayback(video, {
+    lock() {
+      lockedY = anchorY;
+      positionAt(lockedY);
+      lenis?.stop();
+      document.documentElement.classList.add('story-scroll-locked');
+      armedAt = performance.now();
+      freshTouch = false;
+    },
+    unlock,
+    state(phase) {
+      scene.dataset.playback = phase;
+      video.dataset.playback = phase;
+      button.disabled = phase === 'playing';
+      if (phase === 'armed') status.textContent = 'صفحه ثابت شد؛ با یک اسکرول دیگر، چرخش کامل اجرا می‌شود.';
+      if (phase === 'playing') status.textContent = 'چرخش در حال اجراست؛ پس از پایان، اسکرول صفحه آزاد می‌شود.';
+      if (phase === 'complete') {
+        status.textContent = 'چرخش کامل شد؛ می‌توانید به ادامهٔ صفحه بروید.';
+        button.firstChild.textContent = 'پخش دوبارهٔ چرخش ';
+      }
+    },
+    progress(value) {
+      setStage(value >= .56);
+      document.querySelector('.story-progress i').style.transform = `scaleX(${value})`;
+      video.dataset.progress = value.toFixed(3);
+    },
+    ready() { stage.classList.add('sequence-ready'); },
+    finish(reason) {
+      scene.dataset.result = reason;
+      stage.classList.remove('sequence-ready');
+      if (reason === 'error' || reason === 'timeout') {
+        status.textContent = 'ویدئو پخش نشد؛ تصویر ثابت نمایش داده می‌شود و اسکرول صفحه آزاد است.';
+        button.firstChild.textContent = 'تلاش دوباره برای پخش ';
+      } else if (reason !== 'ended') status.textContent = 'اسکرول صفحه آزاد است؛ برای اجرای چرخش می‌توانید دکمه را بزنید.';
+    },
+    reset() {
+      stage.classList.remove('sequence-ready');
+      delete scene.dataset.result;
+      button.firstChild.textContent = 'اجرای چرخش پزشک ';
+      status.textContent = 'وقتی به تصویر رسیدید، با یک اسکرول چرخش کامل آغاز می‌شود.';
+    },
+  });
+
+  function canArm() {
+    return playback.phase === 'idle' && performance.now() >= navigationUntil && mobileNav.hidden;
+  }
+
+  function onWheel(event) {
+    if (event.ctrlKey || Math.abs(event.deltaX) > Math.abs(event.deltaY)) return;
+    const now = performance.now();
+    const gap = now - lastWheelAt;
+    lastWheelAt = now;
+    if (playback.phase === 'playing') { event.preventDefault(); return; }
+    if (playback.phase === 'armed') {
+      if (event.deltaY < 0) { playback.cancel('back'); return; }
+      event.preventDefault();
+      // Ignore the inertial tail of the gesture that brought the scene into view.
+      if (event.deltaY > 0 && now - armedAt > 180 && gap > 160) playback.start();
+      return;
+    }
+    const distance = event.deltaY * (event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? innerHeight : 1);
+    if (canArm() && distance > 0 && scrollY < anchorY && scrollY + distance >= anchorY) {
+      event.preventDefault();
+      playback.arm();
+    }
+  }
+
+  function onKey(event) {
+    if (!playback.locked || event.ctrlKey || event.metaKey || event.altKey) return;
+    if (event.target.closest('input,textarea,select,[contenteditable="true"]')) return;
+    if (event.key === 'Escape') { event.preventDefault(); playback.cancel(); return; }
+    const down = ['ArrowDown', 'PageDown', 'End'].includes(event.key) || (event.key === ' ' && !event.shiftKey);
+    const up = ['ArrowUp', 'PageUp', 'Home'].includes(event.key) || (event.key === ' ' && event.shiftKey);
+    if (playback.phase === 'playing' && (down || up)) { event.preventDefault(); return; }
+    if (playback.phase === 'armed' && down) { event.preventDefault(); playback.start(); }
+    else if (playback.phase === 'armed' && up) playback.cancel('back');
+  }
+
+  function onTouchStart(event) {
+    touchY = event.touches[0]?.clientY ?? 0;
+    freshTouch = playback.phase === 'armed';
+  }
+
+  function onTouchMove(event) {
+    if (event.touches.length !== 1) return;
+    const distance = touchY - event.touches[0].clientY;
+    if (playback.phase === 'playing') { event.preventDefault(); return; }
+    if (playback.phase === 'armed') {
+      if (distance < -12) { playback.cancel('back'); return; }
+      event.preventDefault();
+      if (distance > 12 && freshTouch) { freshTouch = false; playback.start(); }
+    } else if (canArm() && distance > 12 && scrollY < anchorY && scrollY + distance >= anchorY) {
+      event.preventDefault();
+      playback.arm();
+    }
+  }
+
+  function guardScroll() {
+    if (playback.locked && Math.abs(scrollY - lockedY) > 1) positionAt(lockedY);
+  }
+
+  function refresh() {
+    trigger?.kill();
+    measureScene();
+    const top = document.querySelector('.header-inner').offsetHeight + 12;
+    const fits = scene.offsetHeight <= innerHeight - top - 12;
+    const focus = fits ? scene : scene.querySelector('.story-visual');
+    const focusTop = fits ? top : top + Math.max(0, (innerHeight - top - 12 - focus.offsetHeight) / 2);
+    anchorY = Math.max(0, Math.ceil(scrollY + focus.getBoundingClientRect().top - focusTop));
+    scene.dataset.layout = fits ? 'gesture-lock' : 'gesture-focus';
+    if (playback.locked) { lockedY = anchorY; positionAt(lockedY); }
+    trigger = window.ScrollTrigger.create({
+      id: 'doctor-story', trigger: focus, start: `top ${focusTop}px`, end: 'bottom top',
+      onEnter: () => { if (canArm()) playback.arm(); },
+      onLeaveBack: () => { if (!playback.locked && playback.phase !== 'failed') playback.reset(); },
+    });
+  }
+
+  function onButton() {
+    if (playback.phase === 'playing') return;
+    if (playback.phase === 'complete' || playback.phase === 'failed') {
+      playback.reset();
+      video.load();
+    }
+    playback.arm();
+    playback.start();
+  }
+
+  window.addEventListener('wheel', onWheel, { passive: false, capture: true });
+  window.addEventListener('keydown', onKey, { capture: true });
+  window.addEventListener('touchstart', onTouchStart, { passive: true, capture: true });
+  window.addEventListener('touchmove', onTouchMove, { passive: false, capture: true });
+  window.addEventListener('scroll', guardScroll, { passive: true });
+  button.addEventListener('click', onButton);
+  video.src = assetSource('assets/doctor-turn.mp4');
+  video.muted = true;
+  setStage(false);
+  scene.dataset.playback = 'idle';
+  refresh();
+
+  return {
+    get locked() { return playback.locked; },
+    refresh,
+    navigate() { navigationUntil = performance.now() + 1800; playback.cancel('navigation'); },
+    destroy() {
+      trigger?.kill();
+      playback.destroy();
+      unlock();
+      window.removeEventListener('wheel', onWheel, true);
+      window.removeEventListener('keydown', onKey, true);
+      window.removeEventListener('touchstart', onTouchStart, true);
+      window.removeEventListener('touchmove', onTouchMove, true);
+      window.removeEventListener('scroll', guardScroll);
+      button.removeEventListener('click', onButton);
+    },
+  };
+}
+
 function setupAnimations() {
+  storyController?.destroy();
+  storyController = undefined;
   animationContext?.revert();
   currentStage = '';
   setupSmoothScroll();
-  const canAnimate = !reducedMotion.matches && window.gsap && window.ScrollTrigger && context;
+  const canAnimate = !reducedMotion.matches && window.gsap && window.ScrollTrigger && window.SigariStoryPlayback;
   storyScroll.hidden = !canAnimate;
   staticStory.hidden = !!canAnimate;
   if (!canAnimate) return;
   const { gsap, ScrollTrigger } = window;
   gsap.registerPlugin(ScrollTrigger);
-  let sceneTrigger;
+  storyController = createStoryController();
   animationContext = gsap.context(() => {
-    const media = gsap.matchMedia();
-    media.add({ desktop: '(min-width: 769px)', mobile: '(max-width: 768px)' }, scope => {
-      const mobile = scope.conditions.mobile;
-      const scene = document.querySelector('.story-card');
-      sceneTrigger = ScrollTrigger.create({
-        trigger: scene,
-        start: mobile ? 'top 84px' : 'top 104px',
-        end: () => `+=${Math.round(innerHeight * (mobile ? 1.15 : 2))}`,
-        pin: true,
-        pinSpacing: true,
-        anticipatePin: 1,
-        invalidateOnRefresh: true,
-        onUpdate: self => updateSequence(self.progress),
-        onRefresh: self => updateSequence(self.progress),
-      });
-      gsap.to('.orbit-one', { y: mobile ? -20 : -45, scale: 1.08, ease: 'none', scrollTrigger: { trigger: '.story-scroll', start: 'top bottom', end: 'bottom top', scrub: 1 } });
-      gsap.to('.orbit-two', { y: mobile ? 15 : 45, x: -12, ease: 'none', scrollTrigger: { trigger: '.story-scroll', start: 'top bottom', end: 'bottom top', scrub: 1 } });
-    });
-    gsap.from('.hero-copy > *', { y: 24, opacity: 0, duration: .85, stagger: .09, ease: 'power2.out', clearProps: 'transform,opacity' });
-    gsap.from('.hero-photo', { opacity: 0, scale: 1.025, duration: 1.2, ease: 'power2.out', clearProps: 'transform,opacity' });
+    gsap.to('.orbit-one', { y: -25, scale: 1.08, ease: 'none', scrollTrigger: { trigger: '.story-scroll', start: 'top bottom', end: 'bottom top', scrub: 1 } });
+    gsap.to('.orbit-two', { y: 20, x: -12, ease: 'none', scrollTrigger: { trigger: '.story-scroll', start: 'top bottom', end: 'bottom top', scrub: 1 } });
+    // Content stays readable even when a background tab throttles animation frames.
+    gsap.from('.hero-copy > *', { y: 24, opacity: .5, duration: .85, stagger: .09, ease: 'power2.out', clearProps: 'transform,opacity' });
+    gsap.from('.hero-photo', { opacity: .5, scale: 1.025, duration: 1.2, ease: 'power2.out', clearProps: 'transform,opacity' });
     gsap.utils.toArray('.reveal').forEach(title => {
-      gsap.from(title, { y: 24, opacity: 0, duration: .8, ease: 'power2.out', scrollTrigger: { trigger: title, start: 'top 94%', once: true }, clearProps: 'opacity,transform' });
+      gsap.from(title, { y: 24, opacity: .45, duration: .8, ease: 'power2.out', scrollTrigger: { trigger: title, start: 'top 94%', once: true }, clearProps: 'opacity,transform' });
     });
     ['.service-card', '.research-card', '.timeline li', '.journey-steps li'].forEach(selector => {
-      ScrollTrigger.batch(selector, { start: 'top 96%', once: true, onEnter: batch => gsap.fromTo(batch, { y: 22, opacity: .2 }, { y: 0, opacity: 1, duration: .7, stagger: .1, ease: 'power2.out', clearProps: 'opacity,transform' }) });
+      ScrollTrigger.batch(selector, { start: 'top 96%', once: true, onEnter: batch => gsap.fromTo(batch, { y: 22, opacity: .5 }, { y: 0, opacity: 1, duration: .7, stagger: .1, ease: 'power2.out', clearProps: 'opacity,transform' }) });
     });
-    return () => media.revert();
   });
-  updateSequence(sceneTrigger?.progress ?? 0);
-  const loader = new IntersectionObserver(entries => {
-    if (entries.some(entry => entry.isIntersecting)) { loadSequence(); loader.disconnect(); }
-  }, { rootMargin: '900px' });
-  loader.observe(storyScroll);
-  document.fonts.ready.then(() => ScrollTrigger.refresh());
+  document.fonts.ready.then(() => { storyController?.refresh(); ScrollTrigger.refresh(); });
 }
 
 setupAnimations();
 reducedMotion.addEventListener('change', setupAnimations);
 matchMedia('(min-width: 769px) and (pointer: fine)').addEventListener('change', setupSmoothScroll);
-window.addEventListener('pageshow', event => { if (event.persisted) window.ScrollTrigger?.refresh(); });
+window.addEventListener('resize', () => {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => { storyController?.refresh(); window.ScrollTrigger?.refresh(); }, 180);
+});
+window.addEventListener('pageshow', event => { if (event.persisted) { storyController?.refresh(); window.ScrollTrigger?.refresh(); } });
 
 // A direct section URL should settle after fonts and pin spacing have been measured.
 if (location.hash) {
-  const destination = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+  let destination;
+  try { destination = document.getElementById(decodeURIComponent(location.hash.slice(1))); } catch { /* Ignore malformed URL fragments. */ }
   if (destination) document.fonts.ready.then(() => requestAnimationFrame(() => {
     window.ScrollTrigger?.refresh();
     window.scrollTo({ top: Math.max(0, scrollY + destination.getBoundingClientRect().top - 90), behavior: 'instant' });
   }));
 }
+})();

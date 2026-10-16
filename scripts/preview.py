@@ -13,19 +13,19 @@ class Handler(SimpleHTTPRequestHandler):
     def do_GET(self):
         requested = urlsplit(self.path).path
         scenario = None
-        for name in ('reduced-motion', 'frames-fail', 'slow-frames'):
+        for name in ('reduced-motion', 'video-fail', 'slow-video', 'frames-fail', 'slow-frames'):
             prefix = f'/qa/{name}/'
             if requested.startswith(prefix):
                 scenario = name
                 requested = '/' + requested[len(prefix):]
                 break
         self.path = requested
-        if '/assets/frames/' in requested:
-            if scenario == 'frames-fail':
-                self.send_error(503, 'Simulated frame request failure')
+        if requested.endswith('/assets/doctor-turn.mp4'):
+            if scenario in ('video-fail', 'frames-fail'):
+                self.send_error(503, 'Simulated video request failure')
                 return
-            if scenario == 'slow-frames':
-                time.sleep(0.6)
+            if scenario in ('slow-video', 'slow-frames'):
+                time.sleep(1.5)
         if scenario == 'reduced-motion' and requested in ('/', '/index.html'):
             html = (ROOT / 'index.html').read_text(encoding='utf-8')
             fixture = '''<script>
