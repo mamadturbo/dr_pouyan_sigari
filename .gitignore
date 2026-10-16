@@ -1,0 +1,6 @@
+.sites-local/
+.sites.local/
+*.tar.gz
+*.tgz
+__pycache__/
+qa-artifacts/
