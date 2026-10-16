@@ -176,6 +176,7 @@ function updateSequence(progress) {
 let animationContext;
 function setupAnimations() {
   animationContext?.revert();
+  currentStage = '';
   setupSmoothScroll();
   const canAnimate = !reducedMotion.matches && window.gsap && window.ScrollTrigger && context;
   storyScroll.hidden = !canAnimate;
@@ -183,12 +184,13 @@ function setupAnimations() {
   if (!canAnimate) return;
   const { gsap, ScrollTrigger } = window;
   gsap.registerPlugin(ScrollTrigger);
+  let sceneTrigger;
   animationContext = gsap.context(() => {
     const media = gsap.matchMedia();
     media.add({ desktop: '(min-width: 769px)', mobile: '(max-width: 768px)' }, scope => {
       const mobile = scope.conditions.mobile;
       const scene = document.querySelector('.story-card');
-      ScrollTrigger.create({
+      sceneTrigger = ScrollTrigger.create({
         trigger: scene,
         start: mobile ? 'top 84px' : 'top 104px',
         end: () => `+=${Math.round(innerHeight * (mobile ? 1.15 : 2))}`,
@@ -212,7 +214,7 @@ function setupAnimations() {
     });
     return () => media.revert();
   });
-  updateSequence(0);
+  updateSequence(sceneTrigger?.progress ?? 0);
   const loader = new IntersectionObserver(entries => {
     if (entries.some(entry => entry.isIntersecting)) { loadSequence(); loader.disconnect(); }
   }, { rootMargin: '900px' });
