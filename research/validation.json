@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-28",
+  "required_files": [
+    "site-content-audit.md",
+    "identity-verification.md",
+    "sources.csv",
+    "findings.json",
+    "research-report-fa.md",
+    "proposed-site-content-fa.md",
+    "publications.json",
+    "media-inventory.csv",
+    "missing-and-questions.md"
+  ],
+  "source_count": 37,
+  "finding_count": 101,
+  "coverage_count": 101,
+  "publication_count": 4,
+  "media_count": 16,
+  "status_counts": {
+    "تأییدشده": 56,
+    "یافت‌نشده": 9,
+    "تأیید محدود": 18,
+    "نیازمند تأیید پزشک": 17,
+    "متعارض": 1
+  },
+  "checked_site_file_count": 164,
+  "changed_site_files": [],
+  "all_source_references_resolve": true,
+  "checks_passed": true
+}

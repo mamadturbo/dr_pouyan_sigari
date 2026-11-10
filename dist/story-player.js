@@ -6,19 +6,37 @@ window.SigariStoryPlayback = (video, hooks, timers = window) => {
   let phase = 'idle';
   let watchdog;
   let destroyed = false;
+  let rangeStart = 0;
+  let rangeEnd = Infinity;
+  let progressFrame;
+  let run = 0;
   const locked = () => phase === 'armed' || phase === 'playing';
   const change = value => { phase = value; hooks.state(value); };
   const clearWatchdog = () => { timers.clearTimeout(watchdog); watchdog = undefined; };
 
   function progress() {
-    const value = video.duration > 0 ? Math.min(1, video.currentTime / video.duration) : 0;
+    if (phase !== 'playing') return;
+    const end = Math.min(rangeEnd, video.duration || rangeEnd);
+    const value = end > rangeStart ? Math.max(0, Math.min(1, (video.currentTime - rangeStart) / (end - rangeStart))) : 0;
     hooks.progress(value);
+  }
+
+  function tick() {
+    if (phase !== 'playing') return;
+    progress();
+    if (video.currentTime >= rangeEnd - .005) { finish('ended'); return; }
+    progressFrame = timers.requestAnimationFrame?.(tick);
   }
 
   function finish(reason) {
     if (!locked()) return;
     clearWatchdog();
+    timers.cancelAnimationFrame?.(progressFrame);
     video.pause();
+    // A background tab may throttle animation callbacks; keep the correct outfit.
+    if (reason === 'ended' && Number.isFinite(rangeEnd) && video.currentTime > rangeEnd + .025) {
+      try { video.currentTime = rangeEnd - .008; } catch { /* Keep the last decoded frame. */ }
+    }
     change('complete');
     try {
       if (reason === 'ended') hooks.progress(1);
@@ -33,32 +51,36 @@ window.SigariStoryPlayback = (video, hooks, timers = window) => {
 
   function arm() {
     if (destroyed || phase !== 'idle') return false;
-    hooks.lock();
     change('armed');
+    hooks.lock();
     return true;
   }
 
-  function start() {
+  function start(options = {}) {
     if (phase === 'idle') arm();
     if (destroyed || phase !== 'armed') return false;
     change('playing');
+    const thisRun = ++run;
+    rangeStart = options.from ?? 0;
+    rangeEnd = options.to ?? Infinity;
     video.muted = true;
-    try { video.currentTime = 0; } catch { /* Metadata may still be loading. */ }
+    try { if (Math.abs(video.currentTime - rangeStart) > .025) video.currentTime = rangeStart; } catch { /* Metadata may still be loading. */ }
     watchdog = timers.setTimeout(() => finish('timeout'), 8000);
     try {
       const result = video.play();
-      result?.catch(() => { if (phase === 'playing') finish('error'); });
+      result?.catch(() => { if (phase === 'playing' && run === thisRun) finish('error'); });
     } catch { finish('error'); }
+    progressFrame = timers.requestAnimationFrame?.(tick);
     return true;
   }
 
-  function reset() {
+  function reset(options = {}) {
     if (locked()) finish('cancelled');
     clearWatchdog();
     video.pause();
-    try { video.currentTime = 0; } catch { /* Metadata may still be loading. */ }
+    if (!options.preserveFrame) try { video.currentTime = 0; } catch { /* Metadata may still be loading. */ }
     change('idle');
-    hooks.progress(0);
+    if (!options.preserveFrame) hooks.progress(0);
     hooks.reset();
   }
 

@@ -1,0 +1,11 @@
+# SEO and indexing
+
+Each page uses the Next Metadata API for a unique Persian title/description, Open Graph and Twitter cards, locale and canonical URL. `layout.tsx` emits `lang="fa"`, `dir="rtl"`, viewport/theme metadata and the favicon. The local licensed font requires no external font request. Server rendering puts the main copy, services, history, research and article bodies in exported HTML.
+
+JSON-LD: Person and WebSite on the homepage, Person on biography, BreadcrumbList on interior pages, There are no active blog routes or emitted Article schemas. Person sameAs contains only the official Medical Council profile; unverified social accounts and illustrative image references are omitted. Person is used because this is a person's portfolio; no fabricated organization, aggregate rating, awards, review, opening hours or current academic rank is asserted. English research titles use explicit language/direction. Article TOC IDs, canonical paths and related links are static.
+
+`SITE_URL` must be an owner-approved HTTPS origin without credentials/path/query/fragment. It is the source for canonical, Open Graph, schema and sitemap URLs. A no-domain preview intentionally emits `noindex,nofollow`, blocks crawling and returns an empty sitemap. `pnpm release` fails without the domain. This avoids shipping a fake canonical or indexing a preview; low preview Lighthouse SEO reflects this protection. Do not remove the block without configuring the actual domain and rebuilding.
+
+With the domain configured, `sitemap.xml` contains the five existing pages (home, about, expertise, publications, contact); inactive MDX drafts are excluded. `robots.txt` allows crawling and links to the sitemap. Unknown articles return the custom static 404. The static host must serve nested directory indexes and 404.html with HTTP 404, and retain every generated `.txt` navigation payload.
+
+Medical attribution: new articles identify the editorial team and role; no medical reviewer is claimed unless reviewedBy/reviewedAt are actually populated. Current service availability is not inferred from research or event topics. Specialty/research/teaching cards replace the former six service claims; medical FAQ and unreviewed summaries are withheld. Historical appointments remain dated. Structured data does not promise search rich results.

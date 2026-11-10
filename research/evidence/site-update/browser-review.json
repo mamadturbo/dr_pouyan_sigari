@@ -1,0 +1,647 @@
+[
+  {
+    "route": "/",
+    "width": 390,
+    "height": 844,
+    "overflow": false,
+    "lang": "fa",
+    "dir": "rtl",
+    "title": "جراحی دهان، فک و صورت در اردبیل",
+    "description": "معرفی دکتر پویان سیگاری، متخصص جراحی دهان، فک و صورت؛ سوابق آموزشی، پژوهش‌ها و اطلاعات مطب در اردبیل.",
+    "robots": "noindex, nofollow",
+    "canonical": false,
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "دکتر پویان سیگاری",
+        "alternateName": "Pouyan Sigari",
+        "jobTitle": "متخصص جراحی دهان، فک و صورت",
+        "telephone": "+984533235000",
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "شمارهٔ نظام پزشکی",
+          "value": "۱۳۰۸۶۶"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "اردبیل، سرچشمه، کوچه وکیل، ساختمان شیخ‌الرئیس، طبقهٔ دوم",
+          "addressLocality": "اردبیل",
+          "addressCountry": "IR"
+        },
+        "sameAs": [
+          "https://membersearch.irimc.org/member/profile?id=32b39ef4-eeb5-4f3e-9849-ef582561c563"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "دکتر پویان سیگاری",
+        "inLanguage": "fa-IR"
+      }
+    ],
+    "phones": [
+      "tel:+984533235000",
+      "tel:+984533235000",
+      "tel:+984533235000",
+      "tel:+984533235000",
+      "tel:+984533235000",
+      "tel:+984533235000",
+      "tel:+984533235000"
+    ],
+    "errors": []
+  },
+  {
+    "route": "/about/",
+    "width": 390,
+    "height": 844,
+    "overflow": false,
+    "lang": "fa",
+    "dir": "rtl",
+    "title": "دربارهٔ پزشک | دکتر پویان سیگاری",
+    "description": "معرفی مدارک ثبت‌شده و سوابق تاریخ‌دار آموزش و پژوهش دکتر پویان سیگاری، متخصص جراحی دهان، فک و صورت.",
+    "robots": "noindex, nofollow",
+    "canonical": false,
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "خانه"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "دربارهٔ پزشک"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "دکتر پویان سیگاری",
+        "alternateName": "Pouyan Sigari",
+        "jobTitle": "متخصص جراحی دهان، فک و صورت",
+        "telephone": "+984533235000",
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "شمارهٔ نظام پزشکی",
+          "value": "۱۳۰۸۶۶"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "اردبیل، سرچشمه، کوچه وکیل، ساختمان شیخ‌الرئیس، طبقهٔ دوم",
+          "addressLocality": "اردبیل",
+          "addressCountry": "IR"
+        },
+        "sameAs": [
+          "https://membersearch.irimc.org/member/profile?id=32b39ef4-eeb5-4f3e-9849-ef582561c563"
+        ]
+      }
+    ],
+    "phones": [
+      "tel:+984533235000"
+    ],
+    "errors": []
+  },
+  {
+    "route": "/expertise/",
+    "width": 390,
+    "height": 844,
+    "overflow": false,
+    "lang": "fa",
+    "dir": "rtl",
+    "title": "تخصص و سوابق مرتبط | دکتر پویان سیگاری",
+    "description": "معرفی تخصص ثبت‌شدهٔ جراحی دهان، فک و صورت و سوابق پژوهشی و آموزشی مرتبط دکتر پویان سیگاری.",
+    "robots": "noindex, nofollow",
+    "canonical": false,
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "خانه"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "تخصص و سوابق مرتبط"
+          }
+        ]
+      }
+    ],
+    "phones": [
+      "tel:+984533235000",
+      "tel:+984533235000",
+      "tel:+984533235000",
+      "tel:+984533235000"
+    ],
+    "errors": []
+  },
+  {
+    "route": "/publications/",
+    "width": 390,
+    "height": 844,
+    "overflow": false,
+    "lang": "fa",
+    "dir": "rtl",
+    "title": "پژوهش‌ها و مقالات | دکتر پویان سیگاری",
+    "description": "آرشیو پژوهش‌های ثبت‌شده با نام Pouyan Sigari؛ جست‌وجو و فیلتر بر اساس حوزهٔ پژوهش و سال انتشار.",
+    "robots": "noindex, nofollow",
+    "canonical": false,
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "خانه"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "پژوهش‌ها و مقالات"
+          }
+        ]
+      }
+    ],
+    "phones": [
+      "tel:+984533235000"
+    ],
+    "errors": []
+  },
+  {
+    "route": "/contact/",
+    "width": 390,
+    "height": 844,
+    "overflow": false,
+    "lang": "fa",
+    "dir": "rtl",
+    "title": "تماس با مطب | دکتر پویان سیگاری",
+    "description": "نشانی مطب دکتر پویان سیگاری در اردبیل، تلفن برای اطلاع از زمان پذیرش و شیوهٔ نوبت‌گیری و پیوند پروفایل نظام پزشکی.",
+    "robots": "noindex, nofollow",
+    "canonical": false,
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "خانه"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "تماس با مطب"
+          }
+        ]
+      }
+    ],
+    "phones": [
+      "tel:+984533235000",
+      "tel:+984533235000",
+      "tel:+984533235000"
+    ],
+    "errors": []
+  },
+  {
+    "route": "/",
+    "width": 1440,
+    "height": 900,
+    "overflow": false,
+    "lang": "fa",
+    "dir": "rtl",
+    "title": "جراحی دهان، فک و صورت در اردبیل",
+    "description": "معرفی دکتر پویان سیگاری، متخصص جراحی دهان، فک و صورت؛ سوابق آموزشی، پژوهش‌ها و اطلاعات مطب در اردبیل.",
+    "robots": "noindex, nofollow",
+    "canonical": false,
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "دکتر پویان سیگاری",
+        "alternateName": "Pouyan Sigari",
+        "jobTitle": "متخصص جراحی دهان، فک و صورت",
+        "telephone": "+984533235000",
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "شمارهٔ نظام پزشکی",
+          "value": "۱۳۰۸۶۶"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "اردبیل، سرچشمه، کوچه وکیل، ساختمان شیخ‌الرئیس، طبقهٔ دوم",
+          "addressLocality": "اردبیل",
+          "addressCountry": "IR"
+        },
+        "sameAs": [
+          "https://membersearch.irimc.org/member/profile?id=32b39ef4-eeb5-4f3e-9849-ef582561c563"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "دکتر پویان سیگاری",
+        "inLanguage": "fa-IR"
+      }
+    ],
+    "phones": [
+      "tel:+984533235000",
+      "tel:+984533235000",
+      "tel:+984533235000",
+      "tel:+984533235000",
+      "tel:+984533235000",
+      "tel:+984533235000",
+      "tel:+984533235000"
+    ],
+    "errors": []
+  },
+  {
+    "route": "/about/",
+    "width": 1440,
+    "height": 900,
+    "overflow": false,
+    "lang": "fa",
+    "dir": "rtl",
+    "title": "دربارهٔ پزشک | دکتر پویان سیگاری",
+    "description": "معرفی مدارک ثبت‌شده و سوابق تاریخ‌دار آموزش و پژوهش دکتر پویان سیگاری، متخصص جراحی دهان، فک و صورت.",
+    "robots": "noindex, nofollow",
+    "canonical": false,
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "خانه"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "دربارهٔ پزشک"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "دکتر پویان سیگاری",
+        "alternateName": "Pouyan Sigari",
+        "jobTitle": "متخصص جراحی دهان، فک و صورت",
+        "telephone": "+984533235000",
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "شمارهٔ نظام پزشکی",
+          "value": "۱۳۰۸۶۶"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "اردبیل، سرچشمه، کوچه وکیل، ساختمان شیخ‌الرئیس، طبقهٔ دوم",
+          "addressLocality": "اردبیل",
+          "addressCountry": "IR"
+        },
+        "sameAs": [
+          "https://membersearch.irimc.org/member/profile?id=32b39ef4-eeb5-4f3e-9849-ef582561c563"
+        ]
+      }
+    ],
+    "phones": [
+      "tel:+984533235000"
+    ],
+    "errors": []
+  },
+  {
+    "route": "/expertise/",
+    "width": 1440,
+    "height": 900,
+    "overflow": false,
+    "lang": "fa",
+    "dir": "rtl",
+    "title": "تخصص و سوابق مرتبط | دکتر پویان سیگاری",
+    "description": "معرفی تخصص ثبت‌شدهٔ جراحی دهان، فک و صورت و سوابق پژوهشی و آموزشی مرتبط دکتر پویان سیگاری.",
+    "robots": "noindex, nofollow",
+    "canonical": false,
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "خانه"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "تخصص و سوابق مرتبط"
+          }
+        ]
+      }
+    ],
+    "phones": [
+      "tel:+984533235000",
+      "tel:+984533235000",
+      "tel:+984533235000",
+      "tel:+984533235000"
+    ],
+    "errors": []
+  },
+  {
+    "route": "/publications/",
+    "width": 1440,
+    "height": 900,
+    "overflow": false,
+    "lang": "fa",
+    "dir": "rtl",
+    "title": "پژوهش‌ها و مقالات | دکتر پویان سیگاری",
+    "description": "آرشیو پژوهش‌های ثبت‌شده با نام Pouyan Sigari؛ جست‌وجو و فیلتر بر اساس حوزهٔ پژوهش و سال انتشار.",
+    "robots": "noindex, nofollow",
+    "canonical": false,
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "خانه"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "پژوهش‌ها و مقالات"
+          }
+        ]
+      }
+    ],
+    "phones": [
+      "tel:+984533235000"
+    ],
+    "errors": []
+  },
+  {
+    "route": "/contact/",
+    "width": 1440,
+    "height": 900,
+    "overflow": false,
+    "lang": "fa",
+    "dir": "rtl",
+    "title": "تماس با مطب | دکتر پویان سیگاری",
+    "description": "نشانی مطب دکتر پویان سیگاری در اردبیل، تلفن برای اطلاع از زمان پذیرش و شیوهٔ نوبت‌گیری و پیوند پروفایل نظام پزشکی.",
+    "robots": "noindex, nofollow",
+    "canonical": false,
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "خانه"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "تماس با مطب"
+          }
+        ]
+      }
+    ],
+    "phones": [
+      "tel:+984533235000",
+      "tel:+984533235000",
+      "tel:+984533235000"
+    ],
+    "errors": []
+  },
+  {
+    "route": "/",
+    "width": 805,
+    "height": 646,
+    "overflow": false,
+    "lang": "fa",
+    "dir": "rtl",
+    "title": "جراحی دهان، فک و صورت در اردبیل",
+    "description": "معرفی دکتر پویان سیگاری، متخصص جراحی دهان، فک و صورت؛ سوابق آموزشی، پژوهش‌ها و اطلاعات مطب در اردبیل.",
+    "robots": "noindex, nofollow",
+    "canonical": false,
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "دکتر پویان سیگاری",
+        "alternateName": "Pouyan Sigari",
+        "jobTitle": "متخصص جراحی دهان، فک و صورت",
+        "telephone": "+984533235000",
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "شمارهٔ نظام پزشکی",
+          "value": "۱۳۰۸۶۶"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "اردبیل، سرچشمه، کوچه وکیل، ساختمان شیخ‌الرئیس، طبقهٔ دوم",
+          "addressLocality": "اردبیل",
+          "addressCountry": "IR"
+        },
+        "sameAs": [
+          "https://membersearch.irimc.org/member/profile?id=32b39ef4-eeb5-4f3e-9849-ef582561c563"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "دکتر پویان سیگاری",
+        "inLanguage": "fa-IR"
+      }
+    ],
+    "phones": [
+      "tel:+984533235000",
+      "tel:+984533235000",
+      "tel:+984533235000",
+      "tel:+984533235000",
+      "tel:+984533235000",
+      "tel:+984533235000",
+      "tel:+984533235000"
+    ],
+    "errors": []
+  },
+  {
+    "route": "/about/",
+    "width": 805,
+    "height": 646,
+    "overflow": false,
+    "lang": "fa",
+    "dir": "rtl",
+    "title": "دربارهٔ پزشک | دکتر پویان سیگاری",
+    "description": "معرفی مدارک ثبت‌شده و سوابق تاریخ‌دار آموزش و پژوهش دکتر پویان سیگاری، متخصص جراحی دهان، فک و صورت.",
+    "robots": "noindex, nofollow",
+    "canonical": false,
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "خانه"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "دربارهٔ پزشک"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "دکتر پویان سیگاری",
+        "alternateName": "Pouyan Sigari",
+        "jobTitle": "متخصص جراحی دهان، فک و صورت",
+        "telephone": "+984533235000",
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "شمارهٔ نظام پزشکی",
+          "value": "۱۳۰۸۶۶"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "اردبیل، سرچشمه، کوچه وکیل، ساختمان شیخ‌الرئیس، طبقهٔ دوم",
+          "addressLocality": "اردبیل",
+          "addressCountry": "IR"
+        },
+        "sameAs": [
+          "https://membersearch.irimc.org/member/profile?id=32b39ef4-eeb5-4f3e-9849-ef582561c563"
+        ]
+      }
+    ],
+    "phones": [
+      "tel:+984533235000"
+    ],
+    "errors": []
+  },
+  {
+    "route": "/expertise/",
+    "width": 805,
+    "height": 646,
+    "overflow": false,
+    "lang": "fa",
+    "dir": "rtl",
+    "title": "تخصص و سوابق مرتبط | دکتر پویان سیگاری",
+    "description": "معرفی تخصص ثبت‌شدهٔ جراحی دهان، فک و صورت و سوابق پژوهشی و آموزشی مرتبط دکتر پویان سیگاری.",
+    "robots": "noindex, nofollow",
+    "canonical": false,
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "خانه"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "تخصص و سوابق مرتبط"
+          }
+        ]
+      }
+    ],
+    "phones": [
+      "tel:+984533235000",
+      "tel:+984533235000",
+      "tel:+984533235000",
+      "tel:+984533235000"
+    ],
+    "errors": []
+  },
+  {
+    "route": "/publications/",
+    "width": 805,
+    "height": 646,
+    "overflow": false,
+    "lang": "fa",
+    "dir": "rtl",
+    "title": "پژوهش‌ها و مقالات | دکتر پویان سیگاری",
+    "description": "آرشیو پژوهش‌های ثبت‌شده با نام Pouyan Sigari؛ جست‌وجو و فیلتر بر اساس حوزهٔ پژوهش و سال انتشار.",
+    "robots": "noindex, nofollow",
+    "canonical": false,
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "خانه"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "پژوهش‌ها و مقالات"
+          }
+        ]
+      }
+    ],
+    "phones": [
+      "tel:+984533235000"
+    ],
+    "errors": []
+  },
+  {
+    "route": "/contact/",
+    "width": 805,
+    "height": 646,
+    "overflow": false,
+    "lang": "fa",
+    "dir": "rtl",
+    "title": "تماس با مطب | دکتر پویان سیگاری",
+    "description": "نشانی مطب دکتر پویان سیگاری در اردبیل، تلفن برای اطلاع از زمان پذیرش و شیوهٔ نوبت‌گیری و پیوند پروفایل نظام پزشکی.",
+    "robots": "noindex, nofollow",
+    "canonical": false,
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "خانه"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "تماس با مطب"
+          }
+        ]
+      }
+    ],
+    "phones": [
+      "tel:+984533235000",
+      "tel:+984533235000",
+      "tel:+984533235000"
+    ],
+    "errors": []
+  }
+]

@@ -106,3 +106,41 @@ test('a preload error never locks the page; an explicit retry can reset it', () 
   assert.equal(player.phase, 'armed');
   assert.equal(record.locks, 1);
 });
+
+test('a segment stops at the outfit boundary and preserves its displayed frame for the return', () => {
+  const { video, record } = fixture();
+  const frames = new Map();
+  let nextFrame = 0;
+  let player;
+  const hooks = {
+    lock() { assert.equal(player.locked, true, 'scroll callbacks must observe the lock before positioning'); },
+    unlock() { record.unlocks++; }, state() {}, ready() {}, reset() {},
+    finish(reason) { record.finishes.push(reason); }, progress(value) { record.progress.push(value); },
+  };
+  player = sandbox.window.SigariStoryPlayback(video, hooks, {
+    setTimeout() { return 1; }, clearTimeout() {},
+    requestAnimationFrame(callback) { frames.set(++nextFrame, callback); return nextFrame; },
+    cancelAnimationFrame(id) { frames.delete(id); },
+  });
+  const tick = () => { const [id, callback] = frames.entries().next().value; frames.delete(id); callback(); };
+  player.start({ from: 0, to: .75 });
+  video.currentTime = .4;
+  tick();
+  assert.ok(Math.abs(record.progress.at(-1) - .4 / .75) < .001);
+  video.currentTime = .75;
+  tick();
+  assert.equal(player.phase, 'complete');
+  assert.equal(video.paused, true);
+  assert.equal(record.unlocks, 1);
+  const progressCount = record.progress.length;
+  player.reset({ preserveFrame: true });
+  assert.equal(video.currentTime, .75);
+  assert.equal(record.progress.length, progressCount, 'reset must not flash the initial copy');
+  player.start({ from: .75, to: 1.5 });
+  assert.equal(video.currentTime, .75);
+  video.currentTime = 1.5;
+  tick();
+  assert.equal(player.phase, 'complete');
+  assert.equal(record.unlocks, 2);
+  assert.deepEqual(record.finishes, ['ended', 'ended']);
+});

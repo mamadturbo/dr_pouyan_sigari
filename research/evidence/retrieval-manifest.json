@@ -1,0 +1,89 @@
+[
+  {
+    "key": "crossref-2019",
+    "url": "https://api.crossref.org/works/10.34172/ajdr.2019.27",
+    "resolved_url": "https://api.crossref.org/works/10.34172/ajdr.2019.27",
+    "status": 200,
+    "content_type": "application/json",
+    "path": "crossref-2019.json",
+    "sha256": "80b06106ca24a74522dce0e269bd8da58712c69d70f136035808eb2b0b823ea2"
+  },
+  {
+    "key": "crossref-2026",
+    "url": "https://api.crossref.org/works/10.26714/ijd.v6i1.19835",
+    "resolved_url": "https://api.crossref.org/works/10.26714/ijd.v6i1.19835",
+    "status": 200,
+    "content_type": "application/json",
+    "path": "crossref-2026.json",
+    "sha256": "3972fbdb819c4a52cee4c38163948ba11432661faf647c7a6c44e9affd506e18"
+  },
+  {
+    "key": "crossref-2013",
+    "url": "https://api.crossref.org/works/10.5681/joddd.2013.022",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "key": "pubmed-author-search",
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=Sigari%20P%5BAuthor%5D&retmode=json",
+    "resolved_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=Sigari%20P%5BAuthor%5D&retmode=json",
+    "status": 200,
+    "content_type": "application/json; charset=UTF-8",
+    "path": "pubmed-author-search.json",
+    "sha256": "fd3d033e7e7ef19766031c6eef91b9a1ab8c923eb72e0577fb9463af6fa4da46"
+  },
+  {
+    "key": "pubmed-2013",
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=24082984&retmode=xml",
+    "resolved_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=24082984&retmode=xml",
+    "status": 200,
+    "content_type": "text/xml; charset=UTF-8",
+    "path": "pubmed-2013.xml",
+    "sha256": "ae5c0fae8169cacb5e06e8be431d22f11bc71bec2212f82f254727856da4c0ec"
+  },
+  {
+    "key": "orcid-search",
+    "url": "https://pub.orcid.org/v3.0/search/?q=given-names:Pouyan%20AND%20family-name:Sigari",
+    "resolved_url": "https://pub.orcid.org/v3.0/search/?q=given-names:Pouyan%20AND%20family-name:Sigari",
+    "status": 200,
+    "content_type": "application/json;charset=UTF-8",
+    "path": "orcid-search.json",
+    "sha256": "8491ee4ba63651e7df1d6b11334044be11f45b7f460ba20a540bd675018604dc"
+  },
+  {
+    "key": "official-profile",
+    "url": "https://membersearch.irimc.org/member/profile?id=32b39ef4-eeb5-4f3e-9849-ef582561c563",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+  },
+  {
+    "key": "igda-2017",
+    "url": "https://igdanews.ir/14820/%D8%A8%D8%B1%DA%AF%D8%B2%D8%A7%D8%B1%DB%8C-%D9%87%D9%81%D8%AA%D9%87-%D8%AF%D9%88%D9%85-%D8%A7%D8%B2-%D8%A7%D9%88%D9%84%DB%8C%D9%86-%D8%AF%D9%88%D8%B1%D9%87-%D8%AC%D8%A7%D9%85%D8%B9-%D8%A7%D9%86%D8%AF/",
+    "resolved_url": "https://igdanews.ir/14820/%D8%A8%D8%B1%DA%AF%D8%B2%D8%A7%D8%B1%DB%8C-%D9%87%D9%81%D8%AA%D9%87-%D8%AF%D9%88%D9%85-%D8%A7%D8%B2-%D8%A7%D9%88%D9%84%DB%8C%D9%86-%D8%AF%D9%88%D8%B1%D9%87-%D8%AC%D8%A7%D9%85%D8%B9-%D8%A7%D9%86%D8%AF/",
+    "status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "path": "igda-2017.html",
+    "sha256": "9893f592718f6b3bd907508011d4c0afa252f3d38e54e5289caa5160af6a3ab6"
+  },
+  {
+    "key": "implant-2019",
+    "url": "https://ajdr.umsha.ac.ir/PDF/ajdr-306.pdf",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+  },
+  {
+    "key": "canine-2026",
+    "url": "https://jurnal.unimus.ac.id/index.php/IJD/article/download/19835/pdf",
+    "resolved_url": "https://jurnal.unimus.ac.id/index.php/IJD/article/download/19835/pdf",
+    "status": 200,
+    "content_type": "application/pdf",
+    "path": "canine-2026.pdf",
+    "sha256": "5db0d3b1a875fb1ea0edd1bf1d23781ca5f6ca793a46f985165a4a09783d35d4"
+  },
+  {
+    "key": "igda-17-program",
+    "url": "https://igda.ir/2025/09/28/%D8%AC%D8%AF%D9%88%D9%84-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D8%B9%D9%84%D9%85%DB%8C-%DA%A9%D9%86%DA%AF%D8%B1%D9%87-%D9%87%D9%81%D8%AF%D9%87%D9%85/",
+    "resolved_url": "https://igda.ir/2025/09/28/%D8%AC%D8%AF%D9%88%D9%84-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D8%B9%D9%84%D9%85%DB%8C-%DA%A9%D9%86%DA%AF%D8%B1%D9%87-%D9%87%D9%81%D8%AF%D9%87%D9%85/",
+    "status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "path": "igda-17-program.html",
+    "sha256": "0373a04e8b767ce99c500003b48bca86e11ecda16bd535f105a2708a99e4d1d6"
+  }
+]

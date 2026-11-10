@@ -1,0 +1,4 @@
+import Link from 'next/link';
+import {doctor} from '@/content/data/doctor';
+import {navigation} from '@/lib/navigation';
+export function SiteFooter(){return <footer className="site-footer"><div className="container footer-top"><Link prefetch={false} className="brand" href="/">{doctor.name}<small>{doctor.specialty}</small></Link><nav aria-label="منوی پایین صفحه">{navigation.map(([href,label])=><Link prefetch={false} key={href} href={href}>{label}</Link>)}<Link prefetch={false} href="/contact/">تماس با مطب</Link></nav><a href="#top">بازگشت به بالا ↑</a></div><div className="container footer-bottom"><p>تمامی حقوق این وب‌سایت متعلق به {doctor.name} است.</p><div className="footer-policy"><Link prefetch={false} href="/privacy/">حریم خصوصی</Link><Link prefetch={false} href="/terms/">شرایط استفاده</Link><Link prefetch={false} href="/publications/">پژوهش‌های علمی</Link></div><span>{doctor.city} • شمارهٔ نظام پزشکی {doctor.license}</span></div></footer>;}

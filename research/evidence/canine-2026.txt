@@ -1,0 +1,538 @@
+ 
+Indonesian Journal of Dentistry 
+Volume 6 No. 1 (2026): February 
+DOI: http://dx.doi.org/10.26714/ijd.v6i1.19835  
+ 
+Investigating the Factors Related to the Success of Forced Eruption 
+Treatment of Impacted Maxillary Canine Teeth 
+ 
+Reza Namadkolahi 1, Mahdiye Maratebi 2, Sara Faraj Vajari 3, Parastoo Ghaderi 4, Niloofar 
+Deravi5, Sohrab Pourkhamaneh6, Pouyan Sigari7* 
+ 
+1Student Research Committee, Scholl of Dentistry, Ardabil University of Medical Sciences, Iran 
+2Custom Dentist, Ardabil University of Medical Sciences, Iran 
+3Azerbaijan Medical University, Azerbaijan 
+4Faculty of Dentistry, Tabriz University of Medical Sciences, Iran 
+5School of Medicine, Shahid Beheshti University of Medical Sciences, Iran 
+6Department of Orthodontics, Ardabil University of Medical Sciences, Iran 
+7Department of Oral and Maxillofacial Surgery, Ardabil University of Medical Sciences, Iran 
+ 
+Correspondence email: pouyan.sigari@gmail.com  
+ARTICLE INFO 
+ 
+ABSTRACT 
+Keywords: 
+Canine, Forced 
+Eruption Technique, 
+Impacted Tooth 
+Background: The maxillary canine is often more difficult to manage 
+orthodontically compared to other teeth.  
+Objective: This study aims to evaluate additional factors affecting the 
+success of Forced Eruption treatment for impacted maxillary canines, 
+emphasizing the importance of timely and appropriate therapeutic 
+strategies. 
+Method: This descriptive -analytical study evaluated the records of 52 
+patients diagnosed with maxillary canine impaction. Data sources included 
+Cone Beam Computed Tomography (CBCT) images and initial and final 
+panoramic radiographs available in the patients' files . The collected data 
+were analyzed using SPSS software.  
+Outcome: The study revealed a significant relationship between the depth 
+of impaction and the success of Forced Eruption treatment for maxillary 
+impacted canines (p < 0.05). However, no significant associations were 
+found between the success of the treatment and va riables such as age, 
+gender, position of impaction, or the available space in the maxillary arch. 
+These findings suggest that depth of impaction is a critical factor 
+influencing treatment outcomes, while other demographic and positional 
+factors may not significantly affect success rates. 
+Conclusion: Patients with a lower depth of maxillary canine impaction 
+experience better outcomes with Forced Eruption treatment. 
+ 
+Article History: 
+Received. : 20/11/2025 
+Revision  : 27/02/2026 
+Accepted : 27/02/2026 
+Published.: 28/02/2026 
+ 
+Copyright © 2026 IJD 
+ISSN: 2775-0159  
+ 
+Open access under  
+CC BY-SA 4.0 
+International license. 
+ 
+Citation (Vancouver style): 
+Namadkolahi R, Maratebi M, Vajari SF, Ghaderi P, Deravi N, Pourkhamaneh S, Sigari P . Anti -
+inflammatory effects of pineapple core extract on macrophages in gingivitis -induced Wistar rats. 
+Indones J Dent. 2026;6(1): 85-97.
+ORIGINAL ARTICLE 
+
+Indonesian Journal of Dentistry, Volume 6, No 1 (2026), pages 85-97  
+86 
+ 
+INTRODUCTION  
+Growing individuals need to develop their teeth properly. It is essential for preventing 
+malocclusion, ensuring that teeth line up correctly to prevent biting problems, and improving 
+the appearance of the face. When a tooth does not erupt into the oral cav ity at the anticipated 
+time and instead remains embedded in the alveolar bone, it is referred to as dental impaction. If 
+left untreated, this can result in a number of dental issues.1, 2 
+Depending on the population under study, impaction of the maxillary canine (IMC) is the 
+most common type of impaction, second only to that of the third molars.3 When forced eruption 
+and subsequent alignment place the tooth correctly within the dental arch, managing an 
+impacted canine is considered successful. However, in certain situations, additional surgical 
+procedures may be necessary to remove obstacles obstructing the eruption path. The complexity 
+and duration of therapy are determined by variations in the buccopalatal, vertical, and 
+anteroposterior positions of impaction.  5 ,4 
+Due to their proximity to nearby structures or their suboptimal placement within the 
+alveolar bone, maxillary canines may become impacted, preventing natural eruption during the 
+normal eruption sequence. Because of either limited surgical access or a clinically unfavorable 
+and protracted eruption trajectory, canines that are positioned high or horizontally are 
+considered difficult to manage .6, 7  A mesial position, elevated α -Angle (the angle formed 
+between the impacted canine's long axis and the inter-incisor median line; normal range = 20–
+53°), and significant vertical localization have all been associated with longer treatment 
+durations, according to the literature.8 The presence of ankylosis, odontoma, or root dilaceration 
+complicates the treatment strategy and excludes simple orthodontically assisted eruption (Fig. 
+1). Orthodontic traction and surgical exposure may not be effective for some impacted canines.7 
+The increased need for patient compliance throughout extended treatment is one possible 
+complicating factor for canine impaction.9-11 
+The existence, position, and pathophysiology of impacted canines are evaluated using a 
+variety of radiographic techniques. These include Computed Tomography (CT), intraoral 
+periapical radiographs, occlusal radiographs, panoramic radiographs, and cone-beam computed 
+tomography (CBCT).12 A three-dimensional imaging approach called CBCT offers a precise 
+way to identify the affected canine.13, 14 However, it may expose the patient to more radiation, 
+may not be available in all treatment centers, and is not appropriate for early evaluation. 
+Because it provides a thorough two -dimensional view of the impacted teeth, including their 
+position, angulation, and orientation in relation to adjacent teeth, panoramic radiography (OPG) 
+is considered one of the most reliable imaging techniques.15, 16 
+
+Indonesian Journal of Dentistry, Volume 6, No 1 (2026), pages 85-97  
+87 
+ 
+Canine impaction presents a major issue for orthodontists in terms of origin, localization, 
+and preventive treatments, according to the aforementioned facts.17, 18 For the best outcomes, it 
+is therefore essential to evaluate the probability of impaction and the timing of treatment 
+influenced by canine impaction. In these situations, delaying orthodontic treatment until later 
+in life increases the risk of ankylosis, which can negatively impact the roots of neighboring 
+incisor teeth.7, 19 
+This article investigates the key factors associated with the success of forced eruption 
+treatment for impacted maxillary canines, providing insights that can guide clinical decision -
+making and enhance the predictability of treatment results. 2 By examining these elements, we 
+aim to contribute to a more comprehensive understanding of canine impaction management and 
+its implications for orthodontic practice.6, 17, 20 
+RESEARCH METHODS 
+Study Design 
+This study is descriptive, analytical, and cross -sectional. All patients referred to various 
+orthodontic clinics for eruption guidance operations in dental clinics connected to Ardabil 
+University of Medical Sciences between July 2015 and July 2019 were inc luded in the study 
+population. The ethics committee of Ardabil University of Medical Sciences has granted ethical 
+approval for the study. 
+Sampling Method 
+ Complete enumeration sampling was used to collect the research population. All patient 
+records were reviewed, and cases that met the pre -established inclusion and exclusion criteria 
+were added. A minimum of 30 instances were needed for the sample size, wh ich was 
+determined using a 2% prevalence of impacted maxillary canines, a 0.05 margin of error, and 
+95% confidence.  
+Exclusion and Inclusion Criteria 
+The presence of impacted maxillary canines, maxillary lateral teeth on the impaction side, 
+and first premolars on the impaction side were requirements for inclusion.  Dilaceration of the 
+impacted canine, substantial crowding within the dental arch, and the existence of systemic or 
+metabolic disorders were the exclusion criteria. Fifty two instances were added to the study 
+when the selection criteria were applied. The clinical files of the patients were used to report 
+their age and gender.  
+ 
+
+Indonesian Journal of Dentistry, Volume 6, No 1 (2026), pages 85-97  
+88 
+ 
+Assessment of Treatment Success and Impaction Characteristics   
+Treatment success was defined as the complete eruption of the impacted canine into the 
+dental arch, confirmed using final panoramic radiographs   obtained from the same institution 
+under standardized imaging protocols to ensure consistency in image quality and minimize 
+observational bias.  The depth of impaction was determined using initial CBCT and panoramic 
+images,21, 22 which were part of the patients’ routine diagnostic records prior to inclusion in the 
+study and were not obtained specifically for research purposes. Impactions were   classified as 
+Grade 1 (below the CEJ), Grade 2 (above the CEJ but below half of the root), Grade 3 (above 
+half of the root but below the apex), or Grade 4 (above the apex) as shown in Figure 1.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figure 1. Classification of Impaction Depth 
+Notes: 
+1. Grade 1: Below the level of the Cementoenamel Junction (CEJ). 
+2. Grade 2: Above the CEJ and below half of the root. 
+3. Grade 3: Above half of the root and below the apex. 
+4. Grade 4: Above the apex. 
+ 
+The position of impaction was categorized as labial or palatal. Available arch space was 
+assessed using the Pitt et al. classification,23 measuring the space between the lateral incisor and 
+first premolar as Grade 1 (>7 mm), Grade 2 (4 –7 mm), Grade 3 (2 –4 mm), or Grade 4 (0 –2 
+mm).  Figure 2 shows a representative CBCT image of an impacted canine, while Figure 3 
+illustrates a panoramic radiograph for treatment assessment.  
+ 
+
+
+Indonesian Journal of Dentistry, Volume 6, No 1 (2026), pages 85-97  
+89 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figure 2. Representative CBCT Image of an Impacted Canine 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figure 3. Panoramic Radiograph for Treatment Assessment 
+Statistical Analysis 
+ Statistical AnalysisData analyses were conducted utilizing SPSS software (Version 24). 
+Kolmogorov-Smirnov tests determined the distribution of the data, Kruskal -Wallis tests 
+evaluated age and treatment success, and Chi-square tests determined gender, impaction depth, 
+and impaction position. A p-value < 0.05 determined levels of significance. 
+ 
+ 
+
+
+Indonesian Journal of Dentistry, Volume 6, No 1 (2026), pages 85-97  
+90 
+ 
+RESEARCH FINDINGS 
+Baseline characteristics 
+This research assessed the results of forced eruption therapy for impacted maxillary 
+canines in 52 patients, reporting a success rate of 84.6% (44 of 52). The patient sample was 
+73.1% female, with 32.7% of patients aged 10-15 years and 23.1% over 30 years of age. There 
+was no statistically significant effect of age (p>0.05) or g ender (p>0.05) on treatment success. 
+However, there were significant differences in treatment success based on clinical factors. 
+There was a 92.3% success rate for shallow impactions (below CEJ), compared with a 66.7% 
+success rate for deep impactions (abov e apex, p<0.05) and 94.1% success when there was 
+adequate space (>7 mm) in the arch versus 71.4% success when there was minimal space (0 -2 
+mm, p<0.05). Labial impactions had a higher success rate (88.9%) compared to palatal 
+impactions (78.6%); however, there was no statistically significant difference (p>0.05). These 
+findings suggest that , rather than age and gender, the primary factors affecting treatment 
+outcomes are anatomical factors, such as impaction depth and space available in the arch. 
+Table 1. Base line characteristics of the Category 
+  Subgroup Frequency Percentage Cumulative Percentage 
+Gender 
+Male 14 26.90% 26.90% 
+Female 38 73.10% 100% 
+Total 52 100%  
+Age Group 
+Okt-15 17 32.70% 32.70% 
+16-20 6 11.50% 44.20% 
+21-25 8 15.40% 59.60% 
+26-30 9 17.30% 76.90% 
+Over 30 12 23.10% 100% 
+Total 52 100%  
+ 
+The normality of the data was assessed using the Kolmogorov-Smirnov test, as shown in 
+Table 2-4. None of the examined variables demonstrated a normal distribution, as indicated by 
+p-values less than 0.05. 
+Outcome analysis 
+The study evaluated treatment outcomes for impacted maxillary canines in 52 patients 
+undergoing forced eruption, demonstrating an overall success rate of 84.6% (44/52 cases). 
+Analysis revealed that the depth of impaction significantly influenced treatment success (p  = 
+0.042), with Grade 2 impactions showing 95.8% success (23/24) compared to 75% (21/28) for 
+Grade 3 impactions. While age distribution showed a non -significant trend (p  = 0.083), with 
+younger patients (10-15 years) achieving 94.1% success (16/17) versus 66.7% (8/12) in patients 
+
+Indonesian Journal of Dentistry, Volume 6, No 1 (2026), pages 85-97  
+91 
+ 
+over 30, neither gender (p=0.894) nor impaction position (p  = 0.192) significantly affected 
+outcomes. Labial impactions showed 100% success (12/12) compared to 80% (32/40) for 
+palatal impactions, though this difference was not statistically significant. Available arch space 
+demonstrated a non -significant association with success (p  = 0.317), with Score 1 cases 
+achieving 100% success (9/9) versus 77.8% (7/9) for Score 4 cases. Overall, the findings 
+reported relevant outcomes of maxillary canines impacted using forced eruption. Anatomical 
+factors do have strong predictive values for successful treatment, while demographic 
+characteristics did not show strong predictive values regarding forced eruption outcomes. 
+Table 2. Outcomes assessment of the study 
+Variable Category Successful Unsuccessful Total p-value 
+Age Group 
+10-15 16 1 17 
+0.083 
+16-20 5 1 6 
+21-25 7 1 8 
+26-30 8 1 9 
+Over 30 8 4 12 
+Gender Male 12 2 14 0.894 Female 32 6 38 
+Impaction Position Labial 12 0 12 0.192 Palatal 32 8 40 
+Depth of Impaction Grade 2 23 1 24 0.042* Grade 3 21 7 28 
+Available Space 
+Score 1 9 0 9 
+0.317 
+Score 2 19 2 21 
+Score 3 17 4 21 
+Score 4 7 2 9 
+*Statistically significant (p < 0.05) 
+ 
+DISCUSSION 
+The previously mentioned maxillary canines play a significant role in both the aesthetic 
+and functional aspects of dental systems. The treatment of affected canines is essential because 
+their impaction might result in a number of issues. The results of a study looking at the variables 
+influencing the success of eruption are examined in this discussion, specifically the forced 
+method of treating impacted maxillary canines.19, 24 
+The study unexpectedly discovered no meaningful relationship between the patients' age 
+and gender and the effectiveness of their treatment. The results of this study reveal that age 
+alone may not be a crucial factor, despite previous studies suggesting that younger patients may 
+have better outcomes due to more favorable anatomical characteristics. In line with earlier 
+
+Indonesian Journal of Dentistry, Volume 6, No 1 (2026), pages 85-97  
+92 
+ 
+research findings, the absence of a significant correlation with gender implies that male and 
+female patients respond to the treatment in a similar way. 
+According to Darab Gholami Boroujeni and colleagues, the success rate of 
+orthodontically aided eruption of impacted canines is not substantially influenced by gender 
+(P>0.05). This study emphasizes the need for additional research to examine the underlying  
+biological mechanisms that may influence canine eruption beyond demographic considerations, 
+despite widespread beliefs regarding gender differences in dental development.25  According to 
+Mirasmaeili et al. (2015), gender has no discernible effect on how difficult orthodontic 
+treatment is for maxillary impacted canines. 26 This conclusion supports the idea that gender 
+may have little effect on treatment outcomes in this situation and is in line with the current 
+study's findings. 
+During 2009, Schubert assessed whether it was possible to estimate the length of 
+treatment based on the distance traveled by the canine's cusp tip during the forced eruption of 
+impacted maxillary canines. In contrast to the results of the current study, he  discovered that 
+age was a key factor influencing treatment success in patients under the age of eighteen who 
+had at least one canine. The fact that Schubert's study only looked at patients under the age of 
+18, whereas the current study did not have this restriction, may be one of the primary causes of 
+the two studies' disparate findings.27  
+Koenraad Grisar and colleagues' 2021 study examined 17 consecutive autotransplanted 
+maxillary canines in 17 patients and found no significant correlations between treatment 
+outcomes and baseline parameters. The majority of patients were receiving active or thodontic 
+treatment, and the mean age at surgery was eighteen. The majority of canines demonstrated 
+satisfactory post -operative healing despite some early problems, such as soft tissue 
+abnormalities and injury to the root surface; nevertheless, one instanc e showed evidence of 
+inflammatory root resorption after six weeks.28  This leads to the conclusion that age cannot be 
+regarded as a factor associated with the efficacy of forced eruption treatment because the current 
+study did not find a statistically significant link between patients' ages and treatment success at 
+a significance level of 0.05. 
+Investigating the connection between the success rate of forced eruption treatment and 
+the depth of impaction was the main goal of this investigation. In terms of depth of impaction, 
+the majority of research participants fell into Grade 3, with none falling into Grades 1 or 4. The 
+Grade 3 group had a far higher rate of treatment failure than the Grade 2 group. Additionally, 
+statistical research verified a strong correlation between the effectiveness of forced eruption 
+treatment and the depth of impaction. 
+
+Indonesian Journal of Dentistry, Volume 6, No 1 (2026), pages 85-97  
+93 
+ 
+The results of this research are consistent with other research, such as that done by 
+Fleming et al. (2009), which investigated the effect of impacted canines' radiographic location 
+on the length of orthodontic treatment. According to their research, the mesiodistal position of 
+canines may be a predictor of therapy duration and results. Nevertheless, they discovered no 
+relationship between treatment results and the canine's initial angle, depth of impaction, or apex 
+position. This disparity could be explain ed by variations in the research populations and the 
+small sample sizes used.21 
+Pitt et al. also sought to develop an index for the difficulty of treating maxillary impacted 
+canines (TDI) and found that buccopalatal location, age, vertical height, and horizontal position 
+were important factors in the treatment of these canines. This result is in line with our research, 
+supporting the notion that a number of positional parameters, such as depth of impaction, are 
+critical to treatment results.23 
+Furthermore, Zuccati et al. showed that factors like depth of impaction could offer a more 
+precise estimate of the number of sessions needed to finish the forced eruption phase, thereby 
+affecting treatment success. This validates our results and emphasizes how crucial it is to take 
+impaction depth into account when developing treatment plans.29 
+The success of forced eruption treatment is significantly influenced by the depth of 
+impaction, as our study highlights. These results imply that precise evaluation of impaction 
+depth is crucial for maximizing treatment results and customizing strategies t o meet the needs 
+of specific patients. The association between impaction position and the effectiveness of forced 
+eruption treatment was another conclusion of the current investigation. Our findings showed 
+that the effectiveness of forced eruption treatmen t was not significantly correlated with 
+impaction position. Similarly, impaction position was not found to be a significant influencing 
+factor in the Fleming et al. investigation.21 
+On the other hand, Yusuke Hamada et al. found that the treatment strategy for impacted 
+maxillary canines is greatly influenced by the site of impaction. The study suggests that 
+although the position is important for choosing the intervention strategy, ther e may not be a 
+direct relationship between it and the treatment's overall success rates. 11 In contrast to our 
+findings, Pitt et al. suggested that age, depth, and impaction position are three important 
+determinants in the outcome of forced eruption treatme nt.23 Pitt's study limitations, which 
+assessed eight variables in just thirty samples, could be one explanation for these disparities. 
+The robustness of their findings may have been impacted by this limited sample size, which 
+could also explain the discrepancies between our investigations. 
+
+Indonesian Journal of Dentistry, Volume 6, No 1 (2026), pages 85-97  
+94 
+ 
+Examining the connection between the efficacy of forced eruption treatment and the 
+amount of space between the lateral incisor and the first maxillary premolar was another goal 
+of this investigation. At the 0.05 level, there was no discernible correlation between the distance 
+between the teeth in question and the effectiveness of forced eruption therapy. Similar to our 
+findings, Pitt et al.'s investigation discovered no correlation between treatment outcomes and 
+the variable of space between the lateral incisor and the first premolar on the side of impaction.23 
+In 2009, Schubert evaluated the correlation between the duration of treatment and the 
+distance traveled by the canine tip during the forced eruption of impacted maxillary canines. 
+He showed that the impacted canine's location in relation to neighboring teeth had a substantial 
+impact on the length of treatment.27 This conclusion is at odds with the current study's findings, 
+which can be mostly explained by variations in sample size, study location, and time. 
+The effectiveness of forced eruption treatment for impacted maxillary canines was 
+examined by Chawla et al. in a 2011 study. They found that impacted canines were more 
+common in the maxillary region on the palatal side and that forced eruption was an effec tive 
+treatment option for these patients, depending on a number of variables, including the amount 
+of space between the teeth. 30 This discovery, however, contradicts our study's findings. 
+Variations in the inclusion and exclusion criteria among the studies could be the cause of the 
+disparities in the results. 
+The results of this study highlight how important the depth of impaction is in deciding 
+whether forced eruption treatment for impacted maxillary canines is successful. It is crucial for 
+doctors to perform comprehensive assessments of impaction depth before  starting treatment, 
+given the strong correlation seen between impaction depth and treatment outcomes. More 
+individualized treatment strategies that can improve patient outcomes will be possible with this 
+approach. In order to reduce consequences related to impacted canines, such as root resorption 
+and periodontal problems, clinicians should give priority to early management techniques. 
+Given the limitations of this study, the limited sample size of 52 individuals may not offer 
+enough statistical power or generalizability to larger populations. It identifies a number of areas 
+for future research to better improve the understanding and management of impacted maxillary 
+canines. Such as: investigation of biological mechanisms, longitudinal research, wider sample 
+comparative studies that measure the efficacy of various treatment modalities for affected  
+canines in relation to forced eruption procedures. Thes should be beneficial for populations and 
+future study. 
+ 
+
+Indonesian Journal of Dentistry, Volume 6, No 1 (2026), pages 85-97  
+95 
+ 
+CONCLUSION 
+In the present study, the success rate of forced eruption treatment was estimated to be 
+84.6%. This success demonstrated a significant relationship with the depth of impaction. 
+However, variables such as age, gender of the patients, impaction position, and  the space 
+available between the lateral incisor and the first maxillary premolar were not found to be 
+associated with the success of the treatment. These findings emphasize the importance of 
+considering the depth of impaction when predicting treatment out comes for forced eruption  
+while also suggesting that other commonly considered factors may not play a significant role 
+in determining success. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Indonesian Journal of Dentistry, Volume 6, No 1 (2026), pages 85-97  
+96 
+ 
+REFERENCES 
+1. Hirschhaut M, Leon N, Gross H, Flores-Mir C. Guidance for the Clinical Management of Impacted 
+Maxillary Canines. Compendium of Continuing Education in Dentistry (Jamesburg, NJ: 1995). 
+2021;42(5):220-6; quiz 8. 
+2. Corrente MNdCG, do Amaral GCLS, Ribeiro RC, Pannuti CM, Cavalcanti LG, Villar CC. 
+Periodontal outcomes of surgically exposed and orthodontically aligned buccally impacted 
+maxillary canines: A systematic review and meta -analysis. Journal of Orthodontics. 
+2024:14653125241242815. 
+3. Alamri A, Alshahrani N, Al-Madani A, Shahin S, Nazir M. Prevalence of impacted teeth in Saudi 
+patients attending dental clinics in the Eastern province of Saudi Arabia: A radiographic 
+retrospective study. The Scientific World Journal. 2020;2020(1):8104904. 
+4. Kim J, Jung S, Lee KJ, Yu HS, Park W. Forced eruption in impacted teeth: analysis of failed cases 
+and outcome of re-operation. BMC Oral Health. 2024;24(1):254. 
+5. Brito HHdA, Leite HdR, Oliveira EdFF, Pantuzo MCG, Andrade I. An effective and efficient 
+method to treat severely impacted maxillary canines. AJO-DO Clinical Companion. 2025. 
+6. Kucukkaraca E. Characteristics of unilaterally impacted maxillary canines and effect on 
+environmental tissues: A CBCT study. Children. 2023;10(10):1694. 
+7. Alshawy E. The prevalence and categories of impacted maxillary canines: A radiographic study. 
+Cureus. 2023;15(6). 
+8. Cicek O, Gurel T, Demir Cicek B. Investigation of the Relationship of Impacted Maxillary Canines 
+with Orthodontic Malocclusion: A Retrospective Study. Children. 2023;10(6):950. 
+9. Simić S, Nikolić P, Stanišić Zindović J, Jovanović R, Stošović Kalezić I, Djordjević A, et al. Root 
+resorptions on adjacent teeth associated with impacted maxillary canines. Diagnostics. 
+2022;12(2):380. 
+10. Stabryła J, Plakwicz P, Kukuła K, Zadurska M, Czochrowska EM. Comparisons of different 
+treatment methods and their outcomes for impacted maxillary and mandibular canines: A 
+retrospective study. The Journal of the American Dental Association. 2021;152(11):919-26. 
+11. Abdulkreem A, Bhattacharjee T, Alzaabi H, Alali K, Gonzalez A, Chaudhry J, et al. Artificial 
+intelligence-based automated preprocessing and classification of impacted maxillary canines in 
+panoramic radiographs. Dentomaxillofacial Radiology. 2024;53(3):173-7. 
+12. Alfaleh W, Al Thobiani S. Evaluation of impacted maxillary canine position using panoramic 
+radiography and cone beam computed tomography. The Saudi Dental Journal. 2021;33(7):738-44. 
+13. Yang J-S, Cha J -Y, Lee J -Y, Choi S -H. Radiographical characteristics and traction duration of 
+impacted maxillary canine requiring surgical exposure and orthodontic traction: a cross -sectional 
+study. Scientific reports. 2022;12(1):19183. 
+14. Ali IH, Al-Turaihi BA, Mohammed LK, Alam MK. Root resorption of teeth adjacent to untreated 
+impacted maxillary canines: a CBCT study. BioMed Research International. 
+2021;2021(1):6635575. 
+15. Ravi I, Srinivasan B, Kailasam V. Radiographic predictors of maxillary canine impaction in mixed 
+and early permanent dentition–a systematic review and meta-analysis. International Orthodontics. 
+2021;19(4):548-65. 
+16. Aktı A, Dolunay U, Kaya DI, Gürses G, Yeşil D. Evaluation of the Relationship between Impacted 
+Maxillary Canine Teeth and Root Resorption in Adjacent Teeth: A Cross -Sectional Cone Beam 
+Computed Tomography Study. Diagnostics. 2024;14(14):1470. 
+17. Mathews DP. Surgical and Orthodontic Management of the Ectopic, Labially Impacted, Maxillary 
+Canines: A Case Series. International Journal of Periodontics & Restorative Dentistry. 2022;42(6). 
+18. Seehra J, Alshammari A, Wazwaz F, Papageorgiou SN, Newton JT, Cobourne MT. Periodontal 
+outcomes associated with impacted maxillary central incisor and canine teeth following surgical 
+exposure and orthodontic alignment: a systematic review and meta -analysis. European journal of 
+orthodontics. 2023;45(5):584-98. 
+
+Indonesian Journal of Dentistry, Volume 6, No 1 (2026), pages 85-97  
+97 
+ 
+19. Kumar S, Hassan N, Kumar S, Anjan R, Kumar K, Bhowmick D. Radiographic Assessment of 
+Maxillary Canine Impaction. Annals of the Romanian Society for Cell Biology. 2021;25(2):750-7. 
+20. Arvind TP, Jain RK, Nagi R, Tiwari A. Evaluation of alveolar bone microstructure around impacted 
+maxillary canines using fractal analysis in dravidian population: a retrospective CBCT study. The 
+Journal of Contemporary Dental Practice. 2022;23(6):593-600. 
+21. Fleming PS, Scott P, Heidari N, DiBiase AT. Influence of radiographic position of ectopic canines 
+on the duration of orthodontic treatment. The Angle Orthodontist. 2009;79(3):442-6. 
+22. Aquino-Valverde AJ, Barrientos -Sanchez DM, Atoche -Socola KJ. Orthodontic treatment in 
+impacted maxillary canines. A review of the literature. Revista Científica Odontológica. 2021;9(4). 
+23. Pitt S, Hamdan A, Rock P. A treatment difficulty index for unerupted maxillary canines. The 
+European Journal of Orthodontics. 2006;28(2):141-4. 
+24. Cao D, Shao B, Izadikhah I, Xie L, Wu B, Li H, et al. Root dilaceration in maxillary impacted 
+canines and adjacent teeth: A retrospective analysis of the difference between buccal and palatal 
+impaction. American Journal of Orthodontics and Dentofacial Orthopedics. 2021;159(2):167-74. 
+25. Gholami Boroujeni D, Taghadosi Nia Z. Investigating the Success Rate of Maxillary Impacted 
+Canine Eruption Using Orthodontics According to Age, Gender and Type of Impaction. Iranian 
+Journal of Orthodontics. 2024;19(1):1-8. 
+26. Miresmaeili A, Neilsen IL, Varshosaz M, Farhadian N, Mollabashi V, Moghymbeigi A, et al. Web-
+based evaluation of experts' opinions on impacted maxillary canines forced eruption using CBCT. 
+Dental press journal of orthodontics. 2015;20(2):90-9. 
+27. Schubert M, Baumert U. Alignment of impacted maxillary canines: critical analysis of eruption 
+path and treatment time. Journal of Orofacial Orthopedics/Fortschritte der Kieferorthopadie. 
+2009;70(3). 
+28. Grisar K, Smeets M, Ezeldeen M, Shaheen E, De Kock L, Politis C, et al. Survival and success of 
+autotransplanted impacted maxillary canines during short‐term follow‐up: A prospective case‐
+control study. Orthodontics & Craniofacial Research. 2021;24(2):222-32. 
+29. Zuccati G, Ghobadlu J, Nieri M, Clauser C. Factors associated with the duration of forced eruption 
+of impacted maxillary canines: a retrospective study. American Journal of Orthodontics and 
+Dentofacial Orthopedics. 2006;130(3):349-56. 
+30. Chawla S, Goyal M, Marya K, Jhamb A, Bhatia HP. Impacted canines: our clinical experience. 
+International Journal of Clinical Pediatric Dentistry. 2011;4(3):207. 
+ 

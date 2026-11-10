@@ -5,3 +5,18 @@
 __pycache__/
 qa-artifacts/
 dist/preview.html
+
+# Local tooling and private configuration
+.env
+.env.*
+!.env.example
+.devwebui
+.openai/
+modern/.agents/
+# Generated review and measurement output
+modern/design-review/before/
+modern/design-review/after/
+modern/lighthouse*.json
+modern/*-validation.json
+modern/export-metrics.json
+modern/performance-results.json

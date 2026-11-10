@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-28",
+  "timezone": "Asia/Tehran",
+  "project": "modern",
+  "deployed": false,
+  "typecheck": "passed",
+  "build": "passed",
+  "unitTests": {
+    "vitestPassed": 20,
+    "storyPlayerPassed": 8
+  },
+  "fullBrowserSuite": {
+    "passed": 75,
+    "skipped": 1,
+    "failed": 0,
+    "skipReason": "Desktop wheel/keyboard-only test omitted in mobile profile"
+  },
+  "finalTargetedBrowserTests": {
+    "passed": 8,
+    "failed": 0
+  },
+  "contentReview": {
+    "routes": 5,
+    "viewports": [
+      [
+        390,
+        844
+      ],
+      [
+        1440,
+        900
+      ],
+      [
+        805,
+        646
+      ]
+    ],
+    "combinations": 15,
+    "screenshots": 19,
+    "passed": true
+  },
+  "exportMetrics": {
+    "routes": 5,
+    "staticBytes": 2345407,
+    "javascriptBytes": 1095686,
+    "publicAssetBytes": 480047
+  }
+}

@@ -1,0 +1,1119 @@
+[
+  {
+    "id": "F001",
+    "field": "name.fa",
+    "source_ids": [
+      "S01"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": ""
+  },
+  {
+    "id": "F002",
+    "field": "name.en",
+    "source_ids": [
+      "S15",
+      "S18"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "املای Pooyan در مقاله ۲۰۱۳ نیز آمده."
+  },
+  {
+    "id": "F003",
+    "field": "specialty",
+    "source_ids": [
+      "S01"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": ""
+  },
+  {
+    "id": "F004",
+    "field": "license.number",
+    "source_ids": [
+      "S01"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": ""
+  },
+  {
+    "id": "F005",
+    "field": "license.board",
+    "source_ids": [
+      "S01"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "رتبه برتر از این عنوان استنباط نمی‌شود."
+  },
+  {
+    "id": "F006",
+    "field": "license.valid_city",
+    "source_ids": [
+      "S01"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "شهر کرمان در نتیجه جستجو با شهر مجاز پروانه اشتباه نشود."
+  },
+  {
+    "id": "F007",
+    "field": "license.expiry_jalali",
+    "source_ids": [
+      "S01"
+    ],
+    "research_status": "تأییدشده",
+    "action": "در متن کوتاه درج نشد؛ مراجعه به پروفایل رسمی",
+    "remaining_gap": "وضعیت مشاهده‌شده در روز دسترسی؛ تاریخ و دامنه تغییر می‌کنند."
+  },
+  {
+    "id": "F008",
+    "field": "education.professional_degree",
+    "source_ids": [
+      "S01"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "دانشگاه و تاریخ هنوز مشخص نیست."
+  },
+  {
+    "id": "F009",
+    "field": "education.general_institution",
+    "source_ids": [],
+    "research_status": "یافت‌نشده",
+    "action": "فیلد/ادعای تأییدنشده یا متن نیازمند بازبینی در خروجی عمومی درج نشد",
+    "remaining_gap": "دانشنامه یا رزومه تاریخ‌دار پزشک لازم است."
+  },
+  {
+    "id": "F010",
+    "field": "education.specialty_institution",
+    "source_ids": [
+      "S21"
+    ],
+    "research_status": "تأیید محدود",
+    "action": "فیلد/ادعای تأییدنشده یا متن نیازمند بازبینی در خروجی عمومی درج نشد",
+    "remaining_gap": "این وابستگی جای دانشگاه صادرکننده دانشنامه را نمی‌گیرد."
+  },
+  {
+    "id": "F011",
+    "field": "education.graduation_dates",
+    "source_ids": [],
+    "research_status": "یافت‌نشده",
+    "action": "فیلد/ادعای تأییدنشده یا متن نیازمند بازبینی در خروجی عمومی درج نشد",
+    "remaining_gap": "سال ورود/پایان عمومی، تخصص و بورد پرسیده شود."
+  },
+  {
+    "id": "F012",
+    "field": "education.board_rank",
+    "source_ids": [
+      "S05"
+    ],
+    "research_status": "نیازمند تأیید پزشک",
+    "action": "فیلد/ادعای تأییدنشده یا متن نیازمند بازبینی در خروجی عمومی درج نشد",
+    "remaining_gap": "ادعای رتبه برتر در سایت تجاری؛ گواهی و رتبه/سال لازم است."
+  },
+  {
+    "id": "F013",
+    "field": "education.fellowships_awards",
+    "source_ids": [],
+    "research_status": "یافت‌نشده",
+    "action": "فیلد/ادعای تأییدنشده یا متن نیازمند بازبینی در خروجی عمومی درج نشد",
+    "remaining_gap": "فلوشیپ، افتخار و عضویت حرفه‌ای مشخص احراز نشد."
+  },
+  {
+    "id": "F014",
+    "field": "academic.historical_2016_2017",
+    "source_ids": [
+      "S06",
+      "S31",
+      "S32"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "فقط تاریخی؛ حکم امروز نیست."
+  },
+  {
+    "id": "F015",
+    "field": "academic.current_rank",
+    "source_ids": [
+      "S01",
+      "S18"
+    ],
+    "research_status": "یافت‌نشده",
+    "action": "فیلد/ادعای تأییدنشده یا متن نیازمند بازبینی در خروجی عمومی درج نشد",
+    "remaining_gap": "وابستگی در مقاله ۲۰۲۶ مرتبه یا استخدام امروز را ثابت نمی‌کند."
+  },
+  {
+    "id": "F016",
+    "field": "academic.affiliation_2026",
+    "source_ids": [
+      "S18",
+      "S19"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "صرفاً وابستگی اعلامی همان مقاله."
+  },
+  {
+    "id": "F017",
+    "field": "hospital.current_appointments",
+    "source_ids": [
+      "S01"
+    ],
+    "research_status": "نیازمند تأیید پزشک",
+    "action": "فیلد/ادعای تأییدنشده یا متن نیازمند بازبینی در خروجی عمومی درج نشد",
+    "remaining_gap": "ردیف دانشکده و بیمارستان باهنر کرمان تاریخ ندارد؛ نباید سمت فعلی نوشته شود."
+  },
+  {
+    "id": "F018",
+    "field": "experience.2017",
+    "source_ids": [
+      "S06"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "گزارش برگزاری خوانده شد."
+  },
+  {
+    "id": "F019",
+    "field": "experience.2023",
+    "source_ids": [
+      "S07"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "عنوان را معرفی/اعلان بنویسید؛ حضور قطعی مستند نیست."
+  },
+  {
+    "id": "F020",
+    "field": "experience.2024_webinar",
+    "source_ids": [
+      "S08"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "تفکیک از کنگره آذر ضروری است."
+  },
+  {
+    "id": "F021",
+    "field": "experience.2024_congress",
+    "source_ids": [
+      "S09"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "منبع مسئولیت به مصاحبه 12066 ارجاع داده شود."
+  },
+  {
+    "id": "F022",
+    "field": "experience.2025_workshop",
+    "source_ids": [
+      "S10"
+    ],
+    "research_status": "تأیید محدود",
+    "action": "فیلد/ادعای تأییدنشده یا متن نیازمند بازبینی در خروجی عمومی درج نشد",
+    "remaining_gap": "گزارش برگزاری موجود؛ رسمی بودن کانال با دامنه دانشگاه مستقلاً تأیید نشد."
+  },
+  {
+    "id": "F023",
+    "field": "experience.2025_congress",
+    "source_ids": [
+      "S11"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "اعلان با حضور/سخنرانی انجام‌شده فرق دارد."
+  },
+  {
+    "id": "F024",
+    "field": "experience.2026_webinar",
+    "source_ids": [
+      "S12"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "گزارش برگزاری مستقلی یافت نشد."
+  },
+  {
+    "id": "F025",
+    "field": "clinic.address",
+    "source_ids": [
+      "S01",
+      "S03"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "نشانی ثبت‌شده؛ فعالیت روز نیازمند هماهنگی است."
+  },
+  {
+    "id": "F026",
+    "field": "clinic.phone",
+    "source_ids": [
+      "S01",
+      "S02"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "هشت رقم محلی در S01، پیش‌شماره در S02؛ تماس عملی انجام نشده."
+  },
+  {
+    "id": "F027",
+    "field": "clinic.postcode",
+    "source_ids": [
+      "S01"
+    ],
+    "research_status": "تأییدشده",
+    "action": "در متن کوتاه درج نشد؛ مراجعه به پروفایل رسمی",
+    "remaining_gap": "کدپستی عمومی محل کار؛ در متن کوتاه ضروری نیست."
+  },
+  {
+    "id": "F028",
+    "field": "clinic.hours",
+    "source_ids": [
+      "S04"
+    ],
+    "research_status": "نیازمند تأیید پزشک",
+    "action": "فیلد/ادعای تأییدنشده یا متن نیازمند بازبینی در خروجی عمومی درج نشد",
+    "remaining_gap": "یک دایرکتوری برنامه ۹ تا ۱۶ و روز مخدوش دارد؛ تاریخ و تأیید مطب لازم است."
+  },
+  {
+    "id": "F029",
+    "field": "clinic.appointment",
+    "source_ids": [
+      "S02"
+    ],
+    "research_status": "تأیید محدود",
+    "action": "دعوت به تماس برای پرسیدن شیوه و زمان پذیرش؛ بدون تضمین رزرو",
+    "remaining_gap": "موتور آنلاین دایرکتوری دارای نوبت قابل تأیید مشاهده نشد؛ نوبت رزرو نشد."
+  },
+  {
+    "id": "F030",
+    "field": "clinic.map_pin",
+    "source_ids": [
+      "L01"
+    ],
+    "research_status": "نیازمند تأیید پزشک",
+    "action": "فقط جست‌وجوی متن نشانی؛ بدون پین یا مختصات",
+    "remaining_gap": "لینک فقط جستجوی متن نشانی است؛ Place ID و پین مستقل احراز نشد."
+  },
+  {
+    "id": "F031",
+    "field": "clinic.instagram",
+    "source_ids": [
+      "S05",
+      "S24"
+    ],
+    "research_status": "تأیید محدود",
+    "action": "فیلد/ادعای تأییدنشده یا متن نیازمند بازبینی در خروجی عمومی درج نشد",
+    "remaining_gap": "حساب مستقیماً خوانده نشد؛ رسمی بودن نیازمند تأیید مالک است."
+  },
+  {
+    "id": "F032",
+    "field": "clinic.insurance_fees_access",
+    "source_ids": [
+      "S02"
+    ],
+    "research_status": "نیازمند تأیید پزشک",
+    "action": "فیلد/ادعای تأییدنشده یا متن نیازمند بازبینی در خروجی عمومی درج نشد",
+    "remaining_gap": "نبود بیمه ثبت‌شده به معنی عدم پذیرش بیمه نیست؛ تعرفه، دسترس‌پذیری و روزهای تعطیل پرسیده شود."
+  },
+  {
+    "id": "F033",
+    "field": "clinic.contact_email",
+    "source_ids": [
+      "S19"
+    ],
+    "research_status": "نیازمند تأیید پزشک",
+    "action": "فیلد/ادعای تأییدنشده یا متن نیازمند بازبینی در خروجی عمومی درج نشد",
+    "remaining_gap": "ایمیل نویسنده مسئول عمومی است ولی برای تماس مطب تأیید نشده."
+  },
+  {
+    "id": "F034",
+    "field": "service.omfs",
+    "source_ids": [
+      "S01"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "دامنه ثبت‌شده حرفه‌ای؛ فهرست عمل‌های فعلی جداگانه تأیید شود."
+  },
+  {
+    "id": "F035",
+    "field": "service.fracture_dislocation",
+    "source_ids": [
+      "S02"
+    ],
+    "research_status": "تأیید محدود",
+    "action": "فیلد/ادعای تأییدنشده یا متن نیازمند بازبینی در خروجی عمومی درج نشد",
+    "remaining_gap": "مقاله بینی سند شکستگی فک نیست؛ تأیید مطب برای خدمت روز لازم است."
+  },
+  {
+    "id": "F036",
+    "field": "service.implants",
+    "source_ids": [
+      "S16"
+    ],
+    "research_status": "تأییدشده",
+    "action": "فقط سابقهٔ پژوهشی ۲۰۱۹؛ بدون ادعای خدمت فعلی یا برند جاری",
+    "remaining_gap": "سابقه مستند است؛ خدمات فعلی/برند فعلی/نتیجه فردی استنباط نشود."
+  },
+  {
+    "id": "F037",
+    "field": "service.orthognathic",
+    "source_ids": [
+      "S08",
+      "S04",
+      "S12"
+    ],
+    "research_status": "تأیید محدود",
+    "action": "خدمت فعلی درج نشد؛ فقط موضوع آموزشی تاریخ‌دار",
+    "remaining_gap": "تدریس معادل اثبات ارائه فعلی عمل نیست؛ تأیید دامنه درمان لازم است."
+  },
+  {
+    "id": "F038",
+    "field": "service.rhinoplasty_blepharoplasty",
+    "source_ids": [
+      "S05",
+      "S24"
+    ],
+    "research_status": "نیازمند تأیید پزشک",
+    "action": "فیلد/ادعای تأییدنشده یا متن نیازمند بازبینی در خروجی عمومی درج نشد",
+    "remaining_gap": "فقط منبع تجاری؛ مقاله شکستگی بینی گواهی رینوپلاستی/پلک نیست."
+  },
+  {
+    "id": "F039",
+    "field": "service.custom_mandible",
+    "source_ids": [
+      "S23"
+    ],
+    "research_status": "تأیید محدود",
+    "action": "فیلد/ادعای تأییدنشده یا متن نیازمند بازبینی در خروجی عمومی درج نشد",
+    "remaining_gap": "شاهد ذی‌نفع؛ مجوز بازنشر و خدمت فعلی احراز نشده."
+  },
+  {
+    "id": "F040",
+    "field": "media.portfolio",
+    "source_ids": [
+      "L01",
+      "S23"
+    ],
+    "research_status": "نیازمند تأیید پزشک",
+    "action": "گالری خالی حفظ شد؛ وعدهٔ انتشار قریب‌الوقوع حذف شد",
+    "remaining_gap": "تصاویر بیمار با رضایت صریح و مجوز صاحب اثر؛ نمونه‌کار واقعی در سورس نیست."
+  },
+  {
+    "id": "F041",
+    "field": "media.hero_story_rights",
+    "source_ids": [
+      "L01"
+    ],
+    "research_status": "نیازمند تأیید پزشک",
+    "action": "تصویر/ویدئوی موجود فقط نمایشی؛ مجوز هنوز باز؛ از schema تصویر حذف شد",
+    "remaining_gap": "مالکیت/رضایت استفاده از چهره و فایل ویرایش‌شده مستند نیست."
+  },
+  {
+    "id": "F042",
+    "field": "faq.documents",
+    "source_ids": [
+      "S26"
+    ],
+    "research_status": "نیازمند تأیید پزشک",
+    "action": "فیلد/ادعای تأییدنشده یا متن نیازمند بازبینی در خروجی عمومی درج نشد",
+    "remaining_gap": "پیش‌نویس عمومی؛ بازبینی پزشک و مدارک ویژه مطب لازم است."
+  },
+  {
+    "id": "F043",
+    "field": "faq.followup",
+    "source_ids": [
+      "S26",
+      "L01"
+    ],
+    "research_status": "نیازمند تأیید پزشک",
+    "action": "فیلد/ادعای تأییدنشده یا متن نیازمند بازبینی در خروجی عمومی درج نشد",
+    "remaining_gap": "مسیر تماس پیگیری و فوریت‌ها باید مطب تعیین کند."
+  },
+  {
+    "id": "F044",
+    "field": "blog.consultation",
+    "source_ids": [
+      "L01",
+      "S26"
+    ],
+    "research_status": "نیازمند تأیید پزشک",
+    "action": "فایل MDX غیرفعال؛ مسیر عمومی یا Article schema ساخته نشد",
+    "remaining_gap": "مرجع اینستاگرام منبع پزشکی نیست؛ route فعلی یافت نشد."
+  },
+  {
+    "id": "F045",
+    "field": "blog.research_guide",
+    "source_ids": [
+      "S25"
+    ],
+    "research_status": "تأییدشده",
+    "action": "فایل MDX غیرفعال؛ مسیر عمومی یا Article schema ساخته نشد",
+    "remaining_gap": "راهنمای رسمی خوانده شد؛ مقاله نویسندگی پزشک ندارد."
+  },
+  {
+    "id": "F046",
+    "field": "seo.titles_descriptions",
+    "source_ids": [
+      "L01"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "متن پیشنهادی در فایل مربوط؛ ادعای درمان/رتبه افزوده نشود."
+  },
+  {
+    "id": "F047",
+    "field": "seo.person_schema",
+    "source_ids": [
+      "L01"
+    ],
+    "research_status": "تأییدشده",
+    "action": "sameAs فقط پروفایل رسمی؛ شبکهٔ اجتماعی/تصویر نمایشی حذف شد",
+    "remaining_gap": "sameAs اینستاگرام هنوز تأیید محدود؛ نام متغیر verifiedPublications تنها اعتبارسنجی قالب است."
+  },
+  {
+    "id": "F048",
+    "field": "seo.domain",
+    "source_ids": [
+      "L01"
+    ],
+    "research_status": "نیازمند تأیید پزشک",
+    "action": "فیلد/ادعای تأییدنشده یا متن نیازمند بازبینی در خروجی عمومی درج نشد",
+    "remaining_gap": "مالک پروژه باید دامنه HTTPS را اعلام کند؛ از ثبت میزبانی قدیمی استنتاج نشود."
+  },
+  {
+    "id": "F049",
+    "field": "seo.indexing",
+    "source_ids": [
+      "L01"
+    ],
+    "research_status": "تأییدشده",
+    "action": "حفاظت پیش‌نمایش و پنج مسیر واقعی حفظ شد",
+    "remaining_gap": "اسناد تعداد ۶+۲ مسیر می‌گویند اما sitemap فعلی فقط ۵ صفحه دارد."
+  },
+  {
+    "id": "F050",
+    "field": "experience.2025_safe_dentistry_panel",
+    "source_ids": [
+      "S30",
+      "S34"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "برنامه رسمی، نه اثبات حضور؛ موضوع اختصاصی هر سخنران تفکیک نشده."
+  },
+  {
+    "id": "F051",
+    "field": "experience.2025_implant_sinus_talk",
+    "source_ids": [
+      "S30",
+      "S35"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "زمان کل پنل است؛ حضور قطعی و زمان اختصاصی سخنرانی احراز نشد."
+  },
+  {
+    "id": "F052",
+    "field": "social.clubhouse_candidate",
+    "source_ids": [
+      "S36"
+    ],
+    "research_status": "تأیید محدود",
+    "action": "فیلد/ادعای تأییدنشده یا متن نیازمند بازبینی در خروجی عمومی درج نشد",
+    "remaining_gap": "نام/رشته و گروه اردبیل سازگار است، ولی سند اتصال به شماره130866 نیست؛ به‌عنوان حساب رسمی یا sameAs منتشر نشود."
+  },
+  {
+    "id": "F053",
+    "field": "publications.P2016.title",
+    "source_ids": [
+      "S31",
+      "S32",
+      "S13"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F054",
+    "field": "publications.P2016.authors",
+    "source_ids": [
+      "S31",
+      "S32",
+      "S13"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F055",
+    "field": "publications.P2016.journal",
+    "source_ids": [
+      "S31",
+      "S32",
+      "S13"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F056",
+    "field": "publications.P2016.publication_date",
+    "source_ids": [
+      "S31",
+      "S32",
+      "S13"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "History ناشر: دریافت 2016-08-30، بازنگری 2026-09-08 و پذیرش 2019-03-12؛ PDF: دریافت 2015-08-15 و پذیرش 2016-05-24. این تاریخ‌ها تاریخ انتشار نیستند و تعارض ثبت شد.؛ عنوان فعلی سایت کوتاه‌شده است.؛ ترتیب و صفحات از ناشر و PDF اصلی تأیید شد؛ ترتیب متفاوت ویرا ترجیح داده نشد.؛ روز 5 June در پانوشت و September در ResearchGate تاریخ دقیق قابل اتکا نیست.؛ DOI/PMID یافت‌نشده؛ DOAJ بسته بود اما ناشر و PDF در پیگیری نهایی خوانده شدند.؛ صفحات 148-153 در ناشر و PDF تأیید شد؛ 146-153 در استناد ثانویه نادرست ترجیح داده نشد."
+  },
+  {
+    "id": "F057",
+    "field": "publications.P2016.volume",
+    "source_ids": [
+      "S31",
+      "S32",
+      "S13"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F058",
+    "field": "publications.P2016.issue",
+    "source_ids": [
+      "S31",
+      "S32",
+      "S13"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F059",
+    "field": "publications.P2016.pages",
+    "source_ids": [
+      "S31",
+      "S32",
+      "S13"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "History ناشر: دریافت 2016-08-30، بازنگری 2026-09-08 و پذیرش 2019-03-12؛ PDF: دریافت 2015-08-15 و پذیرش 2016-05-24. این تاریخ‌ها تاریخ انتشار نیستند و تعارض ثبت شد.؛ عنوان فعلی سایت کوتاه‌شده است.؛ ترتیب و صفحات از ناشر و PDF اصلی تأیید شد؛ ترتیب متفاوت ویرا ترجیح داده نشد.؛ روز 5 June در پانوشت و September در ResearchGate تاریخ دقیق قابل اتکا نیست.؛ DOI/PMID یافت‌نشده؛ DOAJ بسته بود اما ناشر و PDF در پیگیری نهایی خوانده شدند.؛ صفحات 148-153 در ناشر و PDF تأیید شد؛ 146-153 در استناد ثانویه نادرست ترجیح داده نشد."
+  },
+  {
+    "id": "F060",
+    "field": "publications.P2016.doi",
+    "source_ids": [
+      "S31",
+      "S32",
+      "S13"
+    ],
+    "research_status": "یافت‌نشده",
+    "action": "فیلد/ادعای تأییدنشده یا متن نیازمند بازبینی در خروجی عمومی درج نشد",
+    "remaining_gap": "یافت نشد؛ حدس زده نشود."
+  },
+  {
+    "id": "F061",
+    "field": "publications.P2016.pmid",
+    "source_ids": [
+      "S31",
+      "S32",
+      "S13"
+    ],
+    "research_status": "یافت‌نشده",
+    "action": "فیلد/ادعای تأییدنشده یا متن نیازمند بازبینی در خروجی عمومی درج نشد",
+    "remaining_gap": "یافت نشد؛ حدس زده نشود."
+  },
+  {
+    "id": "F062",
+    "field": "publications.P2016.publisher_url",
+    "source_ids": [
+      "S31",
+      "S32",
+      "S13"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F063",
+    "field": "publications.P2016.attribution",
+    "source_ids": [
+      "S31",
+      "S32",
+      "S13"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "History ناشر: دریافت 2016-08-30، بازنگری 2026-09-08 و پذیرش 2019-03-12؛ PDF: دریافت 2015-08-15 و پذیرش 2016-05-24. این تاریخ‌ها تاریخ انتشار نیستند و تعارض ثبت شد.؛ عنوان فعلی سایت کوتاه‌شده است.؛ ترتیب و صفحات از ناشر و PDF اصلی تأیید شد؛ ترتیب متفاوت ویرا ترجیح داده نشد.؛ روز 5 June در پانوشت و September در ResearchGate تاریخ دقیق قابل اتکا نیست.؛ DOI/PMID یافت‌نشده؛ DOAJ بسته بود اما ناشر و PDF در پیگیری نهایی خوانده شدند.؛ صفحات 148-153 در ناشر و PDF تأیید شد؛ 146-153 در استناد ثانویه نادرست ترجیح داده نشد."
+  },
+  {
+    "id": "F064",
+    "field": "publications.P2016.abstract_summary_fa",
+    "source_ids": [
+      "S31",
+      "S32",
+      "S13"
+    ],
+    "research_status": "نیازمند تأیید پزشک",
+    "action": "فیلد/ادعای تأییدنشده یا متن نیازمند بازبینی در خروجی عمومی درج نشد",
+    "remaining_gap": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F065",
+    "field": "publications.P2019.title",
+    "source_ids": [
+      "S15",
+      "S16",
+      "S17"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F066",
+    "field": "publications.P2019.authors",
+    "source_ids": [
+      "S15",
+      "S16",
+      "S17"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F067",
+    "field": "publications.P2019.journal",
+    "source_ids": [
+      "S15",
+      "S16",
+      "S17"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F068",
+    "field": "publications.P2019.publication_date",
+    "source_ids": [
+      "S15",
+      "S16",
+      "S17"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "Crossref DOI را یک سال پس از تاریخ مقاله ثبت کرده؛ تاریخ ایجاد رکورد انتشار نیست.؛ ORCID وحید خلیلی به سیگاری منتسب نشود.؛ اعداد و محدوده سن بین چکیده و روش متن یکسان نیست؛ برای تبلیغ موفقیت شخصی استفاده نشود."
+  },
+  {
+    "id": "F069",
+    "field": "publications.P2019.volume",
+    "source_ids": [
+      "S15",
+      "S16",
+      "S17"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F070",
+    "field": "publications.P2019.issue",
+    "source_ids": [
+      "S15",
+      "S16",
+      "S17"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F071",
+    "field": "publications.P2019.pages",
+    "source_ids": [
+      "S15",
+      "S16",
+      "S17"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "Crossref DOI را یک سال پس از تاریخ مقاله ثبت کرده؛ تاریخ ایجاد رکورد انتشار نیست.؛ ORCID وحید خلیلی به سیگاری منتسب نشود.؛ اعداد و محدوده سن بین چکیده و روش متن یکسان نیست؛ برای تبلیغ موفقیت شخصی استفاده نشود."
+  },
+  {
+    "id": "F072",
+    "field": "publications.P2019.doi",
+    "source_ids": [
+      "S15",
+      "S16",
+      "S17"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F073",
+    "field": "publications.P2019.pmid",
+    "source_ids": [
+      "S15",
+      "S16",
+      "S17"
+    ],
+    "research_status": "یافت‌نشده",
+    "action": "فیلد/ادعای تأییدنشده یا متن نیازمند بازبینی در خروجی عمومی درج نشد",
+    "remaining_gap": "یافت نشد؛ حدس زده نشود."
+  },
+  {
+    "id": "F074",
+    "field": "publications.P2019.publisher_url",
+    "source_ids": [
+      "S15",
+      "S16",
+      "S17"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F075",
+    "field": "publications.P2019.attribution",
+    "source_ids": [
+      "S15",
+      "S16",
+      "S17"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "Crossref DOI را یک سال پس از تاریخ مقاله ثبت کرده؛ تاریخ ایجاد رکورد انتشار نیست.؛ ORCID وحید خلیلی به سیگاری منتسب نشود.؛ اعداد و محدوده سن بین چکیده و روش متن یکسان نیست؛ برای تبلیغ موفقیت شخصی استفاده نشود."
+  },
+  {
+    "id": "F076",
+    "field": "publications.P2019.abstract_summary_fa",
+    "source_ids": [
+      "S15",
+      "S16",
+      "S17"
+    ],
+    "research_status": "نیازمند تأیید پزشک",
+    "action": "فیلد/ادعای تأییدنشده یا متن نیازمند بازبینی در خروجی عمومی درج نشد",
+    "remaining_gap": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F077",
+    "field": "publications.P2026.title",
+    "source_ids": [
+      "S18",
+      "S19",
+      "S20"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F078",
+    "field": "publications.P2026.authors",
+    "source_ids": [
+      "S18",
+      "S19",
+      "S20"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F079",
+    "field": "publications.P2026.journal",
+    "source_ids": [
+      "S18",
+      "S19",
+      "S20"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F080",
+    "field": "publications.P2026.publication_date",
+    "source_ids": [
+      "S18",
+      "S19",
+      "S20"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "خطای عنوان در Citation صفحه اول: عنوان آناناس/موش چاپ شده؛ عنوان اصلی، DOI و مؤلفان در بالای صفحه و صفحه ناشر همخوان‌اند.؛ Crossref تنها صفحه آغاز 85 دارد؛ بازه کامل PDF 85-97 است.؛ تاریخ ایجاد DOI 2026-06-25 را با تاریخ انتشار 2026-02-28 مخلوط نکنید."
+  },
+  {
+    "id": "F081",
+    "field": "publications.P2026.volume",
+    "source_ids": [
+      "S18",
+      "S19",
+      "S20"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F082",
+    "field": "publications.P2026.issue",
+    "source_ids": [
+      "S18",
+      "S19",
+      "S20"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F083",
+    "field": "publications.P2026.pages",
+    "source_ids": [
+      "S18",
+      "S19",
+      "S20"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "خطای عنوان در Citation صفحه اول: عنوان آناناس/موش چاپ شده؛ عنوان اصلی، DOI و مؤلفان در بالای صفحه و صفحه ناشر همخوان‌اند.؛ Crossref تنها صفحه آغاز 85 دارد؛ بازه کامل PDF 85-97 است.؛ تاریخ ایجاد DOI 2026-06-25 را با تاریخ انتشار 2026-02-28 مخلوط نکنید."
+  },
+  {
+    "id": "F084",
+    "field": "publications.P2026.doi",
+    "source_ids": [
+      "S18",
+      "S19",
+      "S20"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F085",
+    "field": "publications.P2026.pmid",
+    "source_ids": [
+      "S18",
+      "S19",
+      "S20"
+    ],
+    "research_status": "یافت‌نشده",
+    "action": "فیلد/ادعای تأییدنشده یا متن نیازمند بازبینی در خروجی عمومی درج نشد",
+    "remaining_gap": "یافت نشد؛ حدس زده نشود."
+  },
+  {
+    "id": "F086",
+    "field": "publications.P2026.publisher_url",
+    "source_ids": [
+      "S18",
+      "S19",
+      "S20"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F087",
+    "field": "publications.P2026.attribution",
+    "source_ids": [
+      "S18",
+      "S19",
+      "S20"
+    ],
+    "research_status": "تأییدشده",
+    "action": "مقدار مستند یا صورت‌بندی محدود آن در نسخهٔ محلی اعمال/حفظ شد",
+    "remaining_gap": "خطای عنوان در Citation صفحه اول: عنوان آناناس/موش چاپ شده؛ عنوان اصلی، DOI و مؤلفان در بالای صفحه و صفحه ناشر همخوان‌اند.؛ Crossref تنها صفحه آغاز 85 دارد؛ بازه کامل PDF 85-97 است.؛ تاریخ ایجاد DOI 2026-06-25 را با تاریخ انتشار 2026-02-28 مخلوط نکنید."
+  },
+  {
+    "id": "F088",
+    "field": "publications.P2026.abstract_summary_fa",
+    "source_ids": [
+      "S18",
+      "S19",
+      "S20"
+    ],
+    "research_status": "نیازمند تأیید پزشک",
+    "action": "فیلد/ادعای تأییدنشده یا متن نیازمند بازبینی در خروجی عمومی درج نشد",
+    "remaining_gap": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F089",
+    "field": "publications.P2013-candidate.title",
+    "source_ids": [
+      "S21",
+      "S22",
+      "S01"
+    ],
+    "research_status": "تأیید محدود",
+    "action": "مقالهٔ نامزد ۲۰۱۳ درج نشد؛ تأیید انتساب لازم است",
+    "remaining_gap": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F090",
+    "field": "publications.P2013-candidate.authors",
+    "source_ids": [
+      "S21",
+      "S22",
+      "S01"
+    ],
+    "research_status": "تأیید محدود",
+    "action": "مقالهٔ نامزد ۲۰۱۳ درج نشد؛ تأیید انتساب لازم است",
+    "remaining_gap": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F091",
+    "field": "publications.P2013-candidate.journal",
+    "source_ids": [
+      "S21",
+      "S22",
+      "S01"
+    ],
+    "research_status": "تأیید محدود",
+    "action": "مقالهٔ نامزد ۲۰۱۳ درج نشد؛ تأیید انتساب لازم است",
+    "remaining_gap": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F092",
+    "field": "publications.P2013-candidate.publication_date",
+    "source_ids": [
+      "S21",
+      "S22",
+      "S01"
+    ],
+    "research_status": "تأیید محدود",
+    "action": "مقالهٔ نامزد ۲۰۱۳ درج نشد؛ تأیید انتساب لازم است",
+    "remaining_gap": "نام مشابه به‌تنهایی کافی نیست؛ برای افزودن به سایت تأیید پزشک لازم است.؛ وابستگی تبریز در ابتدای PubMed متعلق به نویسنده اول است؛ وابستگی خود سیگاری از PMC خوانده شد.؛ DOI در متن و PubMed موجود ولی API Crossref تک‌رکورد 404 برگرداند؛ DOI حذف یا تکذیب نمی‌شود."
+  },
+  {
+    "id": "F093",
+    "field": "publications.P2013-candidate.volume",
+    "source_ids": [
+      "S21",
+      "S22",
+      "S01"
+    ],
+    "research_status": "تأیید محدود",
+    "action": "مقالهٔ نامزد ۲۰۱۳ درج نشد؛ تأیید انتساب لازم است",
+    "remaining_gap": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F094",
+    "field": "publications.P2013-candidate.issue",
+    "source_ids": [
+      "S21",
+      "S22",
+      "S01"
+    ],
+    "research_status": "تأیید محدود",
+    "action": "مقالهٔ نامزد ۲۰۱۳ درج نشد؛ تأیید انتساب لازم است",
+    "remaining_gap": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F095",
+    "field": "publications.P2013-candidate.pages",
+    "source_ids": [
+      "S21",
+      "S22",
+      "S01"
+    ],
+    "research_status": "تأیید محدود",
+    "action": "مقالهٔ نامزد ۲۰۱۳ درج نشد؛ تأیید انتساب لازم است",
+    "remaining_gap": "نام مشابه به‌تنهایی کافی نیست؛ برای افزودن به سایت تأیید پزشک لازم است.؛ وابستگی تبریز در ابتدای PubMed متعلق به نویسنده اول است؛ وابستگی خود سیگاری از PMC خوانده شد.؛ DOI در متن و PubMed موجود ولی API Crossref تک‌رکورد 404 برگرداند؛ DOI حذف یا تکذیب نمی‌شود."
+  },
+  {
+    "id": "F096",
+    "field": "publications.P2013-candidate.doi",
+    "source_ids": [
+      "S21",
+      "S22",
+      "S01"
+    ],
+    "research_status": "تأیید محدود",
+    "action": "مقالهٔ نامزد ۲۰۱۳ درج نشد؛ تأیید انتساب لازم است",
+    "remaining_gap": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F097",
+    "field": "publications.P2013-candidate.pmid",
+    "source_ids": [
+      "S21",
+      "S22",
+      "S01"
+    ],
+    "research_status": "تأیید محدود",
+    "action": "مقالهٔ نامزد ۲۰۱۳ درج نشد؛ تأیید انتساب لازم است",
+    "remaining_gap": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F098",
+    "field": "publications.P2013-candidate.publisher_url",
+    "source_ids": [
+      "S21",
+      "S22",
+      "S01"
+    ],
+    "research_status": "یافت‌نشده",
+    "action": "مقالهٔ نامزد ۲۰۱۳ درج نشد؛ تأیید انتساب لازم است",
+    "remaining_gap": "یافت نشد؛ حدس زده نشود."
+  },
+  {
+    "id": "F099",
+    "field": "publications.P2013-candidate.attribution",
+    "source_ids": [
+      "S21",
+      "S22",
+      "S01"
+    ],
+    "research_status": "تأیید محدود",
+    "action": "مقالهٔ نامزد ۲۰۱۳ درج نشد؛ تأیید انتساب لازم است",
+    "remaining_gap": "نام مشابه به‌تنهایی کافی نیست؛ برای افزودن به سایت تأیید پزشک لازم است.؛ وابستگی تبریز در ابتدای PubMed متعلق به نویسنده اول است؛ وابستگی خود سیگاری از PMC خوانده شد.؛ DOI در متن و PubMed موجود ولی API Crossref تک‌رکورد 404 برگرداند؛ DOI حذف یا تکذیب نمی‌شود."
+  },
+  {
+    "id": "F100",
+    "field": "publications.P2013-candidate.abstract_summary_fa",
+    "source_ids": [
+      "S21",
+      "S22",
+      "S01"
+    ],
+    "research_status": "نیازمند تأیید پزشک",
+    "action": "مقالهٔ نامزد ۲۰۱۳ درج نشد؛ تأیید انتساب لازم است",
+    "remaining_gap": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F101",
+    "field": "publications.P2016.editorial_history",
+    "source_ids": [
+      "S31",
+      "S32"
+    ],
+    "research_status": "متعارض",
+    "action": "فیلد/ادعای تأییدنشده یا متن نیازمند بازبینی در خروجی عمومی درج نشد",
+    "remaining_gap": "تاریخ‌های دریافت/پذیرش متعارض‌اند؛ برای نشر از سال شماره ۲۰۱۶ استفاده شود. روز دقیق نشر و علت اختلاف نیازمند پاسخ ناشر است."
+  }
+]

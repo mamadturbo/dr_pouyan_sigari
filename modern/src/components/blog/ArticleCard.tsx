@@ -1,0 +1,3 @@
+import Link from 'next/link';
+import type { ArticleMetadata } from '@/types/content';
+export function ArticleCard({article}:{article:ArticleMetadata}){return <article className="article-card"><p className="eyebrow">{article.category}{article.featured?' • برگزیده':''}</p><h3><Link prefetch={false} href={'/blog/'+article.slug+'/'}>{article.title}</Link></h3><p>{article.description}</p><p className="article-byline">{article.author} • <time dateTime={article.publishedAt}>{new Intl.DateTimeFormat('fa-IR',{dateStyle:'long',timeZone:'UTC'}).format(new Date(article.publishedAt+'T00:00:00Z'))}</time></p><Link prefetch={false} className="text-link" href={'/blog/'+article.slug+'/'}>مطالعهٔ مقاله ←</Link></article>;}

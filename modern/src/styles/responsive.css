@@ -1,0 +1,122 @@
+/* Natural reading layouts. Desktop presentation rules remain above this boundary. */
+@media (max-width: 1024px) {
+  .desktop-nav { display: none !important; }
+  .menu-toggle { display: flex; flex-shrink: 0; }
+  .site-header .header-inner { gap: 1rem; }
+  .mobile-nav { max-height: calc(100dvh - var(--hero-header-height, 92px)); padding-bottom: max(1.5rem, env(safe-area-inset-bottom)); }
+  .story-scroll { display: none !important; }
+  .story-static { display: block !important; }
+  .story-static article { display: grid; grid-template-columns: minmax(0, 1fr); padding: 1.5rem; border: 1px solid var(--line); border-radius: 1.25rem; background: #f4f5ef; gap: 1.5rem; }
+  .story-static article + article { margin-top: 1.5rem; background: #e8f0e7; }
+  .story-static h2 { font-size: clamp(1.5rem, 4vw, 2rem); line-height: 1.7; margin-block: .75rem; }
+  .story-static article > div > p:not(.eyebrow), .profile-facts { font-size: 1rem; line-height: 2; }
+  .story-static-portrait { display: none; }
+  .hero-reference-actions { flex-wrap: wrap; }
+  .hero-reference h1, .hero-reference-specialty { white-space: normal; }
+  .section-heading { flex-wrap: wrap; gap: 1rem; }
+  .section-heading > .section-description { text-align: start; }
+  .experience-grid, .contact-grid { gap: 2rem; }
+  .experience-card { min-width: 0; }
+  .experience-card-meta { flex-wrap: wrap; gap: .25rem .5rem; }
+  .experience-card-title { font-size: 1rem; }
+  .experience-card-action { min-width: 44px; }
+  .experience-dialog-body > p[id] { font-size: 1rem; }
+  .filters input, .filters select { font-size: 1rem; }
+  .faq-item summary { min-height: 48px; }
+  .story-section { padding-block: 2rem 3rem; }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container { width: calc(100% - 64px); }
+  .story-static article { grid-template-columns: minmax(160px, .6fr) minmax(0, 1fr); align-items: center; padding: 2rem; }
+  .story-static-portrait { display: block; }
+  .story-static-portrait img { width: 100%; height: auto; max-height: 420px; object-fit: contain; }
+  .hero-reference { min-height: 0; padding-block: calc(var(--hero-header-height) + 48px) 3rem; }
+  .hero-reference-copy { width: 48%; }
+  .hero-reference-visual { position: absolute; inset: var(--hero-header-height) auto 0 0; width: 49%; height: auto; margin: 0; aspect-ratio: auto; }
+  .hero-reference h1 { font-size: clamp(2rem, 4.5vw, 3rem); }
+  .hero-reference-specialty { font-size: clamp(1.25rem, 2.4vw, 1.6rem); }
+  .hero-reference-button { width: 100%; min-height: 52px; font-size: 1rem; }
+  .hero-reference-meta { flex-wrap: wrap; gap: .5rem; }
+  .hero-reference-meta > * + * { padding: 0; border: 0; }
+  .biography { gap: 2rem; }
+  .contact-grid { grid-template-columns: 1fr 1fr; }
+  .service-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .experience-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 767px) {
+  .site-header .header-inner > .button { display: none; }
+  .site-header[data-home="true"] .brand { font-size: 1rem; }
+  .site-header[data-home="true"] .brand small, .brand small { font-size: .6875rem; }
+  .site-header[data-home="true"] .header-inner { gap: .75rem; }
+  .menu-toggle { min-width: 48px; min-height: 48px; }
+  .hero-reference { padding-bottom: 0; }
+  .hero-reference h1 { font-size: clamp(1.875rem, 8vw, 2.5rem); letter-spacing: -.05em; }
+  .hero-reference-specialty { font-size: clamp(1.125rem, 4.6vw, 1.375rem); }
+  .hero-reference-actions { display: grid; grid-template-columns: 1fr; gap: .75rem; }
+  .hero-reference-button { font-size: 1rem; min-height: 52px; }
+  .hero-reference-meta { flex-wrap: wrap; font-size: .875rem; gap: .5rem 1rem; }
+  .hero-reference-meta > * + * { padding-inline-start: 0; border: 0; }
+  .story-static article { padding: 1.25rem; }
+  .story-static .eyebrow { font-size: .875rem; }
+  .story-static .text-link { font-size: 1rem; }
+  .section-title { letter-spacing: -.04em; }
+  .section-space { padding-block: 3rem; }
+  .page-intro > p, .intro-description, .service-card p, .interior .service-card p,
+  .timeline p, .interior .timeline p, .journey-steps p, .article-card > p:not(.eyebrow),
+  .faq-answer, .contact-address p, .contact-copy > p:not(.eyebrow), .portfolio-heading p,
+  .research-card p { font-size: 1rem; }
+  .service-card .text-link, .experience-cards-footnote, .services-note, .academic-note,
+  .experience-cards-hint, .experience-card-meta { font-size: .875rem; }
+  .experience-card { gap: .625rem; padding-inline: 0; }
+  .experience-art { width: 48px; height: 60px; }
+  .experience-cards-hint { flex-wrap: wrap; }
+  .service-grid, .article-grid, .contact-grid { grid-template-columns: minmax(0, 1fr); }
+  .contact-phone strong { font-size: clamp(1.25rem, 6.5vw, 1.75rem); }
+  .contact-details { min-width: 0; }
+  .research-card { min-width: 0; }
+  .research-card-body { padding: 1.25rem; }
+  .paper-english { overflow-wrap: anywhere; }
+  .faq-item summary { font-size: 1rem; }
+  .faq-answer { padding-inline-end: 0; }
+  .filters { padding: 1rem; }
+  .breadcrumbs a { min-height: 44px; }
+  .contact-social { min-height: 44px; display: inline-flex; align-items: center; }
+  .site-footer .footer-bottom { font-size: .875rem; }
+}
+@media (prefers-reduced-motion: reduce) and (min-width: 1025px) {
+  .story-static-portrait { display: block; }
+  .story-static-portrait img { max-height: 420px; width: 100%; object-fit: contain; }
+}
+@media (max-width: 1024px) and (max-height: 500px) {
+  .story-static article { grid-template-columns: minmax(0, 1fr); }
+  .story-static-portrait { display: none; }
+}
+@media (max-width: 1024px) {
+  .site-header[data-home="true"] .header-inner > .button,
+  .hero-reference-button-primary { background: #007657; border-color: #007657; }
+  .experience-art-year { opacity: 1; color: #486550; }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero-reference { flex-direction: row; align-items: center; }
+  .hero-reference-copy { margin-inline: 0; max-width: none; }
+  .hero-reference-actions { display: grid; grid-template-columns: minmax(0, 1fr); }
+  .experience-intro .section-title br { display: none; }
+  .experience-intro .section-title { font-size: 2.5rem; max-width: 28ch; }
+  .experience-intro > .section-description { max-width: 60ch; }
+  .experience-intro .academic-note { max-width: 70ch; }
+}
+@media (max-width: 1024px) {
+  .experience-art-year { display: none; }
+}
+
+/* Phone hero: useful information first, with no portrait footprint or background download. */
+@media (max-width: 767px), (max-width: 1024px) and (max-height: 500px) {
+  .hero-reference-visual, .hero-reference-leaves { display: none; }
+  .hero-reference {
+    min-height: 0;
+    flex-direction: column;
+    align-items: stretch;
+    padding: calc(var(--hero-header-height) + 2rem) max(1.25rem, env(safe-area-inset-right)) 2rem max(1.25rem, env(safe-area-inset-left));
+  }
+  .hero-reference-copy { width: 100%; max-width: 600px; margin-inline: auto; }
+}

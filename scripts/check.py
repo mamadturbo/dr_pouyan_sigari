@@ -48,6 +48,9 @@ for reference in document.references:
         errors.append('Missing target ID: ' + reference)
 if not (DIST / 'assets/doctor-turn.mp4').is_file():
     errors.append('Native turn video is missing')
+for name in ('doctor-turn-flow.mp4',):
+    if not (DIST / 'assets' / name).is_file():
+        errors.append('Animated story direction is missing: ' + name)
 if script_sources.index('story-player.js') > script_sources.index('site.js'):
     errors.append('Playback engine must load before application initialization')
 if '<canvas id="doctor-sequence"' in (DIST / 'index.html').read_text(encoding='utf-8'):
@@ -68,8 +71,11 @@ if preview.is_file():
         parsed = urlsplit(reference)
         if parsed.path and not parsed.scheme and not parsed.netloc:
             errors.append('Offline preview still depends on a local file: ' + reference)
-    if '"assets/doctor-turn.mp4": "data:video/mp4;base64,' not in standalone:
+    if '"assets/doctor-turn-flow.mp4": "data:video/mp4;base64,' not in standalone:
         errors.append('Offline preview is missing the embedded native video')
+    for name in ('doctor-turn-flow.mp4',):
+        if f'"assets/{name}": "data:video/mp4;base64,' not in standalone:
+            errors.append('Offline preview is missing the embedded story direction: ' + name)
     if '"assets/frames/frame-' in standalone:
         errors.append('Offline preview must not load the obsolete frame sequence')
 if errors:

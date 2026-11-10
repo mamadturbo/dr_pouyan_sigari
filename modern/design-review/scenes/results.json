@@ -1,0 +1,47 @@
+[
+  {
+    "width": 805,
+    "stage": 0,
+    "detailVisible": true
+  },
+  {
+    "width": 805,
+    "stage": 1,
+    "detailVisible": true
+  },
+  {
+    "width": 805,
+    "stage": 2,
+    "detailVisible": true
+  },
+  {
+    "width": 805,
+    "stage": 3,
+    "detailVisible": true
+  },
+  {
+    "width": 1440,
+    "stage": 0,
+    "detailVisible": true
+  },
+  {
+    "width": 1440,
+    "stage": 1,
+    "detailVisible": true
+  },
+  {
+    "width": 1440,
+    "stage": 2,
+    "detailVisible": true
+  },
+  {
+    "width": 1440,
+    "stage": 3,
+    "detailVisible": true
+  },
+  {
+    "reflowWidth": 720,
+    "overflow": false,
+    "mode": "natural"
+  }
+]

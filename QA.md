@@ -1,5 +1,19 @@
 # Validation — 2026-10-16
 
+## Current revision — 2026-10-19
+
+The dated notes below describe earlier versions. This revision supersedes their media playback details.
+
+- The active media is one 60fps H.264 file with 92 frames and a duration of 1.533333 seconds. Forward and reverse directions each occupy half the same source (about 0.77 seconds), without changing sources or calling load() between directions.
+- The first decoded video frame becomes visible after loadeddata. A completed turn pauses on its decoded endpoint; the fallback poster stays at opacity 0 before, during and after successful playback. CSS opacity transitions on the video have been removed.
+- Progress and copy transitions use animation-frame sampling rather than only the sparse timeupdate event. Text blocks reveal with small offsets and a stagger, replacing the slower whole-block blur effect.
+- Desktop wheel checks at CSS 1280×720: arrival armed at scroll Y=798 and scene top=103.109. Forward playback completed at media time 0.764307, with the surgical copy, hidden poster, visible video, and an unlocked page at the same Y. The reverse completed at media time 1.529610 with academic copy and the same Y.
+- Rapid opposite wheel input during a further turn left the scene locked at Y=798; completion unlocked at the same Y. Inputs cannot seek or restart an in-progress turn. Reverse playback starts at the fixed scene boundary, rather than whenever any part of the doctor is visible.
+- Standalone preview checked at CSS 360×800: no horizontal overflow; the full 300px visual was within the viewport. Both directions completed at scroll Y=1179. The video stayed visible and poster hidden after playback.
+- The failure fixture targets the new active media: failed playback left a loaded poster and no lock. Reduced-motion mode showed the static alternative without locking. Physical touch devices and Safari were not tested.
+- Eight playback tests passed, including segment completion, preserved frame/copy on reset, and observing the armed state before repositioning. Static checks and JavaScript syntax validation passed.
+- Publishing is blocked: get_site and the source-credential operation returned project_not_found for the retained project ID. No replacement site was created.
+
 - JavaScript syntax checks passed for `site.js` and `content.js`.
 - Static check passed: 39 unique IDs, all HTML asset references, internal anchors, all 57 WebP frames and the Sites hosting manifest.
 - Browser checked at 1440×900, 768×1024, 360×800 and 360×640. No horizontal overflow in these viewports.
@@ -36,3 +50,12 @@ This replaces the previous scroll-scrubbed frame sequence.
 - Escape cancelled playback and cleared the lock. A deliberately failing MP4 request left the poster visible and the page unlocked. Reduced-motion mode showed the static alternative without any lock.
 - Seven automated playback lifecycle tests passed: arrival without autoplay, one uninterrupted playback, ignored duplicate starts, native-ended unlock, media-error unlock, stalled-media timeout, cancellation, rejected play promises, callback cleanup and explicit retry.
 - Native touch gesture handling is implemented; a physical touchscreen device was not tested. Keyboard and wheel paths are available, together with an explicit play/replay button.
+
+## Faster and reversible story animation — 2026-10-17
+
+- The forward source is encoded at 1.37 seconds (about 28% shorter than the original 1.90-second clip); the opposite direction has its own reversed MP4 so upward scrolling preserves the full outfit-change motion.
+- When the surgical portrait is visible, scrolling up starts the reverse clip before the page can move. The scene stays locked until the academic portrait returns. Wheel, touch and keyboard paths share the same scene transition.
+- The accompanying copy now changes with the direction-adjusted video progress. Both directions use a short GSAP crossfade, blur and offset transition. The enclosing frame uses a large asymmetrical curve, a pale split background, and a raised shadow.
+- Browser playback completed in both directions. The forward pass ended on the surgical portrait and copy; one upward gesture held the same scroll position through the reverse pass and ended on the academic portrait and copy.
+- Regression follow-up: after moving 112px away from the story’s lock point, one upward gesture returned to the original anchor (scroll Y=798) before reverse playback. A later full exit and re-entry armed the scene at that same anchor again; additional input stayed contained until playback ended.
+- The one-file preview embeds the forward and reverse clips locally; it has no network dependency for the rotation.

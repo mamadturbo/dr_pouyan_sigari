@@ -19,7 +19,8 @@ def standalone():
     html = (DIST / 'index.html').read_text(encoding='utf-8')
     assets = {path.relative_to(DIST).as_posix(): data_url(path)
               for path in (DIST / 'assets').rglob('*')
-              if path.is_file() and path.suffix in ('.webp', '.woff2', '.svg', '.mp4') and 'frames' not in path.parts}
+              if path.is_file() and path.suffix in ('.webp', '.woff2', '.svg', '.mp4') and 'frames' not in path.parts
+              and (path.suffix != '.mp4' or path.name == 'doctor-turn-flow.mp4')}
     scripts = re.findall(r'<script src="([^"]+)" defer></script>', html)
     html = re.sub(r'\s*<script src="[^"]+" defer></script>', '', html)
     html = re.sub(r'\s*<link rel="preload"[^>]+>', '', html)

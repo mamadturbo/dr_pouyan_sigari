@@ -1,0 +1,54 @@
+:root {
+  --clinic-arrival-ease: cubic-bezier(.25, .5, .3, 1);
+}
+
+@media (prefers-reduced-motion: no-preference) and (scripting: enabled) {
+  .hero-reference h1 {
+    --arrival-y: 17px;
+    --arrival-opacity: .72;
+    animation: clinic-entry 680ms var(--clinic-arrival-ease) backwards;
+  }
+
+  .hero-reference-specialty, .hero-reference-description {
+    --arrival-y: 8px;
+    animation: clinic-entry 540ms var(--clinic-arrival-ease) 90ms backwards;
+  }
+
+  .hero-reference-description { animation-delay: 135ms; }
+
+  .hero-reference-portrait img {
+    --arrival-x: -14px;
+    --arrival-opacity: .7;
+    animation: clinic-entry 760ms var(--clinic-arrival-ease) 45ms backwards;
+  }
+
+  .page-intro h1, .not-found h1 {
+    --arrival-y: 12px;
+    --arrival-opacity: .76;
+    animation: clinic-entry 530ms var(--clinic-arrival-ease) backwards;
+  }
+
+  .intro-description {
+    --arrival-y: 6px;
+    animation: clinic-entry 450ms var(--clinic-arrival-ease) 60ms backwards;
+  }
+
+  .mobile-nav:not([hidden]) {
+    --arrival-y: -4px;
+    --arrival-opacity: .9;
+    animation: clinic-entry 220ms var(--clinic-arrival-ease);
+  }
+
+  .faq-item[open] > .faq-answer, details[open] > .abstract-copy {
+    --arrival-y: -4px;
+    --arrival-opacity: .82;
+    animation: clinic-entry 260ms var(--clinic-arrival-ease);
+  }
+}
+
+@keyframes clinic-entry {
+  from {
+    opacity: var(--arrival-opacity, .82);
+    translate: var(--arrival-x, 0) var(--arrival-y, 0);
+  }
+}

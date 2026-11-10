@@ -1,0 +1,1354 @@
+[
+  {
+    "id": "F001",
+    "claim": "name.fa",
+    "value": "دکتر پویان سیگاری",
+    "source_ids": [
+      "S01"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "همه",
+    "notes": ""
+  },
+  {
+    "id": "F002",
+    "claim": "name.en",
+    "value": "Pouyan Sigari",
+    "source_ids": [
+      "S15",
+      "S18"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/about/",
+    "notes": "املای Pooyan در مقاله ۲۰۱۳ نیز آمده."
+  },
+  {
+    "id": "F003",
+    "claim": "specialty",
+    "value": "متخصص جراحی دهان، فک و صورت",
+    "source_ids": [
+      "S01"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "همه",
+    "notes": ""
+  },
+  {
+    "id": "F004",
+    "claim": "license.number",
+    "value": "130866",
+    "source_ids": [
+      "S01"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/ و /about/",
+    "notes": ""
+  },
+  {
+    "id": "F005",
+    "claim": "license.board",
+    "value": "تخصص بورد (دانشنامه) جراحی دهان، فک و صورت",
+    "source_ids": [
+      "S01"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/about/",
+    "notes": "رتبه برتر از این عنوان استنباط نمی‌شود."
+  },
+  {
+    "id": "F006",
+    "claim": "license.valid_city",
+    "value": "اردبیل",
+    "source_ids": [
+      "S01"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/contact/",
+    "notes": "شهر کرمان در نتیجه جستجو با شهر مجاز پروانه اشتباه نشود."
+  },
+  {
+    "id": "F007",
+    "claim": "license.expiry_jalali",
+    "value": "1409/07/01",
+    "source_ids": [
+      "S01"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/about/",
+    "notes": "وضعیت مشاهده‌شده در روز دسترسی؛ تاریخ و دامنه تغییر می‌کنند."
+  },
+  {
+    "id": "F008",
+    "claim": "education.professional_degree",
+    "value": "دکترای حرفه‌ای دندانپزشکی",
+    "source_ids": [
+      "S01"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/about/",
+    "notes": "دانشگاه و تاریخ هنوز مشخص نیست."
+  },
+  {
+    "id": "F009",
+    "claim": "education.general_institution",
+    "value": null,
+    "source_ids": [],
+    "confidence": "medium",
+    "verification_status": "یافت‌نشده",
+    "relevant_page": "/about/",
+    "notes": "دانشنامه یا رزومه تاریخ‌دار پزشک لازم است."
+  },
+  {
+    "id": "F010",
+    "claim": "education.specialty_institution",
+    "value": "کرمان؛ به‌عنوان محل دستیاری در مقاله ۲۰۱۳",
+    "source_ids": [
+      "S21"
+    ],
+    "confidence": "medium",
+    "verification_status": "تأیید محدود",
+    "relevant_page": "/about/",
+    "notes": "این وابستگی جای دانشگاه صادرکننده دانشنامه را نمی‌گیرد."
+  },
+  {
+    "id": "F011",
+    "claim": "education.graduation_dates",
+    "value": null,
+    "source_ids": [],
+    "confidence": "medium",
+    "verification_status": "یافت‌نشده",
+    "relevant_page": "/about/",
+    "notes": "سال ورود/پایان عمومی، تخصص و بورد پرسیده شود."
+  },
+  {
+    "id": "F012",
+    "claim": "education.board_rank",
+    "value": null,
+    "source_ids": [
+      "S05"
+    ],
+    "confidence": "medium",
+    "verification_status": "نیازمند تأیید پزشک",
+    "relevant_page": "/about/",
+    "notes": "ادعای رتبه برتر در سایت تجاری؛ گواهی و رتبه/سال لازم است."
+  },
+  {
+    "id": "F013",
+    "claim": "education.fellowships_awards",
+    "value": null,
+    "source_ids": [],
+    "confidence": "medium",
+    "verification_status": "یافت‌نشده",
+    "relevant_page": "/about/",
+    "notes": "فلوشیپ، افتخار و عضویت حرفه‌ای مشخص احراز نشد."
+  },
+  {
+    "id": "F014",
+    "claim": "academic.historical_2016_2017",
+    "value": "معرفی به‌عنوان استادیار جراحی دهان، فک و صورت در اردبیل",
+    "source_ids": [
+      "S06",
+      "S31",
+      "S32"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/about/ و /",
+    "notes": "فقط تاریخی؛ حکم امروز نیست."
+  },
+  {
+    "id": "F015",
+    "claim": "academic.current_rank",
+    "value": null,
+    "source_ids": [
+      "S01",
+      "S18"
+    ],
+    "confidence": "medium",
+    "verification_status": "یافت‌نشده",
+    "relevant_page": "/about/",
+    "notes": "وابستگی در مقاله ۲۰۲۶ مرتبه یا استخدام امروز را ثابت نمی‌کند."
+  },
+  {
+    "id": "F016",
+    "claim": "academic.affiliation_2026",
+    "value": "گروه جراحی دهان، فک و صورت، دانشگاه علوم پزشکی اردبیل",
+    "source_ids": [
+      "S18",
+      "S19"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/ و /about/",
+    "notes": "صرفاً وابستگی اعلامی همان مقاله."
+  },
+  {
+    "id": "F017",
+    "claim": "hospital.current_appointments",
+    "value": null,
+    "source_ids": [
+      "S01"
+    ],
+    "confidence": "medium",
+    "verification_status": "نیازمند تأیید پزشک",
+    "relevant_page": "/about/",
+    "notes": "ردیف دانشکده و بیمارستان باهنر کرمان تاریخ ندارد؛ نباید سمت فعلی نوشته شود."
+  },
+  {
+    "id": "F018",
+    "claim": "experience.2017",
+    "value": "تدریس اصول جراحی اندودانتیکس، ۲۱ اردیبهشت ۱۳۹۶",
+    "source_ids": [
+      "S06"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/about/ و /",
+    "notes": "گزارش برگزاری خوانده شد."
+  },
+  {
+    "id": "F019",
+    "claim": "experience.2023",
+    "value": "معرفی به‌عنوان دبیر علمی برنامه 200941؛ ۲۰ مرداد ۱۴۰۲",
+    "source_ids": [
+      "S07"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/about/ و /",
+    "notes": "عنوان را معرفی/اعلان بنویسید؛ حضور قطعی مستند نیست."
+  },
+  {
+    "id": "F020",
+    "claim": "experience.2024_webinar",
+    "value": "معرفی برای سخنرانی ارتوگناتیک، ۱۲ مرداد ۱۴۰۳",
+    "source_ids": [
+      "S08"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/about/ و /",
+    "notes": "تفکیک از کنگره آذر ضروری است."
+  },
+  {
+    "id": "F021",
+    "claim": "experience.2024_congress",
+    "value": "دبیر مشاور علمی تخصصی جراحی دهان، فک و صورت کنگره شانزدهم",
+    "source_ids": [
+      "S09"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/about/ و /",
+    "notes": "منبع مسئولیت به مصاحبه 12066 ارجاع داده شود."
+  },
+  {
+    "id": "F022",
+    "claim": "experience.2025_workshop",
+    "value": "تدریس کارگاه عفونت‌های ادنتوژنیک، ۱۵ اردیبهشت ۱۴۰۴",
+    "source_ids": [
+      "S10"
+    ],
+    "confidence": "medium",
+    "verification_status": "تأیید محدود",
+    "relevant_page": "/about/ و /",
+    "notes": "گزارش برگزاری موجود؛ رسمی بودن کانال با دامنه دانشگاه مستقلاً تأیید نشد."
+  },
+  {
+    "id": "F023",
+    "claim": "experience.2025_congress",
+    "value": "معرفی به‌عنوان سخنران کنگره هفدهم، ۲۷ تا ۳۰ آبان ۱۴۰۴",
+    "source_ids": [
+      "S11"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/about/",
+    "notes": "اعلان با حضور/سخنرانی انجام‌شده فرق دارد."
+  },
+  {
+    "id": "F024",
+    "claim": "experience.2026_webinar",
+    "value": "اعلان سخنرانی ارتوگناتیک برنامه 257769 برای ۳۰ مرداد ۱۴۰۵",
+    "source_ids": [
+      "S12"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/about/",
+    "notes": "گزارش برگزاری مستقلی یافت نشد."
+  },
+  {
+    "id": "F025",
+    "claim": "clinic.address",
+    "value": "اردبیل، سرچشمه، کوچه وکیل، ساختمان شیخ‌الرئیس، طبقه دوم",
+    "source_ids": [
+      "S01",
+      "S03"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/contact/ و /",
+    "notes": "نشانی ثبت‌شده؛ فعالیت روز نیازمند هماهنگی است."
+  },
+  {
+    "id": "F026",
+    "claim": "clinic.phone",
+    "value": "04533235000",
+    "source_ids": [
+      "S01",
+      "S02"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/contact/ و /",
+    "notes": "هشت رقم محلی در S01، پیش‌شماره در S02؛ تماس عملی انجام نشده."
+  },
+  {
+    "id": "F027",
+    "claim": "clinic.postcode",
+    "value": "5613669742",
+    "source_ids": [
+      "S01"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/contact/",
+    "notes": "کدپستی عمومی محل کار؛ در متن کوتاه ضروری نیست."
+  },
+  {
+    "id": "F028",
+    "claim": "clinic.hours",
+    "value": null,
+    "source_ids": [
+      "S04"
+    ],
+    "confidence": "medium",
+    "verification_status": "نیازمند تأیید پزشک",
+    "relevant_page": "/contact/",
+    "notes": "یک دایرکتوری برنامه ۹ تا ۱۶ و روز مخدوش دارد؛ تاریخ و تأیید مطب لازم است."
+  },
+  {
+    "id": "F029",
+    "claim": "clinic.appointment",
+    "value": "تماس برای اطلاع از شیوه نوبت‌گیری",
+    "source_ids": [
+      "S02"
+    ],
+    "confidence": "medium",
+    "verification_status": "تأیید محدود",
+    "relevant_page": "/contact/ و FAQ",
+    "notes": "موتور آنلاین دایرکتوری دارای نوبت قابل تأیید مشاهده نشد؛ نوبت رزرو نشد."
+  },
+  {
+    "id": "F030",
+    "claim": "clinic.map_pin",
+    "value": null,
+    "source_ids": [
+      "L01"
+    ],
+    "confidence": "medium",
+    "verification_status": "نیازمند تأیید پزشک",
+    "relevant_page": "/contact/",
+    "notes": "لینک فقط جستجوی متن نشانی است؛ Place ID و پین مستقل احراز نشد."
+  },
+  {
+    "id": "F031",
+    "claim": "clinic.instagram",
+    "value": "https://www.instagram.com/dr.pouyansigari/",
+    "source_ids": [
+      "S05",
+      "S24"
+    ],
+    "confidence": "medium",
+    "verification_status": "تأیید محدود",
+    "relevant_page": "/contact/ و SEO",
+    "notes": "حساب مستقیماً خوانده نشد؛ رسمی بودن نیازمند تأیید مالک است."
+  },
+  {
+    "id": "F032",
+    "claim": "clinic.insurance_fees_access",
+    "value": null,
+    "source_ids": [
+      "S02"
+    ],
+    "confidence": "medium",
+    "verification_status": "نیازمند تأیید پزشک",
+    "relevant_page": "/contact/ و FAQ",
+    "notes": "نبود بیمه ثبت‌شده به معنی عدم پذیرش بیمه نیست؛ تعرفه، دسترس‌پذیری و روزهای تعطیل پرسیده شود."
+  },
+  {
+    "id": "F033",
+    "claim": "clinic.contact_email",
+    "value": null,
+    "source_ids": [
+      "S19"
+    ],
+    "confidence": "medium",
+    "verification_status": "نیازمند تأیید پزشک",
+    "relevant_page": "/contact/",
+    "notes": "ایمیل نویسنده مسئول عمومی است ولی برای تماس مطب تأیید نشده."
+  },
+  {
+    "id": "F034",
+    "claim": "service.omfs",
+    "value": "جراحی دهان، فک و صورت",
+    "source_ids": [
+      "S01"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/expertise/ و /",
+    "notes": "دامنه ثبت‌شده حرفه‌ای؛ فهرست عمل‌های فعلی جداگانه تأیید شود."
+  },
+  {
+    "id": "F035",
+    "claim": "service.fracture_dislocation",
+    "value": "در دایرکتوری خدمات فک ثبت شده",
+    "source_ids": [
+      "S02"
+    ],
+    "confidence": "medium",
+    "verification_status": "تأیید محدود",
+    "relevant_page": "/expertise/",
+    "notes": "مقاله بینی سند شکستگی فک نیست؛ تأیید مطب برای خدمت روز لازم است."
+  },
+  {
+    "id": "F036",
+    "claim": "service.implants",
+    "value": "سابقه انجام ایمپلنت در مطب اردبیل در مطالعه ۲۰۱۹",
+    "source_ids": [
+      "S16"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/expertise/",
+    "notes": "سابقه مستند است؛ خدمات فعلی/برند فعلی/نتیجه فردی استنباط نشود."
+  },
+  {
+    "id": "F037",
+    "claim": "service.orthognathic",
+    "value": "موضوع آموزش و معرفی حرفه‌ای در جراحی فک",
+    "source_ids": [
+      "S08",
+      "S04",
+      "S12"
+    ],
+    "confidence": "medium",
+    "verification_status": "تأیید محدود",
+    "relevant_page": "/expertise/",
+    "notes": "تدریس معادل اثبات ارائه فعلی عمل نیست؛ تأیید دامنه درمان لازم است."
+  },
+  {
+    "id": "F038",
+    "claim": "service.rhinoplasty_blepharoplasty",
+    "value": null,
+    "source_ids": [
+      "S05",
+      "S24"
+    ],
+    "confidence": "medium",
+    "verification_status": "نیازمند تأیید پزشک",
+    "relevant_page": "/expertise/",
+    "notes": "فقط منبع تجاری؛ مقاله شکستگی بینی گواهی رینوپلاستی/پلک نیست."
+  },
+  {
+    "id": "F039",
+    "claim": "service.custom_mandible",
+    "value": "گزارش شرکت از همکاری بازسازی با ایمپلنت اختصاصی",
+    "source_ids": [
+      "S23"
+    ],
+    "confidence": "medium",
+    "verification_status": "تأیید محدود",
+    "relevant_page": "/expertise/",
+    "notes": "شاهد ذی‌نفع؛ مجوز بازنشر و خدمت فعلی احراز نشده."
+  },
+  {
+    "id": "F040",
+    "claim": "media.portfolio",
+    "value": null,
+    "source_ids": [
+      "L01",
+      "S23"
+    ],
+    "confidence": "medium",
+    "verification_status": "نیازمند تأیید پزشک",
+    "relevant_page": "/ #journey",
+    "notes": "تصاویر بیمار با رضایت صریح و مجوز صاحب اثر؛ نمونه‌کار واقعی در سورس نیست."
+  },
+  {
+    "id": "F041",
+    "claim": "media.hero_story_rights",
+    "value": null,
+    "source_ids": [
+      "L01"
+    ],
+    "confidence": "medium",
+    "verification_status": "نیازمند تأیید پزشک",
+    "relevant_page": "/ و /about/",
+    "notes": "مالکیت/رضایت استفاده از چهره و فایل ویرایش‌شده مستند نیست."
+  },
+  {
+    "id": "F042",
+    "claim": "faq.documents",
+    "value": "پیشنهاد عمومی همراه داشتن مدارک مرتبط و فهرست داروها",
+    "source_ids": [
+      "S26"
+    ],
+    "confidence": "medium",
+    "verification_status": "نیازمند تأیید پزشک",
+    "relevant_page": "FAQ و وبلاگ",
+    "notes": "پیش‌نویس عمومی؛ بازبینی پزشک و مدارک ویژه مطب لازم است."
+  },
+  {
+    "id": "F043",
+    "claim": "faq.followup",
+    "value": "زمان پیگیری مطابق برنامه فردی درمان مشخص شود",
+    "source_ids": [
+      "S26",
+      "L01"
+    ],
+    "confidence": "medium",
+    "verification_status": "نیازمند تأیید پزشک",
+    "relevant_page": "FAQ و وبلاگ",
+    "notes": "مسیر تماس پیگیری و فوریت‌ها باید مطب تعیین کند."
+  },
+  {
+    "id": "F044",
+    "claim": "blog.consultation",
+    "value": "پیش‌نویس تحریریه، بدون بازبینی پزشکی",
+    "source_ids": [
+      "L01",
+      "S26"
+    ],
+    "confidence": "medium",
+    "verification_status": "نیازمند تأیید پزشک",
+    "relevant_page": "وبلاگ (بدون route)",
+    "notes": "مرجع اینستاگرام منبع پزشکی نیست؛ route فعلی یافت نشد."
+  },
+  {
+    "id": "F045",
+    "claim": "blog.research_guide",
+    "value": "راهنمای جستجوی عنوان، نویسنده و نشریه",
+    "source_ids": [
+      "S25"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "وبلاگ (بدون route)",
+    "notes": "راهنمای رسمی خوانده شد؛ مقاله نویسندگی پزشک ندارد."
+  },
+  {
+    "id": "F046",
+    "claim": "seo.titles_descriptions",
+    "value": "پنج مسیر واقعی، عنوان و توضیح فارسی و OG/Twitter",
+    "source_ids": [
+      "L01"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "همه",
+    "notes": "متن پیشنهادی در فایل مربوط؛ ادعای درمان/رتبه افزوده نشود."
+  },
+  {
+    "id": "F047",
+    "claim": "seo.person_schema",
+    "value": "Person با تلفن، نشانی و sameAs",
+    "source_ids": [
+      "L01"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/ و /about/",
+    "notes": "sameAs اینستاگرام هنوز تأیید محدود؛ نام متغیر verifiedPublications تنها اعتبارسنجی قالب است."
+  },
+  {
+    "id": "F048",
+    "claim": "seo.domain",
+    "value": null,
+    "source_ids": [
+      "L01"
+    ],
+    "confidence": "medium",
+    "verification_status": "نیازمند تأیید پزشک",
+    "relevant_page": "همه",
+    "notes": "مالک پروژه باید دامنه HTTPS را اعلام کند؛ از ثبت میزبانی قدیمی استنتاج نشود."
+  },
+  {
+    "id": "F049",
+    "claim": "seo.indexing",
+    "value": "بدون SITE_URL: noindex و robots مسدود و sitemap خالی",
+    "source_ids": [
+      "L01"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "همه",
+    "notes": "اسناد تعداد ۶+۲ مسیر می‌گویند اما sitemap فعلی فقط ۵ صفحه دارد."
+  },
+  {
+    "id": "F050",
+    "claim": "experience.2025_safe_dentistry_panel",
+    "value": "درج نام در پنل جراحی دندانپزشکی ایمن؛ 1404/08/28 ساعت16-17:30، سالن فردوسی",
+    "source_ids": [
+      "S30",
+      "S34"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/about/ و /",
+    "notes": "برنامه رسمی، نه اثبات حضور؛ موضوع اختصاصی هر سخنران تفکیک نشده."
+  },
+  {
+    "id": "F051",
+    "claim": "experience.2025_implant_sinus_talk",
+    "value": "معرفی برای سخنرانی کامپلیکیشن‌های مرتبط با جراحی ایمپلنت و سینوس ماگزیلاری؛ 1404/08/30 در پنل11-13 سالن مولوی",
+    "source_ids": [
+      "S30",
+      "S35"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/about/ و /",
+    "notes": "زمان کل پنل است؛ حضور قطعی و زمان اختصاصی سخنرانی احراز نشد."
+  },
+  {
+    "id": "F052",
+    "claim": "social.clubhouse_candidate",
+    "value": "pouyan_sigari در آینه ClubhouseDB؛ انتساب مالکیت احراز نشده",
+    "source_ids": [
+      "S36"
+    ],
+    "confidence": "medium",
+    "verification_status": "تأیید محدود",
+    "relevant_page": "/contact/",
+    "notes": "سرنخ تاریخی با به‌روزرسانی2023؛ اثبات فعالیت جاری یا خدمات نیست."
+  },
+  {
+    "id": "F053",
+    "claim": "publications.P2016.title",
+    "value": "Efficacy of closed reduction surgery on treatment of nasal bone fracture in admitted patients to Shahid Bahonar Hospital, Kerman, Iran",
+    "source_ids": [
+      "S31",
+      "S32",
+      "S13"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/publications/",
+    "notes": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F054",
+    "claim": "publications.P2016.authors",
+    "value": [
+      "Javad Faryabi",
+      "Ahmad Enhesari",
+      "Pouyan Sigari",
+      "Shiva Pouradeli"
+    ],
+    "source_ids": [
+      "S31",
+      "S32",
+      "S13"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/publications/",
+    "notes": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F055",
+    "claim": "publications.P2016.journal",
+    "value": "Journal of Oral Health and Oral Epidemiology",
+    "source_ids": [
+      "S31",
+      "S32",
+      "S13"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/publications/",
+    "notes": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F056",
+    "claim": "publications.P2016.publication_date",
+    "value": "2016",
+    "source_ids": [
+      "S31",
+      "S32",
+      "S13"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/publications/",
+    "notes": "History ناشر: دریافت 2016-08-30، بازنگری 2026-09-08 و پذیرش 2019-03-12؛ PDF: دریافت 2015-08-15 و پذیرش 2016-05-24. این تاریخ‌ها تاریخ انتشار نیستند و تعارض ثبت شد.؛ عنوان فعلی سایت کوتاه‌شده است.؛ ترتیب و صفحات از ناشر و PDF اصلی تأیید شد؛ ترتیب متفاوت ویرا ترجیح داده نشد.؛ روز 5 June در پانوشت و September در ResearchGate تاریخ دقیق قابل اتکا نیست.؛ DOI/PMID یافت‌نشده؛ DOAJ بسته بود اما ناشر و PDF در پیگیری نهایی خوانده شدند.؛ صفحات 148-153 در ناشر و PDF تأیید شد؛ 146-153 در استناد ثانویه نادرست ترجیح داده نشد."
+  },
+  {
+    "id": "F057",
+    "claim": "publications.P2016.volume",
+    "value": "5",
+    "source_ids": [
+      "S31",
+      "S32",
+      "S13"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/publications/",
+    "notes": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F058",
+    "claim": "publications.P2016.issue",
+    "value": "3",
+    "source_ids": [
+      "S31",
+      "S32",
+      "S13"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/publications/",
+    "notes": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F059",
+    "claim": "publications.P2016.pages",
+    "value": "148-153",
+    "source_ids": [
+      "S31",
+      "S32",
+      "S13"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/publications/",
+    "notes": "History ناشر: دریافت 2016-08-30، بازنگری 2026-09-08 و پذیرش 2019-03-12؛ PDF: دریافت 2015-08-15 و پذیرش 2016-05-24. این تاریخ‌ها تاریخ انتشار نیستند و تعارض ثبت شد.؛ عنوان فعلی سایت کوتاه‌شده است.؛ ترتیب و صفحات از ناشر و PDF اصلی تأیید شد؛ ترتیب متفاوت ویرا ترجیح داده نشد.؛ روز 5 June در پانوشت و September در ResearchGate تاریخ دقیق قابل اتکا نیست.؛ DOI/PMID یافت‌نشده؛ DOAJ بسته بود اما ناشر و PDF در پیگیری نهایی خوانده شدند.؛ صفحات 148-153 در ناشر و PDF تأیید شد؛ 146-153 در استناد ثانویه نادرست ترجیح داده نشد."
+  },
+  {
+    "id": "F060",
+    "claim": "publications.P2016.doi",
+    "value": null,
+    "source_ids": [
+      "S31",
+      "S32",
+      "S13"
+    ],
+    "confidence": "high",
+    "verification_status": "یافت‌نشده",
+    "relevant_page": "/publications/",
+    "notes": "یافت نشد؛ حدس زده نشود."
+  },
+  {
+    "id": "F061",
+    "claim": "publications.P2016.pmid",
+    "value": null,
+    "source_ids": [
+      "S31",
+      "S32",
+      "S13"
+    ],
+    "confidence": "high",
+    "verification_status": "یافت‌نشده",
+    "relevant_page": "/publications/",
+    "notes": "یافت نشد؛ حدس زده نشود."
+  },
+  {
+    "id": "F062",
+    "claim": "publications.P2016.publisher_url",
+    "value": "https://johoe.kmu.ac.ir/article_84849.html",
+    "source_ids": [
+      "S31",
+      "S32",
+      "S13"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/publications/",
+    "notes": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F063",
+    "claim": "publications.P2016.attribution",
+    "value": "تأییدشده",
+    "source_ids": [
+      "S31",
+      "S32",
+      "S13"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/publications/",
+    "notes": "History ناشر: دریافت 2016-08-30، بازنگری 2026-09-08 و پذیرش 2019-03-12؛ PDF: دریافت 2015-08-15 و پذیرش 2016-05-24. این تاریخ‌ها تاریخ انتشار نیستند و تعارض ثبت شد.؛ عنوان فعلی سایت کوتاه‌شده است.؛ ترتیب و صفحات از ناشر و PDF اصلی تأیید شد؛ ترتیب متفاوت ویرا ترجیح داده نشد.؛ روز 5 June در پانوشت و September در ResearchGate تاریخ دقیق قابل اتکا نیست.؛ DOI/PMID یافت‌نشده؛ DOAJ بسته بود اما ناشر و PDF در پیگیری نهایی خوانده شدند.؛ صفحات 148-153 در ناشر و PDF تأیید شد؛ 146-153 در استناد ثانویه نادرست ترجیح داده نشد."
+  },
+  {
+    "id": "F064",
+    "claim": "publications.P2016.abstract_summary_fa",
+    "value": "پژوهش به ارزیابی جااندازی بسته شکستگی بینی در ۳۶ بیمار و تطبیق تصویربرداری پیش و پس از درمان می‌پردازد.",
+    "source_ids": [
+      "S31",
+      "S32",
+      "S13"
+    ],
+    "confidence": "high",
+    "verification_status": "نیازمند تأیید پزشک",
+    "relevant_page": "/publications/",
+    "notes": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F065",
+    "claim": "publications.P2019.title",
+    "value": "Radiographic Evaluation of Bone Resorption Rate 1 Year After the Placement of Intra-lock Dental Implants",
+    "source_ids": [
+      "S15",
+      "S16",
+      "S17"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/publications/",
+    "notes": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F066",
+    "claim": "publications.P2019.authors",
+    "value": [
+      "Pouyan Sigari",
+      "Abbas Naghizadeh Baghi",
+      "Vahid Khalili"
+    ],
+    "source_ids": [
+      "S15",
+      "S16",
+      "S17"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/publications/",
+    "notes": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F067",
+    "claim": "publications.P2019.journal",
+    "value": "Avicenna Journal of Dental Research",
+    "source_ids": [
+      "S15",
+      "S16",
+      "S17"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/publications/",
+    "notes": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F068",
+    "claim": "publications.P2019.publication_date",
+    "value": "2019-12-30",
+    "source_ids": [
+      "S15",
+      "S16",
+      "S17"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/publications/",
+    "notes": "Crossref DOI را یک سال پس از تاریخ مقاله ثبت کرده؛ تاریخ ایجاد رکورد انتشار نیست.؛ ORCID وحید خلیلی به سیگاری منتسب نشود.؛ اعداد و محدوده سن بین چکیده و روش متن یکسان نیست؛ برای تبلیغ موفقیت شخصی استفاده نشود."
+  },
+  {
+    "id": "F069",
+    "claim": "publications.P2019.volume",
+    "value": "11",
+    "source_ids": [
+      "S15",
+      "S16",
+      "S17"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/publications/",
+    "notes": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F070",
+    "claim": "publications.P2019.issue",
+    "value": "4",
+    "source_ids": [
+      "S15",
+      "S16",
+      "S17"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/publications/",
+    "notes": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F071",
+    "claim": "publications.P2019.pages",
+    "value": "135-138",
+    "source_ids": [
+      "S15",
+      "S16",
+      "S17"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/publications/",
+    "notes": "Crossref DOI را یک سال پس از تاریخ مقاله ثبت کرده؛ تاریخ ایجاد رکورد انتشار نیست.؛ ORCID وحید خلیلی به سیگاری منتسب نشود.؛ اعداد و محدوده سن بین چکیده و روش متن یکسان نیست؛ برای تبلیغ موفقیت شخصی استفاده نشود."
+  },
+  {
+    "id": "F072",
+    "claim": "publications.P2019.doi",
+    "value": "10.34172/ajdr.2019.27",
+    "source_ids": [
+      "S15",
+      "S16",
+      "S17"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/publications/",
+    "notes": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F073",
+    "claim": "publications.P2019.pmid",
+    "value": null,
+    "source_ids": [
+      "S15",
+      "S16",
+      "S17"
+    ],
+    "confidence": "high",
+    "verification_status": "یافت‌نشده",
+    "relevant_page": "/publications/",
+    "notes": "یافت نشد؛ حدس زده نشود."
+  },
+  {
+    "id": "F074",
+    "claim": "publications.P2019.publisher_url",
+    "value": "https://ajdr.umsha.ac.ir/Article/ajdr-306",
+    "source_ids": [
+      "S15",
+      "S16",
+      "S17"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/publications/",
+    "notes": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F075",
+    "claim": "publications.P2019.attribution",
+    "value": "تأییدشده",
+    "source_ids": [
+      "S15",
+      "S16",
+      "S17"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/publications/",
+    "notes": "Crossref DOI را یک سال پس از تاریخ مقاله ثبت کرده؛ تاریخ ایجاد رکورد انتشار نیست.؛ ORCID وحید خلیلی به سیگاری منتسب نشود.؛ اعداد و محدوده سن بین چکیده و روش متن یکسان نیست؛ برای تبلیغ موفقیت شخصی استفاده نشود."
+  },
+  {
+    "id": "F076",
+    "claim": "publications.P2019.abstract_summary_fa",
+    "value": "مطالعه گذشته‌نگر تصاویر رادیوگرافی برای بررسی تغییر استخوان پیرامون ایمپلنت‌های Intra-lock است؛ متن محل انجام درمان را مطب سیگاری در اردبیل معرفی می‌کند.",
+    "source_ids": [
+      "S15",
+      "S16",
+      "S17"
+    ],
+    "confidence": "high",
+    "verification_status": "نیازمند تأیید پزشک",
+    "relevant_page": "/publications/",
+    "notes": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F077",
+    "claim": "publications.P2026.title",
+    "value": "Investigating the Factors Related to the Success of Forced Eruption Treatment of Impacted Maxillary Canine Teeth",
+    "source_ids": [
+      "S18",
+      "S19",
+      "S20"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/publications/",
+    "notes": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F078",
+    "claim": "publications.P2026.authors",
+    "value": [
+      "Reza Namadkolahi",
+      "Mahdiye Maratebi",
+      "Sara Faraj Vajari",
+      "Parastoo Ghaderi",
+      "Niloofar Deravi",
+      "Sohrab Pourkhamaneh",
+      "Pouyan Sigari"
+    ],
+    "source_ids": [
+      "S18",
+      "S19",
+      "S20"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/publications/",
+    "notes": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F079",
+    "claim": "publications.P2026.journal",
+    "value": "Indonesian Journal of Dentistry",
+    "source_ids": [
+      "S18",
+      "S19",
+      "S20"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/publications/",
+    "notes": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F080",
+    "claim": "publications.P2026.publication_date",
+    "value": "2026-02-28",
+    "source_ids": [
+      "S18",
+      "S19",
+      "S20"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/publications/",
+    "notes": "خطای عنوان در Citation صفحه اول: عنوان آناناس/موش چاپ شده؛ عنوان اصلی، DOI و مؤلفان در بالای صفحه و صفحه ناشر همخوان‌اند.؛ Crossref تنها صفحه آغاز 85 دارد؛ بازه کامل PDF 85-97 است.؛ تاریخ ایجاد DOI 2026-06-25 را با تاریخ انتشار 2026-02-28 مخلوط نکنید."
+  },
+  {
+    "id": "F081",
+    "claim": "publications.P2026.volume",
+    "value": "6",
+    "source_ids": [
+      "S18",
+      "S19",
+      "S20"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/publications/",
+    "notes": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F082",
+    "claim": "publications.P2026.issue",
+    "value": "1",
+    "source_ids": [
+      "S18",
+      "S19",
+      "S20"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/publications/",
+    "notes": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F083",
+    "claim": "publications.P2026.pages",
+    "value": "85-97",
+    "source_ids": [
+      "S18",
+      "S19",
+      "S20"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/publications/",
+    "notes": "خطای عنوان در Citation صفحه اول: عنوان آناناس/موش چاپ شده؛ عنوان اصلی، DOI و مؤلفان در بالای صفحه و صفحه ناشر همخوان‌اند.؛ Crossref تنها صفحه آغاز 85 دارد؛ بازه کامل PDF 85-97 است.؛ تاریخ ایجاد DOI 2026-06-25 را با تاریخ انتشار 2026-02-28 مخلوط نکنید."
+  },
+  {
+    "id": "F084",
+    "claim": "publications.P2026.doi",
+    "value": "10.26714/ijd.v6i1.19835",
+    "source_ids": [
+      "S18",
+      "S19",
+      "S20"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/publications/",
+    "notes": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F085",
+    "claim": "publications.P2026.pmid",
+    "value": null,
+    "source_ids": [
+      "S18",
+      "S19",
+      "S20"
+    ],
+    "confidence": "high",
+    "verification_status": "یافت‌نشده",
+    "relevant_page": "/publications/",
+    "notes": "یافت نشد؛ حدس زده نشود."
+  },
+  {
+    "id": "F086",
+    "claim": "publications.P2026.publisher_url",
+    "value": "https://jurnal.unimus.ac.id/index.php/IJD/article/view/19835",
+    "source_ids": [
+      "S18",
+      "S19",
+      "S20"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/publications/",
+    "notes": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F087",
+    "claim": "publications.P2026.attribution",
+    "value": "تأییدشده",
+    "source_ids": [
+      "S18",
+      "S19",
+      "S20"
+    ],
+    "confidence": "high",
+    "verification_status": "تأییدشده",
+    "relevant_page": "/publications/",
+    "notes": "خطای عنوان در Citation صفحه اول: عنوان آناناس/موش چاپ شده؛ عنوان اصلی، DOI و مؤلفان در بالای صفحه و صفحه ناشر همخوان‌اند.؛ Crossref تنها صفحه آغاز 85 دارد؛ بازه کامل PDF 85-97 است.؛ تاریخ ایجاد DOI 2026-06-25 را با تاریخ انتشار 2026-02-28 مخلوط نکنید."
+  },
+  {
+    "id": "F088",
+    "claim": "publications.P2026.abstract_summary_fa",
+    "value": "مطالعه پرونده ۵۲ بیمار با دندان نیش نهفته فک بالا، ارتباط ویژگی‌های نهفتگی با موفقیت درمان رویش اجباری را بررسی کرده است.",
+    "source_ids": [
+      "S18",
+      "S19",
+      "S20"
+    ],
+    "confidence": "high",
+    "verification_status": "نیازمند تأیید پزشک",
+    "relevant_page": "/publications/",
+    "notes": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F089",
+    "claim": "publications.P2013-candidate.title",
+    "value": "Effect of Different Energy Levels of Microwave on Disinfection of Dental Stone Casts",
+    "source_ids": [
+      "S21",
+      "S22",
+      "S01"
+    ],
+    "confidence": "medium",
+    "verification_status": "تأیید محدود",
+    "relevant_page": "/publications/",
+    "notes": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F090",
+    "claim": "publications.P2013-candidate.authors",
+    "value": [
+      "Mahmood Robati Anaraki",
+      "Farzaneh Lotfipour",
+      "Elnaz Moslehifard",
+      "Ali Momtaheni",
+      "Pooyan Sigari"
+    ],
+    "source_ids": [
+      "S21",
+      "S22",
+      "S01"
+    ],
+    "confidence": "medium",
+    "verification_status": "تأیید محدود",
+    "relevant_page": "/publications/",
+    "notes": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F091",
+    "claim": "publications.P2013-candidate.journal",
+    "value": "Journal of Dental Research, Dental Clinics, Dental Prospects",
+    "source_ids": [
+      "S21",
+      "S22",
+      "S01"
+    ],
+    "confidence": "medium",
+    "verification_status": "تأیید محدود",
+    "relevant_page": "/publications/",
+    "notes": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F092",
+    "claim": "publications.P2013-candidate.publication_date",
+    "value": "2013-08-30",
+    "source_ids": [
+      "S21",
+      "S22",
+      "S01"
+    ],
+    "confidence": "medium",
+    "verification_status": "تأیید محدود",
+    "relevant_page": "/publications/",
+    "notes": "نام مشابه به‌تنهایی کافی نیست؛ برای افزودن به سایت تأیید پزشک لازم است.؛ وابستگی تبریز در ابتدای PubMed متعلق به نویسنده اول است؛ وابستگی خود سیگاری از PMC خوانده شد.؛ DOI در متن و PubMed موجود ولی API Crossref تک‌رکورد 404 برگرداند؛ DOI حذف یا تکذیب نمی‌شود."
+  },
+  {
+    "id": "F093",
+    "claim": "publications.P2013-candidate.volume",
+    "value": "7",
+    "source_ids": [
+      "S21",
+      "S22",
+      "S01"
+    ],
+    "confidence": "medium",
+    "verification_status": "تأیید محدود",
+    "relevant_page": "/publications/",
+    "notes": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F094",
+    "claim": "publications.P2013-candidate.issue",
+    "value": "3",
+    "source_ids": [
+      "S21",
+      "S22",
+      "S01"
+    ],
+    "confidence": "medium",
+    "verification_status": "تأیید محدود",
+    "relevant_page": "/publications/",
+    "notes": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F095",
+    "claim": "publications.P2013-candidate.pages",
+    "value": "140-146",
+    "source_ids": [
+      "S21",
+      "S22",
+      "S01"
+    ],
+    "confidence": "medium",
+    "verification_status": "تأیید محدود",
+    "relevant_page": "/publications/",
+    "notes": "نام مشابه به‌تنهایی کافی نیست؛ برای افزودن به سایت تأیید پزشک لازم است.؛ وابستگی تبریز در ابتدای PubMed متعلق به نویسنده اول است؛ وابستگی خود سیگاری از PMC خوانده شد.؛ DOI در متن و PubMed موجود ولی API Crossref تک‌رکورد 404 برگرداند؛ DOI حذف یا تکذیب نمی‌شود."
+  },
+  {
+    "id": "F096",
+    "claim": "publications.P2013-candidate.doi",
+    "value": "10.5681/joddd.2013.022",
+    "source_ids": [
+      "S21",
+      "S22",
+      "S01"
+    ],
+    "confidence": "medium",
+    "verification_status": "تأیید محدود",
+    "relevant_page": "/publications/",
+    "notes": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F097",
+    "claim": "publications.P2013-candidate.pmid",
+    "value": "24082984",
+    "source_ids": [
+      "S21",
+      "S22",
+      "S01"
+    ],
+    "confidence": "medium",
+    "verification_status": "تأیید محدود",
+    "relevant_page": "/publications/",
+    "notes": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F098",
+    "claim": "publications.P2013-candidate.publisher_url",
+    "value": null,
+    "source_ids": [
+      "S21",
+      "S22",
+      "S01"
+    ],
+    "confidence": "medium",
+    "verification_status": "یافت‌نشده",
+    "relevant_page": "/publications/",
+    "notes": "یافت نشد؛ حدس زده نشود."
+  },
+  {
+    "id": "F099",
+    "claim": "publications.P2013-candidate.attribution",
+    "value": "تأیید محدود",
+    "source_ids": [
+      "S21",
+      "S22",
+      "S01"
+    ],
+    "confidence": "medium",
+    "verification_status": "تأیید محدود",
+    "relevant_page": "/publications/",
+    "notes": "نام مشابه به‌تنهایی کافی نیست؛ برای افزودن به سایت تأیید پزشک لازم است.؛ وابستگی تبریز در ابتدای PubMed متعلق به نویسنده اول است؛ وابستگی خود سیگاری از PMC خوانده شد.؛ DOI در متن و PubMed موجود ولی API Crossref تک‌رکورد 404 برگرداند؛ DOI حذف یا تکذیب نمی‌شود."
+  },
+  {
+    "id": "F100",
+    "claim": "publications.P2013-candidate.abstract_summary_fa",
+    "value": "مطالعه آزمایشگاهی به مقایسه روش‌های ضدعفونی نمونه‌های گچ دندانپزشکی با تابش مایکروویو و محلول شیمیایی پرداخته است.",
+    "source_ids": [
+      "S21",
+      "S22",
+      "S01"
+    ],
+    "confidence": "medium",
+    "verification_status": "نیازمند تأیید پزشک",
+    "relevant_page": "/publications/",
+    "notes": "مشخصات و توضیح در publications.json"
+  },
+  {
+    "id": "F101",
+    "claim": "publications.P2016.editorial_history",
+    "value": {
+      "publisher_history": {
+        "received": "2016-08-30",
+        "revised": "2026-09-08",
+        "accepted": "2019-03-12"
+      },
+      "pdf_history": {
+        "received": "2015-08-15",
+        "accepted": "2016-05-24"
+      }
+    },
+    "source_ids": [
+      "S31",
+      "S32"
+    ],
+    "confidence": "high",
+    "verification_status": "متعارض",
+    "relevant_page": "/publications/",
+    "notes": "تاریخ‌های دریافت/پذیرش متعارض‌اند؛ برای نشر از سال شماره ۲۰۱۶ استفاده شود. روز دقیق نشر و علت اختلاف نیازمند پاسخ ناشر است."
+  }
+]

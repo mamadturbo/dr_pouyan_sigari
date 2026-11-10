@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export default function NotFound(){return <main id="main" tabIndex={-1} className="interior container not-found"><div className="not-found-mark" aria-hidden="true">۴۰۴</div><div><h1 className="section-title">صفحه پیدا نشد</h1><p>ممکن است نشانی تغییر کرده باشد. از صفحهٔ اصلی ادامه دهید یا اطلاعات تماس مطب را ببینید.</p><div className="recovery-actions"><Link prefetch={false} className="button" href="/">بازگشت به خانه</Link><Link prefetch={false} className="text-link" href="/contact/">اطلاعات تماس مطب ←</Link></div></div></main>;}

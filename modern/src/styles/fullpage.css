@@ -1,0 +1,149 @@
+html.fullpage-enabled,html.fullpage-enabled body{overflow:hidden;overscroll-behavior:none}
+.presentation-active{height:100dvh;overflow:hidden;overscroll-behavior:none;touch-action:pan-x pinch-zoom;position:relative}
+.fullpage-enabled .site-header{position:fixed;background:var(--green);color:var(--text-on-dark);transition:none}
+.presentation-candidate #main>section,.presentation-candidate>.site-footer{min-height:100dvh;box-sizing:border-box;padding-block:110px 50px;display:flex;flex-direction:column;justify-content:center}
+.presentation-candidate #main>section>.container{flex-shrink:0}
+.presentation-candidate .section-heading{margin-bottom:28px}
+.presentation-candidate .section-title{font-size:38px}
+.presentation-candidate .experience-intro .section-title{font-size:42px}
+.presentation-candidate .timeline li{padding-bottom:20px}
+.presentation-candidate .hero{padding-top:110px;padding-bottom:40px;justify-content:space-between}
+.presentation-candidate .hero-inner{min-height:0;gap:50px}
+.presentation-candidate .hero-photo{height:min(555px,calc(100dvh - 250px))}
+.presentation-candidate .hero h1{font-size:clamp(48px,4.7vw,68px);line-height:1.35}
+.presentation-candidate .hero-copy{padding-block:0}
+.presentation-candidate .hero-bottom{margin-top:18px;padding-block:16px}
+.presentation-candidate .story-section{padding-block:108px 55px}
+.presentation-candidate .section-prelude{margin-bottom:14px}
+.presentation-candidate .story-card{height:min(610px,calc(100dvh - 250px));min-height:0}
+.presentation-candidate .story-content{padding:22px 36px 44px 26px}
+.presentation-candidate .story-state h2{font-size:clamp(30px,3vw,43px);margin-block:10px}
+.presentation-candidate .story-facts{font-size:12px;margin-top:14px}
+.presentation-candidate .story-progress{bottom:20px;right:36px}
+.presentation-candidate .frame-stage{height:88%;max-height:calc(100dvh - 300px)}
+.presentation-candidate .story-controls{padding-top:10px;padding-inline-end:360px}
+.presentation-candidate .service-card{padding:20px 24px}
+.presentation-candidate .service-card-top{margin-bottom:14px}
+.presentation-candidate .service-card-top>.icon{width:32px;height:32px}
+.presentation-candidate .service-card .text-link{padding-top:10px}
+.presentation-candidate .journey-steps{margin-top:36px}
+.presentation-candidate .contact-section{border-radius:0}
+.presentation-candidate>.site-footer{gap:40px;padding-block:120px 70px}
+.presentation-candidate .site-footer .footer-top{width:min(1240px,calc(100% - 112px))}
+@media(max-height:850px){
+  .presentation-candidate #main>section{padding-block:104px 40px}
+  .presentation-candidate .story-section{padding-block:104px 45px}
+  .presentation-candidate .timeline li{padding-bottom:10px}
+  .presentation-candidate .section-heading{margin-bottom:20px}
+  .presentation-candidate .service-card{padding:18px 22px}
+}
+/* A browser side panel still has room for the two-column presentation.
+   Reduce decorative space before measuring; never scale or hide the copy. */
+@media(min-width:769px) and (max-width:1100px), (min-width:769px) and (max-height:767px){
+  .presentation-candidate #main>section{padding-block:94px 64px}
+  .presentation-candidate .container{width:calc(100% - 48px)}
+  .presentation-candidate .section-title{font-size:30px;line-height:1.5}
+  .presentation-candidate .section-heading{gap:20px;margin-bottom:16px}
+  .presentation-candidate .hero-inner{gap:24px}
+  .presentation-candidate .hero h1{font-size:44px;line-height:1.3}
+  .presentation-candidate .hero-intro{margin-bottom:12px}
+  .presentation-candidate .hero-description{margin-top:10px}
+  .presentation-candidate .hero-actions{margin-top:16px}
+  .presentation-candidate .hero-meta{margin-top:12px}
+  .presentation-candidate .hero-bottom{margin-top:12px;padding-block:10px}
+  .presentation-candidate .hero-photo{height:min(430px,calc(100dvh - 250px));margin-right:-24px}
+  .presentation-candidate .experience-grid{gap:28px;grid-template-columns:.9fr 1.1fr}
+  .presentation-candidate .experience-intro .section-title{font-size:34px;line-height:1.5}
+  .presentation-candidate .experience-intro>.section-description{font-size:14px;margin-top:12px}
+  .presentation-candidate .academic-note{margin-top:18px;padding-top:14px}
+  .presentation-candidate .timeline{padding-top:0}
+  .presentation-candidate .timeline li{padding-bottom:4px}
+  .presentation-candidate .timeline-year{margin-bottom:2px}
+  .presentation-candidate .timeline h3{font-size:15px;margin-bottom:3px}
+  .presentation-candidate .timeline p{font-size:12px;line-height:1.8}
+  .presentation-candidate .service-card{padding:12px 16px}
+  .presentation-candidate .service-card-top{margin-bottom:8px}
+  .presentation-candidate .service-card p{font-size:12px;line-height:1.8;margin-top:5px}
+  .presentation-candidate .service-card .text-link{padding-top:6px}
+  .presentation-candidate .services-note{margin-top:12px}
+  .presentation-candidate .paper-art{height:84px}
+  .presentation-candidate .research-card-body{padding:14px 16px}
+  .presentation-candidate .research-card h3{font-size:16px}
+  .presentation-candidate .research-card p{font-size:12px}
+  .presentation-candidate .story-section{padding-block:92px 64px}
+  .presentation-candidate .section-prelude{margin-bottom:10px}
+  .presentation-candidate .story-card{height:calc(100dvh - 248px)}
+  .presentation-candidate .story-content{padding:16px 24px 36px}
+  .presentation-candidate .story-state h2{font-size:28px;line-height:1.4;margin-block:8px}
+  .presentation-candidate .story-facts{font-size:11px;line-height:1.8;margin-top:10px}
+  .presentation-candidate .story-facts p+p{margin-top:8px}
+  .presentation-candidate .story-state .text-link{margin-top:8px}
+  .presentation-candidate .story-progress{right:24px;left:24px;bottom:14px}
+  .presentation-candidate .story-controls{padding-inline-end:0}
+  .presentation-candidate .frame-stage{height:82%;max-height:calc(100dvh - 290px)}
+  .presentation-candidate .visual-label{inset-inline:18px;bottom:16px;font-size:9px}
+  .presentation-candidate>.site-footer{padding-block:100px 70px}
+  .presentation-candidate .site-footer .footer-top{width:calc(100% - 48px)}
+}
+/* Softer portrait and a borderless doctor scene. */
+.hero-photo{clip-path:none;border-radius:0;box-shadow:none}
+.hero-photo:after{border:0}
+.story-card{border:0;border-radius:0;background:transparent;box-shadow:none;overflow:visible}
+.story-visual{background:transparent;border-radius:0}
+.story-content{background:transparent}
+.story-card:before,.story-card:after{display:none}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* The last numbered section includes the compact footer. */
+.presentation-candidate #main>.contact-section{min-height:calc(100dvh - var(--home-footer-height,160px));padding-block:100px 24px;justify-content:center}
+.presentation-candidate>.site-footer{min-height:0;display:block;padding:22px 0 18px}
+.presentation-candidate .site-footer .footer-top{width:min(1240px,calc(100% - 112px));padding-bottom:16px;gap:20px}
+.presentation-candidate .site-footer .footer-bottom{padding-top:12px}
+.presentation-candidate .site-footer .brand{font-size:13px}
+.presentation-candidate .site-footer nav{gap:18px;font-size:10px}
+.presentation-candidate .site-footer .footer-top>a:last-child{font-size:11px}
+
+/* A quiet vertical rail: the current number stays sharp. */
+.presentation-navigation{position:fixed;z-index:26;display:flex;align-items:center;top:50%;bottom:auto;right:8px;left:auto;transform:translateY(-50%);flex-direction:column;gap:4px;background:transparent;border:0;border-radius:0;padding:0;box-shadow:none;direction:ltr;color:var(--green)}
+.presentation-navigation[data-tone=dark]{color:var(--text-on-dark)}
+.presentation-navigation button{min-width:32px;min-height:32px;width:32px;padding:0;border:1px solid currentColor;border-radius:50%;background:transparent;color:inherit;font-size:14px;font-weight:400;opacity:0;filter:blur(2px);transform:scale(.86);box-shadow:none;transition:opacity .4s,filter .4s,transform .5s var(--ease),color .4s}
+.presentation-navigation button[data-distance="1"]{opacity:.55;filter:blur(.35px);transform:scale(.97)}
+.presentation-navigation button[data-distance="2"]{opacity:.24;filter:blur(.8px);transform:scale(.93)}
+.presentation-navigation button[data-distance="3"]{opacity:.08;filter:blur(1.3px);transform:scale(.9)}
+.presentation-navigation button[data-distance="0"]{opacity:1;filter:blur(0);transform:scale(1.12);font-weight:650}
+.presentation-navigation button:focus-visible{opacity:1;filter:blur(0);outline-offset:3px;pointer-events:auto}
+@media(min-width:769px) and (max-width:1100px), (min-width:769px) and (max-height:767px){
+  .presentation-candidate .container{width:calc(100% - 88px);margin-inline-start:64px;margin-inline-end:24px}
+  .presentation-candidate .hero-photo{margin-right:0}
+  .presentation-candidate .site-footer .footer-top{width:calc(100% - 88px)}
+}
+
+/* Laptop timeline: one floating explanation opens from its selected title. */
+.experience-stages{min-width:0}
+.timeline.timeline-progressive{padding-top:0}
+.timeline.timeline-progressive li{position:relative;min-height:64px;padding-bottom:12px;transition:min-height .5s var(--ease)}
+.timeline.timeline-progressive li[data-current=true]{min-height:210px}
+.timeline.timeline-progressive li:before{transition:background .3s,box-shadow .3s,transform .3s}
+.timeline.timeline-progressive li[data-current=true]:before{background:var(--green);border-color:var(--green);box-shadow:0 0 0 6px #004d3e12;transform:scale(1.15)}
+.timeline-progressive h3{margin-bottom:0}
+.timeline-progressive h3 button{padding:0;border:0;background:transparent;color:var(--ink);font-weight:600;text-align:right;line-height:1.6;transition:color .3s}
+.timeline-progressive [data-current=true] h3 button{color:var(--accent)}
+.timeline-progressive .timeline-detail{position:absolute;top:62px;right:0;left:0;padding:18px 22px;border:1px solid #c6dbce;border-radius:18px 3px 18px 18px;background:#fff;box-shadow:0 14px 35px #003d3312;transform-origin:top right;animation:experience-open .5s var(--ease) both;z-index:1}
+.timeline-progressive .timeline-detail:before{content:'';position:absolute;top:-6px;right:22px;width:10px;height:10px;background:white;border-top:1px solid #c6dbce;border-left:1px solid #c6dbce;transform:rotate(45deg)}
+.timeline-progressive .timeline-detail p{font-size:13px;line-height:1.9;max-width:none}
+.timeline-progressive .timeline-sources{margin-top:8px}
+.experience-step-controls{display:flex;align-items:center;justify-content:flex-end;gap:12px;margin-top:12px;color:var(--green);font-size:12px;direction:ltr}
+.experience-step-controls button{width:34px;height:34px;border:1px solid #b9cebf;background:transparent;border-radius:50%;color:var(--green)}
+.experience-step-controls button:hover{background:var(--mint)}
+.experience-step-controls button:disabled{opacity:.3}
+@keyframes experience-open{from{opacity:0;transform:translateY(-12px) scale(.96)}to{opacity:1;transform:translateY(0) scale(1)}}
+@media(min-width:769px) and (max-width:1100px){
+  .presentation-candidate .site-footer .footer-top{width:calc(100% - 48px)}
+  .presentation-candidate .contact-grid{gap:34px}
+  .presentation-candidate .contact-copy .section-title{font-size:34px}
+  .presentation-candidate .contact-details{padding-right:24px}
+  .presentation-candidate .contact-phone strong{font-size:25px}
+  .presentation-candidate .site-footer nav{gap:12px}
+}
+@media(max-width:768px){.hero-photo{width:100%;margin-right:0}}
+@media(prefers-reduced-motion:reduce){.timeline.timeline-progressive li{transition:none}.timeline-progressive .timeline-detail{animation:none}}

@@ -20,7 +20,7 @@ class Handler(SimpleHTTPRequestHandler):
                 requested = '/' + requested[len(prefix):]
                 break
         self.path = requested
-        if requested.endswith('/assets/doctor-turn.mp4'):
+        if requested.endswith('/assets/doctor-turn-flow.mp4'):
             if scenario in ('video-fail', 'frames-fail'):
                 self.send_error(503, 'Simulated video request failure')
                 return

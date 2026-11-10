@@ -63,7 +63,7 @@ function setupSmoothScroll() {
   stopSmoothScroll?.();
   lenis = undefined;
   if (reducedMotion.matches || !window.Lenis || !window.gsap || !matchMedia('(min-width: 769px) and (pointer: fine)').matches) return;
-  lenis = new window.Lenis({ lerp: 0.085, smoothWheel: true, syncTouch: false });
+  lenis = new window.Lenis({ lerp: 0.065, wheelMultiplier: .85, smoothWheel: true, syncTouch: false });
   const tick = time => lenis?.raf(time * 1000);
   lenis.on('scroll', () => window.ScrollTrigger?.update());
   window.gsap.ticker.add(tick);
@@ -97,6 +97,7 @@ const poster = document.querySelector('.story-poster');
 const storyScroll = document.querySelector('.story-scroll');
 const staticStory = document.querySelector('.story-static');
 let currentStage = '';
+let storyTextAnimation;
 
 function setStage(surgical) {
   const next = surgical ? 'surgical' : 'academic';
@@ -112,8 +113,14 @@ function setStage(surgical) {
   incoming.inert = false;
   incoming.removeAttribute('aria-hidden');
   if (!initial && window.gsap && !reducedMotion.matches) {
-    window.gsap.to(outgoing, { autoAlpha: 0, y: surgical ? -12 : 12, duration: .22, overwrite: true });
-    window.gsap.fromTo(incoming, { autoAlpha: 0, y: surgical ? 14 : -14 }, { autoAlpha: 1, y: 0, duration: .38, delay: .12, overwrite: true });
+    const direction = surgical ? -1 : 1;
+    storyTextAnimation?.kill();
+    const pieces = incoming.querySelectorAll(':scope > .eyebrow, :scope > h2, :scope > .section-description, .story-facts > p, :scope > .text-link');
+    window.gsap.killTweensOf([academic, surgery, ...pieces]);
+    storyTextAnimation = window.gsap.timeline();
+    storyTextAnimation.to(outgoing, { autoAlpha: 0, x: direction * -14, duration: .12, ease: 'power2.in' }, 0);
+    storyTextAnimation.fromTo(incoming, { autoAlpha: 0, x: 0, y: 0, scale: 1, filter: 'none' }, { autoAlpha: 1, duration: .14 }, .04);
+    storyTextAnimation.fromTo(pieces, { y: 14, x: direction * 10, opacity: 0, clipPath: 'inset(0 0 90% 0)' }, { y: 0, x: 0, opacity: 1, clipPath: 'inset(0 0 0% 0)', stagger: .025, duration: .26, ease: 'power3.out', clearProps: 'transform,opacity,clipPath' }, .05);
   } else {
     outgoing.style.opacity = '0'; outgoing.style.visibility = 'hidden';
     incoming.style.opacity = '1'; incoming.style.visibility = 'visible';
@@ -155,6 +162,19 @@ function createStoryController() {
   let navigationUntil = 0;
   let touchY = 0;
   let freshTouch = false;
+  let reversePlayback = false;
+  let settlingUntil = 0;
+  const midpoint = () => Number.isFinite(video.duration) ? video.duration / 2 : 46 / 60;
+  const startTurn = () => playback.start(reversePlayback ? { from: midpoint(), to: midpoint() * 2 } : { from: 0, to: midpoint() });
+  const nearAnchor = distance => Math.abs(scrollY - anchorY) < 3 || (scrollY > anchorY && scrollY + distance <= anchorY);
+
+  function playBackwards() {
+    if (playback.phase !== 'complete' || currentStage !== 'surgical') return false;
+    reversePlayback = true;
+    playback.reset({ preserveFrame: true });
+    playback.arm();
+    return startTurn();
+  }
 
   function positionAt(y) {
     lenis?.scrollTo(y, { immediate: true, force: true });
@@ -163,15 +183,17 @@ function createStoryController() {
 
   function unlock() {
     document.documentElement.classList.remove('story-scroll-locked');
+    // Discard momentum accumulated during playback before accepting a new gesture.
+    settlingUntil = performance.now() + 140;
     if (mobileNav.hidden) lenis?.start();
   }
 
   const playback = window.SigariStoryPlayback(video, {
     lock() {
       lockedY = anchorY;
-      positionAt(lockedY);
       lenis?.stop();
       document.documentElement.classList.add('story-scroll-locked');
+      positionAt(lockedY);
       armedAt = performance.now();
       freshTouch = false;
     },
@@ -188,21 +210,21 @@ function createStoryController() {
       }
     },
     progress(value) {
-      setStage(value >= .56);
-      document.querySelector('.story-progress i').style.transform = `scaleX(${value})`;
-      video.dataset.progress = value.toFixed(3);
+      const forwardProgress = reversePlayback ? 1 - value : value;
+      setStage(forwardProgress >= .56);
+      document.querySelector('.story-progress i').style.transform = `scaleX(${forwardProgress})`;
+      video.dataset.progress = forwardProgress.toFixed(3);
     },
     ready() { stage.classList.add('sequence-ready'); },
     finish(reason) {
       scene.dataset.result = reason;
-      stage.classList.remove('sequence-ready');
       if (reason === 'error' || reason === 'timeout') {
+        stage.classList.remove('sequence-ready');
         status.textContent = 'ویدئو پخش نشد؛ تصویر ثابت نمایش داده می‌شود و اسکرول صفحه آزاد است.';
         button.firstChild.textContent = 'تلاش دوباره برای پخش ';
       } else if (reason !== 'ended') status.textContent = 'اسکرول صفحه آزاد است؛ برای اجرای چرخش می‌توانید دکمه را بزنید.';
     },
     reset() {
-      stage.classList.remove('sequence-ready');
       delete scene.dataset.result;
       button.firstChild.textContent = 'اجرای چرخش پزشک ';
       status.textContent = 'وقتی به تصویر رسیدید، با یک اسکرول چرخش کامل آغاز می‌شود.';
@@ -219,14 +241,26 @@ function createStoryController() {
     const gap = now - lastWheelAt;
     lastWheelAt = now;
     if (playback.phase === 'playing') { event.preventDefault(); return; }
+    if (now < settlingUntil && gap < 120) { event.preventDefault(); return; }
+    const distance = event.deltaY * (event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? innerHeight : 1);
+    if (playback.phase === 'complete' && currentStage === 'surgical' && distance < 0 && nearAnchor(distance)) {
+      event.preventDefault();
+      playBackwards();
+      return;
+    }
     if (playback.phase === 'armed') {
       if (event.deltaY < 0) { playback.cancel('back'); return; }
       event.preventDefault();
       // Ignore the inertial tail of the gesture that brought the scene into view.
-      if (event.deltaY > 0 && now - armedAt > 180 && gap > 160) playback.start();
+      if (event.deltaY > 0 && now - armedAt > 140 && gap > 120) startTurn();
       return;
     }
-    const distance = event.deltaY * (event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? innerHeight : 1);
+    if (playback.phase === 'complete' && reversePlayback && currentStage === 'academic' && distance > 0 && Math.abs(scrollY - anchorY) < 3) {
+      event.preventDefault();
+      reversePlayback = false;
+      playback.reset({ preserveFrame: true });
+      playback.arm(); startTurn(); return;
+    }
     if (canArm() && distance > 0 && scrollY < anchorY && scrollY + distance >= anchorY) {
       event.preventDefault();
       playback.arm();
@@ -234,13 +268,18 @@ function createStoryController() {
   }
 
   function onKey(event) {
-    if (!playback.locked || event.ctrlKey || event.metaKey || event.altKey) return;
+    if (event.ctrlKey || event.metaKey || event.altKey) return;
     if (event.target.closest('input,textarea,select,[contenteditable="true"]')) return;
-    if (event.key === 'Escape') { event.preventDefault(); playback.cancel(); return; }
-    const down = ['ArrowDown', 'PageDown', 'End'].includes(event.key) || (event.key === ' ' && !event.shiftKey);
     const up = ['ArrowUp', 'PageUp', 'Home'].includes(event.key) || (event.key === ' ' && event.shiftKey);
+    const down = ['ArrowDown', 'PageDown', 'End'].includes(event.key) || (event.key === ' ' && !event.shiftKey);
+    if (!playback.locked && playback.phase === 'complete' && currentStage === 'surgical' && up && nearAnchor(-innerHeight * .8)) { event.preventDefault(); playBackwards(); return; }
+    if (!playback.locked && playback.phase === 'complete' && reversePlayback && down && Math.abs(scrollY - anchorY) < 3) {
+      event.preventDefault(); reversePlayback = false; playback.reset({ preserveFrame: true }); playback.arm(); startTurn(); return;
+    }
+    if (!playback.locked) return;
+    if (event.key === 'Escape') { event.preventDefault(); playback.cancel(); return; }
     if (playback.phase === 'playing' && (down || up)) { event.preventDefault(); return; }
-    if (playback.phase === 'armed' && down) { event.preventDefault(); playback.start(); }
+    if (playback.phase === 'armed' && down) { event.preventDefault(); startTurn(); }
     else if (playback.phase === 'armed' && up) playback.cancel('back');
   }
 
@@ -253,10 +292,19 @@ function createStoryController() {
     if (event.touches.length !== 1) return;
     const distance = touchY - event.touches[0].clientY;
     if (playback.phase === 'playing') { event.preventDefault(); return; }
+    if (performance.now() < settlingUntil) { event.preventDefault(); return; }
+    if (playback.phase === 'complete' && reversePlayback && distance > 12 && Math.abs(scrollY - anchorY) < 3) {
+      event.preventDefault(); reversePlayback = false; playback.reset({ preserveFrame: true }); playback.arm(); startTurn(); return;
+    }
+    if (playback.phase === 'complete' && currentStage === 'surgical' && distance < -12 && nearAnchor(distance)) {
+      event.preventDefault();
+      playBackwards();
+      return;
+    }
     if (playback.phase === 'armed') {
       if (distance < -12) { playback.cancel('back'); return; }
       event.preventDefault();
-      if (distance > 12 && freshTouch) { freshTouch = false; playback.start(); }
+      if (distance > 12 && freshTouch) { freshTouch = false; startTurn(); }
     } else if (canArm() && distance > 12 && scrollY < anchorY && scrollY + distance >= anchorY) {
       event.preventDefault();
       playback.arm();
@@ -280,18 +328,27 @@ function createStoryController() {
     trigger = window.ScrollTrigger.create({
       id: 'doctor-story', trigger: focus, start: `top ${focusTop}px`, end: 'bottom top',
       onEnter: () => { if (canArm()) playback.arm(); },
-      onLeaveBack: () => { if (!playback.locked && playback.phase !== 'failed') playback.reset(); },
+      onLeaveBack: () => {
+        if (playback.phase === 'complete' && currentStage === 'surgical' && performance.now() >= navigationUntil) { playBackwards(); return; }
+        if (!playback.locked && playback.phase !== 'failed') {
+          playback.reset({ preserveFrame: true });
+          reversePlayback = false;
+          setStage(false);
+        }
+      },
     });
   }
 
   function onButton() {
     if (playback.phase === 'playing') return;
+    if (video.error) video.load();
     if (playback.phase === 'complete' || playback.phase === 'failed') {
-      playback.reset();
-      video.load();
+      if (currentStage === 'surgical') { playBackwards(); return; }
+      reversePlayback = false;
+      playback.reset({ preserveFrame: true });
     }
     playback.arm();
-    playback.start();
+    startTurn();
   }
 
   window.addEventListener('wheel', onWheel, { passive: false, capture: true });
@@ -300,7 +357,9 @@ function createStoryController() {
   window.addEventListener('touchmove', onTouchMove, { passive: false, capture: true });
   window.addEventListener('scroll', guardScroll, { passive: true });
   button.addEventListener('click', onButton);
-  video.src = assetSource('assets/doctor-turn.mp4');
+  const showDecodedFrame = () => { if (!video.error) stage.classList.add('sequence-ready'); };
+  video.addEventListener('loadeddata', showDecodedFrame);
+  video.src = assetSource('assets/doctor-turn-flow.mp4');
   video.muted = true;
   setStage(false);
   scene.dataset.playback = 'idle';
@@ -320,6 +379,7 @@ function createStoryController() {
       window.removeEventListener('touchmove', onTouchMove, true);
       window.removeEventListener('scroll', guardScroll);
       button.removeEventListener('click', onButton);
+      video.removeEventListener('loadeddata', showDecodedFrame);
     },
   };
 }

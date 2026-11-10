@@ -1,0 +1,66 @@
+[
+  {
+    "route": "/",
+    "width": 712,
+    "dpr": 2,
+    "overflow": false,
+    "mode": "natural",
+    "h1": true
+  },
+  {
+    "route": "/about/",
+    "width": 712,
+    "dpr": 2,
+    "overflow": false,
+    "h1": true
+  },
+  {
+    "route": "/expertise/",
+    "width": 712,
+    "dpr": 2,
+    "overflow": false,
+    "h1": true
+  },
+  {
+    "route": "/publications/",
+    "width": 712,
+    "dpr": 2,
+    "overflow": false,
+    "h1": true
+  },
+  {
+    "route": "/blog/",
+    "width": 712,
+    "dpr": 2,
+    "overflow": false,
+    "h1": true
+  },
+  {
+    "route": "/blog/first-consultation/",
+    "width": 712,
+    "dpr": 2,
+    "overflow": false,
+    "h1": true
+  },
+  {
+    "route": "/blog/finding-research/",
+    "width": 712,
+    "dpr": 2,
+    "overflow": false,
+    "h1": true
+  },
+  {
+    "route": "/contact/",
+    "width": 712,
+    "dpr": 2,
+    "overflow": false,
+    "h1": true
+  },
+  {
+    "route": "/404.html",
+    "width": 712,
+    "dpr": 2,
+    "overflow": false,
+    "h1": true
+  }
+]
